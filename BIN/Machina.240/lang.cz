@@ -1,0 +1,589 @@
+
+
+Nedostatek pamàti.
+
+
+
+
+
+
+
+
+
+
+Nelze otev©°t soubor.
+Nelze á°st ze souboru.
+
+
+
+
+
+
+
+Nekorektn° parametry.
+Soubor nenalezen.
+
+P©°stup odep©en.
+
+
+
+
+Neplatn† cesta.
+Nelze ps†t do souboru.
+
+
+
+Selh†n° DPMI.
+
+
+
+Nedostatek konvenán° pamàti.
+Pot©ebuji DOS verze p©inejmen®°m
+Neplatny disk
+Selhalo nastaven° fantom disku
+Selhal test fantom disku
+Zabils koáku, ëivotñ màla
+Nelze vytvo©it soubor.
+Nelze zav©°t soubor.
+P©°li® velkò soubor.
+V readonly m¢du nelze zapisovat na disk.
+Sluëba Event Wait je obsazena.
+DialogovÇ okno je vàt®° neë obrazovka, zkus vy®®° rozli®en°.
+M†lo pamàti na vol†n° shellu "$".
+Ne£spà®nÇ vol†n° shellu "$".
+Selhalo naáten° souboru.
+Selhalo uloëen° souboru.
+Selhalo vol†n° shellu.
+Adresa
+Nejde nastavit zobrazovac° m¢d.
+Vadnò VESA BIOS. Po©iÉ si slu®nàj®° nebo pouëij VGA rozli®en°.
+Screen=nil. Je pot©eba nejprve nastavit nàjakò m¢d.
+Vadnò font.
+Pokus o nastaven°/konverzi fontu pro tyto £áely p©°li® velkÇho.
+Chyba v INI souboru na ©†dce:
+ChybnÇ hexadecim†ln° á°slo v INI souboru na ©†dce:
+Intern° chyba INI readeru.
+Ä°slo mimo rozsah $..$ v INI souboru na ©†dce:
+Promànn† m† bòt á°slo v INI souboru na ©†dce:
+ReadOnly m¢d, vynech†v†m pr†ci s
+Alokuje® moc blokñ konvenán° pamàti. Pro autora: zvy® si maxDosBlocks.
+blokñ konvenán° pamàti neuvolnàno.
+Nenahazuje se ret, intern° chyba.
+Fuj bios, sluëba load user font zmànila doublescanning.
+minulò m¢d neuvolnil timer
+ë†dn† bitmapa na vstupu.
+p©°li® velk† li®ta.
+
+- TEST GRAFICKê KARTY -
+ûiÉ se instrukcemi na obrazovce.
+Pokud jsi v oknà, p©epni do fullscreenu!
+...ENTER - pokraáov†n°...
+Jestli se text hòbe, stiskni ENTER.
+V opaánÇm p©°padà ESC.
+ENTER jestli se text cuk†, jinak ESC
+Stiskni ENTER.
+Stiskni ESC.
+Je-li vidàt jen pñlkruënice, stiskni ESC.
+Stiskni ENTER, je-li cel†.
+Stiskni MEZERNãK, je-li cel†.
+Je-li sloupec textu uprost©ed obrazovky, stiskni ENTER. Je-li vychòlen doprava nebo doleva, stiskni ESC.
+Pokud se kurzor pohybuje kolmo (v jednom sloupci), stiskni ENTER. Jinak ESC.
+Pokud se text pohybuje plynule, stiskni ENTER. Jinak ESC.
+Pokud se text
+pohybuje plynule,
+stiskni ENTER.
+Jinak ESC.
+
+Postr†d†m soubor
+Soubor $ jië existuje.
+Adres†© $ neexistuje.
+Nelze otev©°t soubor
+Nelze á°st ze souboru
+Nelze naá°st celò soubor
+Nelze vytvo©it soubor
+Nelze ps†t do souboru
+asi je m†lo m°sta na disku.
+Nelze zav©°t soubor
+Nelze p©ejmenovat soubor
+Nelze smazat soubor
+na
+Nelze zjistit velikost souboru
+Nelze zjistit atributy souboru
+Nelze nastavit atributy souboru
+Nelze vytvo©it adres†©
+Nelze vstoupit do adres†©e
+Nelze smazat adres†©
+Bàhem akce nastala chyba.
+Pokraáuj;Pok.vëdy;Skonái;Sko.vëdy
+õpatn† á°seln† soustava
+õpatn† cifra na vstupu.
+Chyba p©°stupu ke streamu
+Nelze inicializovat stream
+Äten° za koncem streamu
+Nelze ps†t do streamu
+Get neregistrovanÇho typu
+Put neregistrovanÇho typu
+MÇdium chr†nàno proti z†pisu.
+Disk
+Disky
+NEPûIPRAVEN
+Zas nic.
+PûECPèNO!
+PûãLIõ MNOHO
+SOUBOR¶!
+Äekejte,
+pros°m
+ûad°m..
+Zadej masku.
+ADRESèû
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dàlen° nulou.
+P©ekroáen° mez° pole nebo typu.
+P©eteáen° stacku.
+Nedostatek pamàti.
+Invalid pointer operation.
+Floating point overflow.
+Floating point underflow.
+Invalid floating point operation.
+Overlay manager not installed.
+Overlay file read error.
+Pouëit° neinicializovanÇho objektu.
+Vol†n° abstraktn° metody.
+Stream registration error.
+Indexov†n° v kolekci mimo rozsah.
+P©eteáen° kolekce.
+AritmetickÇ p©eteáen°.
+General Protection Fault, hehe :).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Break, taky ©e®en°.
+
+Pouziti: FN [options] [zdroj [cil]]
+  -i jen vypise informace o fontech zdroj
+  -f jen vypise informace o formatech
+  -p prevede font na proporcionalni
+  -ncislo prevede font na neproporcionalni, cislo je sirka, zadne cislo=detekce
+  -r umozni prejmenovat font (nazev v headeru, ne nazev souboru)
+  -first-last rika, ze font obsahuje pouze znaky first az last (napr. -32-255)
+  -wcislo udava sirku znaku ve FNT v pixelech, implicitne 8
+  -scislo posune vsechny znaky nahoru (tak lze vytvorit superscript)
+  -k prevede font z CentralEurope na Kameniky (chces jinou konverzi? call me)
+  -v zpracuje vsechny fonty obsazene v souboru
+  -cslovo nejake slovo obsazene v .FON v headeru kazdeho fontu, implicitne (c)
+   (neznam format .FON, fonty vyhledavam podle tohoto slova)
+  :lang volba jazyka (:cz nebo :eng)
+  Pokud je zadan jen zdroj, font se nastavi na obrazovce.
+  Pokud je zadan i cil, program se pokusi o konverzi.
+  Zdroj i cil mohou obsahovat * a ? (napr. FN *.fnt *.fn).
+
+Formaty (serazene od nejjednodussiho k nejkomplexnejsimu):
+  FNT - nespakovane bitmapy, sirka 8 pixelu, vyska se autodetekuje
+  FNP - jako FNT ale pred kazdym znakem je byte sirka(0-8)
+  RIF - magic "af"; pchar copyright; word vyska(0-24),lastchar (firstchar=32);
+        tablo[word ofs_od_zacatku_bitmap,sirka(0-16)]; hromada bitmap
+  FN  - magic "Îm’onÁ "; pchar name; char firstchar,lastchar; short sizeover,
+        sizeunder; short addspace; byte future; tablo[short relx,rely;
+        byte sir,vys,shift; word ofs_od_zacatku_souboru]; hromada bitmap
+  FON - copyright, copyright, copyright, chaos, copyright...
+
+Nejak moc parametru.
+Chaos 1, sezen mi popis formatu FON.
+Chaos 2, sezen mi popis formatu FON.
+Fontu:
+Pouzit font cislo
+Font
+Vyska
+õ°©ka $ neodpovida parametrum - neni nasobkem $ (znaku*sirka).
+Prilis velky font.
+Interni chyba, spatna velikost vygenerovaneho fn.
+Expand failed.
+Shrink failed.
+Z†pis do form†tu .
+nen° podporov†n.
+Load $.
+Rename (zadej libovolne dlouhe jmeno fontu, uklada se do headeru):
+Proporc.
+Noprop.
+Superscript.
+Show.
+Save
+
+Pro takovò form†t nem†m loader.
+Pro takovò form†t nem†m writer.
+Nepodporovanò áernob°lò obr†zek!
+Nepodporovanò typ komprese!
+Nepodporovan† barevn† hloubka!
+Postr†d†m paletu!
+Neoáek†van† paleta!
+Chyba v datech!
+P©°li® mnoho Huffmanovòch tabulek!
+P©°li® mnoho kvantizaán°ch tabulek!
+P©°li® mnoho barevnòch sloëek!
+Neprokl†danÇ obr†zky nejsou podporov†ny!
+Nespr†vnò poáet barevnòch sloëek!
+Chybn† velikost znaáky DRI!
+Chybn† velikost hlaviáky souboru!
+DHL nen° podporov†no!
+Nalezena nezn†m† znaáka v datech!
+Barevnò model CMYK nen° podporov†n!
+Barevnò model YIQ nen° podporov†n!
+Nezn†mò barevnò model!
+Aritmetick† komprese nen° podporov†na!
+Soubory typu HSI JPEG nejsou podporov†ny!
+Neoáek†van† znaáka konce souboru!
+Nebyla definov†na ë†dn† Huffmanova dekompresn° tabulka!
+Nepodporovanò typ prokl†d†n°!
+Neoáek†van† znaáka v datech!
+Prokl†d†n° obr†zkñ nen° podporov†no!
+P©°li® velkò obr†zek!
+Podporov†ny jsou pouze 256barevnÇ obr†zky!
+Chyba CRC v hlaviáce souboru!
+Nalezen neoáek†vanò konec souboru!
+Obr†zky v progresivn°m m¢du nejsou podporov†ny!
+Nezn†mò typ komprese!
+Dekompresn° buffer vàt®° neë 32KB nen° podporov†n!
+Nezn†mò typ filtru!
+Chybn† velikost nekomprimovanÇho bloku!
+Alfa kan†l nen° podporov†n!
+P©°li® velk† animace pro indirect player.
+
+Nelze spustit modul
+Nepovolenò n†zev samplu
+Nekorektn° sampl, beru jen 8bit mono.
+MIDAS Error:
+FATAL MIDAS uninitialization failure:
+
+Nekorektn° popis pozad°:
+Syntatick† chyba v popisu pozad°:
+Nezn†m† barva:
+
+Chybnò n†zev projektu, nastuduj roz®°©enou hvàzdiákovou konvenci...
+Nejd©°v kompiluj - pouzij parametr 1.
+je v seznamu v°ckr†t!
+Zadej jmeno $. DM souboru.
+Nazvi obsah $. DM souboru.
+Pokud to neni Root, je to AddOn k
+(ve vyrazu muzes pouzit *,?,[varianta1|varianta2|...])
+2-3 pismenna zkratka nazvu.
+
+(vede na nàj odkaz ze str†nky $).
+Neza©azen† str†nka: $.
+Str†nka $ nen° fit! (beru jen str†nky verz° 200..$)
+Obr†zek $ pouëitò na str†nce $ neexistuje.
+Vyluáuji z projektu
+Nehled°m na velikost
+Prohl°ë°m vazby uvnit© projektu...
+Nena®el jsem ë†dnÇ str†nky, ze kteròch bych .DM sestavil.
+Velikost projektu
+
+M†lo pamàti pro skript v Parlanu.
+
+P©°li® mnoho modulñ na str†nce.
+
+P©ekroáen maxim†ln° poáet sloupcñ na str†nce.
+
+Zkracuji text.
+
+Moc malò buffer pro dmtext.
+Nezn†mò form†t souboru.
+Chyb° str†nka template.
+Str†nka m† ne£plnò header, moën† k tomu do®lo zmànou template.
+Mezi ®ablonami vznikla smyáka.
+
+P©ekroáen maxim†ln° poáet DM souborñ.
+P©ekroáen maxim†ln° poáet projektñ.
+P©°li® mnoho DM souborñ v jednom projektu.
+Nezkompilov†no
+mus° bòt root
+rulez
+sux
+none
+Hled†m DMs v
+verze
+Chyb°
+ale mñëe® si vybrat n†hradn° jazyk.
+
+Sorry, p©ekroáen max.poáet vno©en°.
+Nelze obnovit str†nku (m†lo pamàti nebo intern° chyba).
+Nastaven° palety (ovl†d†n°: my®, mezern°k, z,x)
+ESC=v®echno zpàt
+ENTER=hotovo
+set
+Setup
+ndx
+Index
+rip
+Ripper
+shell
+S hudbou
+shell
+Bez hudby
+bye
+Konec
+zkou®°m velikost
+P©etekl ministack.
+Podtekl ministack.
+Export do:
+screenshot
+obr†zek celÇ str†nky
+holò text str†nky
+Vòhe§: hol† str†nka
+HTML: hol† str†nka
+HTML: str†nka a obr†zky
+HTML: celò site, i podstr†nky
+Ma®ina: hol† str†nka
+Ma®ina: plnà vybaven† str†nka
+Ma®ina: celò site, i podstr†nky
+Str†nka neobsahuje ë†dn† textov† data.
+Jakò modul chce® pustit?
+Modul
+neexistuje.
+nem† vlastn° moduly.
+Kde hledat moduly
+Hledat na disku...
+Toto menu.
+Vstup na str†nku.
+Str†nky podle autorñ.
+Volba projektu.
+Volba rozli®en°.
+Volba jazyka.
+Export str†nky.
+Vòbàr modulu.
+Reinicializace Midasu.
+Vypnut°/zapnut° hudby (mute).
+Stopnut° pr†và hraj°c°ch samplñ.
+N†hl† smrt.
+Hlavn° menu.
+Editor palety.
+Mezern°k
+Link vede na
+Tento form†t nen° podporov†n.
+odkazuje na
+kteròëto soubor nebyl nalezen.
+Nejde vygenerovat button (®patnÇ parametry nebo m†lo pamàti).
+Adres†© pro exportovanÇ soubory.
+Ripping zñstal nedokonáen.
+
+Zkou®°m
+Instaluji
+do
+Zap°n†m readonly reëim.
+Upozornàn°: p©°kazem SET DM=cesta mñëe® nastavit kam m†m ukl†dat konfig.soubor.
+Konfiguraán° soubor $ je vytvo©en novàj®° verz° Ma®iny.
+Pokud chce® mermomoc° pouë°vat tuto star®° verzi, bude® ho muset smazat.
+Instaluji Ma®inu do
+Updatuji Masinu v
+Parametry:
+ ?,H     - vyp°®e tento seznam parametrñ
+ R       - readonly mode (vñbec nezapisuje na disk)
+ S       - safe mode (bezpeánej®° reëim - bez timeru, hw scrolu, mousehandleru)
+ O       - oldies but goldies (áte i .DM soubory verze 0.xx, ale bez z†ruk)
+ D,DP,DM,DW,DC,DA,DS - rñznÇ debugovac° m¢dy, lze kombinovat
+           (debug general,pal,mem,writer,cache,atoms,scripts)
+ I       - instalace (do $ nebo %DM%)
+ E       - editor (tvorba vlastn°ch stranek..)
+ 1       - kompil†tor projektu (vygeneruje seznam souborñ $)
+ 2       - linker projektu (soubory z $ spoj° do .DM)
+ VGA,VESA,NOVGA,NOVESA - vynut° nebo zak†ëe VGA nebo VESA m¢dy
+ OsaRelaceLimit - omez° rozli®en° v ose x nebo y danòm poátem pixelñ
+           (p©°klady: y=480, xlt800, "x<800", x!=360, "y<100"...)
+ +bitñ   - pouëije pouze m¢dy s tolika bity na pixel (4,8,15,16,24,32)
+ -bitñ   - vynech† m¢dy s tolika bity na pixel       (4=textm¢d)
+ :jazyk  - volba jazyka (:cz nebo :eng)
+ adres†© - tam hled† dal®° .DM soubory
+ soubor  - rovnou otev©e zadanò soubor (.DM nebo str†nka editoru)
+ soubor.swp [MB]-zvet®° pamàü otev©en°m swapfile (implicitnà 16MB) (nestabiln°)
+Nezn†mò parametr
+Program je jië jednou spu®tàn, m†m rozbàhnout dal®° kopii? [Ano/Ne/Kec†®]
+AaNnKk
+Verze p©ilinkovanÇho ini souboru neodpov°d† verzi programu.
+Jazyk p©ilinkovanÇho ini souboru neodpov°d† jeho n†zvu.
+
+Ano;Storno
+Intern° chyba, ®patnò odhad velikosti str†nky.
+sloupec
+bajtñ
+Str†nka
+nejde uloëit. Zadej jinò n†zev.
+Vyber str†nku nebo napi® novÇ jmÇno.
+Ve sloupci nen° m°sto, udàlej ho ve zdroj†ku nebo jdi do jinÇho sloupce.
+Vyber obr†zek...
+Vyber skript...
+Vyber si font...
+Kterò font chce® nahradit?
+Dal®° font ti ned†m, uë m†® na str†nce jinÇ áty©i.
+Odkaz vede na...
+M†m tento sloupec slouáit s p©edchoz°m?
+Vloëen°m obr†zku zru®°® textury na pozad°. Pokraáovat?
+Definuj pozad° zpñsobem popsanòm v helpu (F1).
+Velikost str†nky (SIRKAxVYSKA) (®°©kaÚ$).
+DoporuáenÇ rozli®en° (SIRKAxVYSKA).
+N†zev str†nky.
+Autor str†nky.
+Flags
+Zab°j°m zlÇ dÇmony...
+Upozornàn°: Nem†® VESA BIOS.
+Upozornàn°: Nem†® my®.
+Check Event Wait...
+Tvñj operaán° systÇm moment†lnà nepodporuje standardn° sluëbu Event Wait.
+Mñëu pokraáovat, ale potom neruá°m za vòsledek.
+Check OS...
+Upozornàn°: Scrolling je plynulej®° bez Windows.
+Check memory...
+Upozornàn°: V°c pamàti by ne®kodilo ;-)
+Nem†® moc volnÇ pamàti. Mñëu pokraáovat, ale mohou nastat problÇmy.
+Nastaven° se projev° aë p©i p©°®t°m spu®tàn° editoru.
+Vyber si jednu z v°ce sad parametrñ skriptu.
+Skript
+parametr
+m† nezn†mò typ
+nem† zdokumentovanÇ parametry.
+nepodporuje parametry
+parametr typu script/link/... mus° bòt posledn°.
+
+Kategorie textu
+Norm†ln° text
+Odli®enò text (spoluautor, citace, k¢d)
+Zvòraznànò text, odkazy
+Silnà zvòraznànò text
+
+Bez helpu ani r†nu
+To nejdñleëitàj®° bàhem jednÇ minuty
+!1stmin.cz
+Struánò p©ehled ovl†d†n°
+!keys.cz
+Hlavn° help
+!editor.cz
+Obr†zky a animace
+!picture.cz
+Menu editoru
+!edmenu.cz
+Pozad° a textury
+!texture.cz
+Zvuk a hudba
+!sound.cz
+Projekty
+!project.cz
+Atomy, skripty, ParLan
+!parlan.cz
+Chyby a hroucen°
+!bugz.cz
+Popis form†tu
+!format.cz
+
+PomocnÇ funkce
+Velikost str†nky
+Template str†nka
+ N†zev str†nky
+ Autor str†nky
+ DoporuáenÇ rozli®en°
+ Obr†zek na pozad°
+ Definice pozad°/barev
+ Seznam fontñ
+ Sampl >˛  (welcome)
+ Sampl  ˛ (wel.again)
+ Sampl  ˛> (yessir)
+ Sampl ˛  (goback)
+ Sampl ˛ (boom)
+ Seznam modulñ
+ Flags
+Vycentrovat sloupec
+Rozli®en° editoru
+P©ehodit Y a Z

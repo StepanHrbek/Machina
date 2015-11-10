@@ -1,0 +1,589 @@
+
+Undefined error.
+Out of memory.
+Conventional memory heap corrupted.
+Invalid conventional memory block.
+Out of EMS memory.
+EMS memory heap corrupted.
+Invalid EMS memory block.
+Expanded Memory Manager failure.
+Out of soundcard memory.
+Soundcard memory heap corrupted.
+Invalid soundcard memory block.
+Out of instrument handles.
+Unable to open file.
+Unable to read file.
+Invalid module file.
+Invalid instrument in module.
+Invalid pattern data in module.
+Invalid channel number.
+Invalid instrument handle.
+Sound Device channels not open.
+Sound Device hardware failure.
+Invalid function arguments.
+File does not exist.
+Invalid file handle.
+Access denied.
+File exists.
+Too many open files.
+Disk full.
+Unexpected end of file.
+Invalid path.
+Unable to write file.
+Unable to lock Virtual DMA buffer.
+Unable to use Virtual DMA Services.
+Invalid Virtual DMA Service version.
+DPMI failure.
+Invalid segment descriptor.
+Out of system resources.
+
+Not enough conventional memory.
+I need DOS version at least
+Invalid disc
+Unable to select fantom disc
+Failed to test fantom disc
+You killed a cat, lives had she
+Unable to create file.
+Unable to close file.
+Too big file.
+Unable to write to disk in ReadOnly mode.
+Event Wait busy.
+Dialog window is bigger than screen, try higher resolution.
+Not enough memory for shell command "$".
+Unsuccessful shell call "$".
+FileLoad failed.
+FileSave failed.
+Calling shell failed.
+Address
+Unable to set video mode.
+Bad VESA BIOS. Get a better one or use VGA resolution.
+Screen=nil. You should set a video mode first.
+Incorrect font.
+It's not possible to set/convert so big font.
+Error in INI file, line:
+Bad hexadecimal number on following line of INI file:
+INI reader internal error.
+Number out of range $..$ on following line of INI file:
+Variable should be number on following line of INI file:
+ReadOnly mode, skipping job with
+You alloc too many conv.mem.blocks. For author: increase maxDosBlocks.
+conv.mem.blocks not freed.
+Nobody sets ret, internal error.
+Bios sux, service 'load user font' changes doublescanning.
+last mode forgot to free timer
+no bitmap on input.
+too big bottom map.
+
+- GRAPHICS CARD TEST -
+Proceed according to instructions on screen.
+If you are in window, go to fullscreen!
+...ENTER - continue...
+If text moves, press ENTER.
+Otherwise ESC.
+ENTER if text flicks, otherwise ESC.
+Press ENTER.
+Press ESC.
+If you see only halfcircle, press ESC.
+Press ENTER if you see whole circle.
+Press SPACE if you see whole circle.
+If this column is in the middle of screen, press ENTER. If it is aside, press ESC.
+If cursor moves vertically (in one column), press ENTER. Otherwise ESC.
+If text moves smoothly, press ENTER. Otherwise ESC.
+If text moves
+smoothly,
+press ENTER.
+Otherwise ESC.
+
+Missing file
+File $ already exists.
+Directory $ doesn't exist.
+Unable to open file
+Unable to read file
+Unable to read whole file
+Unable to create file
+Unable to write file
+perhaps low diskspace.
+Unable to close file
+Unable to rename file
+Unable to delete file
+to
+Unable to get size of file
+Unable to get attributes of file
+Unable to set attributes of file
+Unable to create directory
+Unable to enter directory
+Unable to delete directory
+Error occured during action.
+Continue;Always C;Stop;Always S
+Bad numeral base.
+Bad digit on input.
+Stream access error
+Cannot initialize stream
+Read beyond end of stream
+Cannot expand stream
+Get of unregistered object type
+Put of unregistered object type
+Write protected disc.
+Drive
+Drives
+NOT READY
+No files
+2 MANY FILES
+TOO MANY
+FILES!
+Wait,
+please
+Sorting..
+Enter wildcard.
+DIRECTORY
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Division by zero
+Range check error
+Stack overflow error
+Out of memory
+Invalid pointer operation
+Floating point overflow
+Floating point underflow
+Invalid floating point operation
+Overlay manager not installed
+Overlay file read error
+Object not initialized
+Call to abstract method
+Stream registration error
+Collection index out of range
+Collection overflow error
+Arithmetic overflow error
+General Protection fault, hehe :)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Break, you rule.
+
+Usage: FN [options] [source [destination]]
+  -i show informations about source fonts, nothing more
+  -f show formats description, nothing more
+  -p convert font to proportional
+  -nnumber convert font to no-proportional, number is width, none=autodetect
+  -r rename font (name in header, not a filename)
+  -first-last tells that font contains only chars first..last (eg. -32-255)
+  -wnumber sets char width in FNT in pixels, 8 by default
+  -snumber shifts all chars up (to create superscript)
+  -k some conversion meaningful only for Czechs
+  -v work out all fonts from a multifont file (.fon)
+  -cword word found in each font header in multifont file, (c) by default
+   (I have no .FON description, I detect subfonts by searching this word)
+  :lang language selection (:eng or :cz)
+  If you enter only source, font is set up on screen.
+  If you enter also destination, program tries to convert.
+  Both source and destination may contain * and ? (eg. FN *.fnt *.fn).
+
+Formats (sorted by complexity):
+  FNT - unpacked bitmaps, width 8 pixels, height autodetected
+  FNP - as FNT but with byte width(1-24) before each bitmap
+  RIF - magic "af"; pchar copyright; word height(0-24),lastchar (firstchar=32);
+        table[word ofs_from_bitmaps_start,width(0-16)]; bitmaps heap
+  FN  - magic "ëmÕonç "; pchar name; char firstchar,lastchar; short sizeover,
+        sizeunder; short addspace; byte future; table[short relx,rely;
+        byte width,height,shift; word ofs_from_file_start]; bitmaps heap
+  FON - copyright, copyright, copyright, chaos, copyright...
+
+Too many parameters.
+FON chaos 1, I can't code more without format description.
+FON chaos 2, I can't code more without format description.
+Fonts:
+Use font number
+Font
+Height
+Width of $ doesn't match parameters - it's not multiple of $ (chars*width).
+Too big font.
+Internal error, bad size of generated fn.
+Expand failed.
+Shrink failed.
+Write to format .
+is not supported.
+Load $.
+Rename (enter unlimited-length fontname, will be stored in font header):
+Proporc.
+Noprop.
+Superscript.
+Show.
+Save
+
+There is no loader for such format.
+There is no writer for such format.
+Unsupported monochromatic image!
+Unsupported compression type!
+Unsupported bitdepth!
+Palette was not found!
+Unexpected palette!
+Error in data!
+Too many Huffman tables!
+Too many quantisation tables!
+Too many color components!
+Noninterlaced images are not yet supported!
+Incorrect number of color components
+Bogus DRI size!
+Incorrect file header size!
+DHL not yet supported!
+Unknown mark found in data!
+CMYK color model not yet supported!
+YIQ color model not yet suported!
+Unknown color model!
+Arithmetic compression is not yet supported!
+HSI JPEGs are not yet supported!
+Unexpected end-of-file marker found!
+No Huffman decompression table was defined!
+Unsupported type of interlacing!
+Unexpected marker found in data!
+Interlaced images are not yer supported!
+Image too wide!
+Only 256color images are supported!
+Bad CRC of the file header
+Unexpected end of the file found!
+Progressive mode images are not yet supported!
+Unknown compression type!
+Too big decompression buffer required, not supported!
+Unknown filter type!
+Incorrect size of uncompressed block!
+Alpha channel is not yet supported!
+Too big animation for indirect player.
+
+Unable to play module
+Forbidden sample name
+Incorrect sample, only 8bit mono allowed.
+MIDAS Error:
+FATAL MIDAS uninitialization failure:
+
+Some error in background description:
+Syntax error in background description:
+Unknown color:
+
+Bad project name, *?[|] have special meaning.
+Compile first - use parameter 1.
+is listed more than once.
+$. DM filename.
+Name of $. DM file contents.
+If it isn't Root, it's AddOn for
+(you can use *,?,[variant1|variant2|..] in expression)
+2-3 letter long acronyme.
+
+(linked from $).
+No link to page: $.
+Page $ is not fit! (I accept only versions 200..$)
+Picture $ used on page $ doesn't exist.
+Excluding
+Ignoring size of
+Chcecking dependencies inside project...
+I didn't found any pages to compile into .DM file.
+Project size
+
+Not enough memory for Parlan script.
+
+Too many modules on page.
+
+Too many columns on page.
+
+Shortening text.
+
+Too small buffer for dmtext.
+Unknown file format.
+Missing page template.
+Page has incomplete header, maybe you changed template.
+Loop in templates.
+
+Too many DM files.
+Too many projects.
+Too many DM files in one project.
+Not compiled
+must be root
+rulez
+sux
+none
+Looking for DMs in
+version
+Missing
+but you can select other language.
+
+Sorry, too many pages in history.
+Unable to refresh old page (low memory or internal error).
+Palette editor (controls: mouse, space, z,x)
+ESC=abort
+ENTER=confirm
+set
+Setup
+ndx
+Index
+rip
+Ripper
+shell
+W/ music
+shell
+W/o music
+bye
+Exit
+trying size
+Ministack overflow.
+Ministack underflow.
+Export to:
+screenshot
+picture of whole page
+plain text
+Vyhen: plain page
+HTML: plain page
+HTML: page and pictures
+HTML: whole site with subpages
+Machina: plain page
+Machina: fully equipped page
+Machina: whole site with subpages
+Page doesn't contain any text data.
+Select module to play.
+Module
+doesn't exist.
+has no modules.
+Where to go for modules
+Browse disc...
+This menu.
+Go to page.
+Articles by authors.
+Project selector.
+Resolution selector.
+Language selector.
+Page export.
+Select module.
+Reinitialize Midas.
+Mute.
+Stop samples currently playing.
+Sudden death.
+Main menu.
+Palette editor.
+Space
+Link points to
+This format is not supported.
+points to
+which wasn't found.
+Unable to create button (bad parameters or low memory).
+Directory for exported files.
+Ripping unfinished.
+
+Trying
+Installing
+to
+Entering readonly mode.
+Note: SET DM=path tells me where my config files should be.
+INI file $ was created by higher version of Machina.
+If you really want to use this older version, you must delete INI file.
+Installing Machina to
+Updating Machina in
+Parameters:
+ ?,H      - help
+ R        - readonly mode (doesn't write to disk)
+ S        - safe mode (no timer, no hw scrolling, no mousehandler)
+ O        - oldies but goldies (read also 0.xx version .DM files, no warranty)
+ D,DP,DM,DW,DC,DA,DS - different debug modes
+            (debug general,pal,mem,writer,cache,atoms,scripts)
+ I        - automatic installation/update (to $ or %DM%)
+ E        - editor (create your diskmag..)
+ 1        - compile project (generate filelist $)
+ 2        - link project (merge files from $ to .DM)
+ VGA,VESA,NOVGA,NOVESA - forces or disables VGA or VESA modes
+ AxisRelationLimit - limits resolutions in axis x or y by given # of pixels
+            (examples: y=480, xlt800, "x<800", x!=360, "y<100"...)
+ +bits    - use only modes with this number of bits per pixel (4,8,15,16,24,32)
+ -bits    - ignore modes with this number of bits per pixel   (4=textmode)
+ :lang    - select language (:eng or :cz)
+ directory- search .DM files also there
+ file     - open this file (.DM or editor page)
+ file.swp [megabytes]-enlarge memory by opening swapfile (default 16MB), unsafe
+Unknown parameter
+Program is already running, run another copy? [Yes/No/you Lie]
+YyNnLl
+Linked ini file version doesn't match program version.
+Linked ini file language doesn't match its name.
+
+Yes;Cancel
+Internal error, bad estimation of? page size.
+column
+bytes
+Page
+can't be saved. Rename it.
+Select page or type new name.
+Layer has no space for text, make it in source or go to a different one.
+Select picture...
+Select script...
+Select font...
+Which font to replace?
+You mix 4 fonts on one page and want more?
+Your link points to...
+Merge this column with previous one?
+You are going to erase background textures. Continue?
+Define textures on background. F1=help.
+Page size (WIDTHxHEIGHT) (widthò$).
+Recommended resolution (WIDTHxHEIGHT).
+Page name.
+Page author.
+Flags
+Killing bad demons...
+Note: You don't have a VESA BIOS.
+Note: You don't have a mouse.
+Check Event Wait...
+Your operating system currently doesn't support standard Event Wait service.
+I can continue, but anything could happen then.
+Check OS...
+Note: Scrolling is smoother without Windows.
+Check memory...
+Note: More memory won't be amiss.
+You don't have enough memory. I can continue, but expect troubles.
+Select one set of script parameters.
+Setting has effect from next session.
+Script
+parameter
+is of unknown type
+has not documented parameters.
+doesn't support parameters
+parameter of type script/link/... must be last.
+
+Text cathegory
+Normal text
+Different text (cowriter, cite, code...)
+Emphasized text, links
+Strongly emphasized text
+
+Select theme
+The most important in one minute
+!1stmin.eng
+Keyboard, mouse
+!keys.eng
+Main help
+!editor.eng
+Pictures and animations
+!picture.eng
+Editor menu
+!edmenu.eng
+Backgrounds and textures
+!texture.eng
+Sound and music
+!sound.eng
+Projects
+!project.eng
+Atoms, scripts, ParLan
+!parlan.cz
+Bugs and collapses
+!bugz.eng
+Format description
+!format.eng
+
+Other functions
+Page size
+Template page
+ Page name
+ Page author
+ Recommended resolution
+ Background picture
+ Background description
+ List of fonts
+ Sample þ  (welcome)
+ Sample  þ (wel.again)
+ Sample  þ (yessir)
+ Sample þ  (goback)
+ Sample þ (boom)
+ List of modules
+ Flags
+Center column
+Resolution in editor
+Switch Y and Z
