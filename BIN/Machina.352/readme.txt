@@ -8,4 +8,4 @@ Native support for DOS and Windows, ready for emulators.
 In DOS or without Windows installer, run Machina by dm.com.
 (under emulators you may find helpful silent mode - dm.exe)
 
-http://dee.webpark.cz/machina
+http://dee.cz/machina

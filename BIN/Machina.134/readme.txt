@@ -1,11 +1,10 @@
 Deus ex Machina 1.34
 ====================
 
-(leden 1998)
+(1998-01)
 
-Posledni neprogramovatelna 256barevna verze.
-Vsechny nastroje pro vytvareni vlastnich projektu jsou jiz vestavene.
+Interactive hypertext/media engine.
+Minimal system requirements (386,VGA etc).
+DOS, (S)VGA 256color, SB/GUS/PAS/WSS.
 
-nativne DOS (bezi i ve Windows, OS/2 atd), (S)VGA, SB/GUS/PAS/WSS
-
-Pro prohlizeni Parenist 5-40 spust run.bat.
+http://dee.cz/machina
