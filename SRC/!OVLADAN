@@ -1,0 +1,56 @@
+1000d0760005400000
+44 << MM*GG LL QQ VV \\ XN@OS_\ ;WWW22 >> MM ZZ O::_CC444>>>HHH :: HH UU<<=EEC  W"!S  W""P'&L  M$0J  ?5.-700:31<53?75B:8
+tex:d(*,+4,s)2 =40.(115,282)80d(-1)222
+^0108000294
+
+
+|eOvl d n¡
+
+
+`bTla‡¡tka my¨i`a
+
+Pokud jsi na to je¨tˆ nep©i¨el metodou pokus omyl, pak vˆz, ‘e `clev‚`a tla‡¡tko znamen  volbu toho na co klik ¨, posun o str nku vp©ed, `cprav‚`a pak zru¨en¡ akce, p©¡padnˆ n vrat o str nku zpˆt, `cprost©edn¡`a otv¡r  setup panel. Nav¡c je tu jedna v˜jimka - tam kde je jeden ‡l nek rozdˆlen na v¡ce stran, lev˜m tla‡¡tkem se posouv ¨ na dal¨¡, prav˜m na p©edchoz¡ stranu. Posun vp©ed na posledn¡ str nce v ©adˆ tˆ vr t¡ zpˆt tam odkud jsi vy¨el.
+
+`bMenu`a
+
+Menu se objev¡ po spu¨tˆn¡, pozdˆji ho m–‘e¨ vyvolat kl vesou ESC. Na obrazovce se objev¡ tla‡¡tka Dokumentace, Setup, Konec a v¨echna nalezen  ‡¡sla. Na nˆkter‚ z tla‡¡tek klikne¨. Menu m–‘e¨ t‚‘ opustit kl vesou ESC nebo prav˜m tla‡¡tkem my¨i.
+
+`bScrolling`a
+
+Kromˆ my¨i lze pou‘¡t i ¨ipky na kl vesnici. V nˆkter˜ch obrazovk ch maj¡ jin˜ v˜znam: pohyb kurzoru pro zad v n¡ textu (nap©. v anketˆ). Scrolling do stran je p©¡stupn˜ pouze ve star¨¡ch verz¡ch tohoto programu.
+
+
+`bSlideShow`a
+
+Prav˜m tla‡¡tkem o obr zek zpˆt, ESC ukon‡it slideshow, cokoliv jin‚ho dal¨¡ obr zek. Ostatn¡ funkce jsou ze slideshow nedosa‘iteln‚ (zmˆna hudby, setup, menu apod).
+
+
+`bHudba/Zvuk`a
+
+Zvuk se aktivuje a‘ po spu¨tˆn¡ setupu nebo po vstupu na prvn¡ ozvu‡enou str nku. Probl‚my s konfigurac¡ zvukov‚ karty by ti tedy nemˆly br nit ve ‡ten¡ dokumentace. Zvuk m–‘e¨ pop©¡padˆ zcela odstranit stiskem F11 hned na £vodn¡ str nce.
+Pa©eni¨tˆ m–‘e kromˆ vlasn¡ hudby hr t i importovan‚ skladby typ– MOD,S3M,MTM, kter‚ bere z bˆ‘n‚ho adres ©e. K nim se dostane¨ kl vesami F?. Hlasitost lze nastavit jak v setupu, tak rychleji kl vesami 1 a‘ 0.
+F10 vybere n hodnˆ hudbu ze seznamu v¨ech dostupn˜ch, v‡etnˆ importovan˜ch. F11 hudbu vypne, vypnut  z–stane a‘ do dal¨¡ho stisku F?.
+Maxim ln¡ po‡et kan l– v modulu je omezen nastaven¡m MaxKanalu= v DISKMAG.INI. Pokus¡m se toto omezen¡ odstranit.
+
+
+`bSimulace my¨i`a
+
+Pro pohyb ¨ipky my¨i lze pou‘¡t numerickou kl vesnici (1,2,3,4,6,7,8,9). Lev‚ tla‡¡tko lze opsat kl vesou 5 nebo NumLockem, prost©edn¡ lom¡tkem a prav‚ hvˆzdi‡kou.
+
+
+`bMenu / Tla‡¡tko Setup`a
+
+Z polo‘ek v menu Setup stoj¡ za vysvˆtlen¡ akor t Ripper. Ten umo‘¤uje vyta‘en¡ hudby (MOD,S3M,MTM) a jej¡ ulo‘en¡ na disk. Seznam pou‘iteln˜ch kl ves je vyps n na obrazovce, ale rad¨i je stru‡nˆ proberu. +,-,*,INS,¨ipky slou‘¡ k oselektov n¡ vybran˜ch soubor–, stejnˆ jako t©eba ve Volkovovi. R (jako rip) zvolen‚ soubory vytvo©¡ na disku. ESC konec.
+
+
+`bSetup panel`a
+
+Objev¡ se po stisku prost©edn¡ho tla‡¡tka nebo ¨ediv‚ho /. Obsahuje ¨oup tka na nastaven¡ hlasitosti apod. Volba Ulo‘it str nku v BMP na disku vytvo©¡ BMP soubor s danou str nkou, ov¨em pokud str nka obsahuje v¡ce obr zk–, bude m¡t spr vnou paletu pouze ten kter˜ je pr vˆ vidˆt. Vypnut¡ volby Synchronizace m  smysl p©i spou¨tˆn¡ programu pod nˆkter˜mi multitaskov˜mi opera‡n¡mi syst‚my a v jin˜ch speci ln¡ch p©¡padech. Nev˜hodou vypnut¡ je ob‡asn‚mu ¨kub n¡ p©i scrollingu.
+
+
+`bKonec`a
+
+Program lze ukon‡it p©¡slu¨nou volbou z menu nebo t‚mˆ© kdykoliv okam‘itˆ kl vesou F12.
+
+
+

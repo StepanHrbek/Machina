@@ -1,0 +1,252 @@
+;                           ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+;                           ³  Konfigurace  ³
+;                           ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+;
+;-------------------------------- Z V U K -------------------------------
+
+ZvukovaKarta=
+
+;  Pripustne hodnoty: 0-4
+;     0 - GUS
+;     1 - Pro Audio Spectrum
+;     2 - Windows Sound System
+;     3 - Sound Blaster
+;     4 - zadna zvukova karta (No Sound)
+;
+;  Neni-li zadano nic, probehne autodetekce.
+
+
+TypKarty=
+
+;  Blize urcuje typ zvukove karty.
+;
+;  Pripustne hodnoty pro Gravis UltraSound
+;     1 - Gravis UltraSound (GF1 hardware mixing)
+;
+;  Pripustne hodnoty pro Media Vision Pro Audio Spectrum series
+;     1 - Pro Audio Spectrum
+;     2 - Pro Audio Spectrum plus
+;     3 - Pro Audio Spectrum 16
+;     Upozorneni: MixovaciFrekvence nad 22kHz nemusi s normalnim PASem
+;                 pracovat spravne.
+;
+;  Pripustne hodnoty pro Microsoft Windows Sound System
+;     1 - Windows Sound System (Crystal/Analog CODEC)
+;     Upozorneni: Melo by to pracovat i s WSS kompatibilnimi kartami
+;                 jako Compaq Business Audio, je testovano s AudiotrixPro.
+;                 Program neobsahuje autodetekci WSS karty.
+;
+;  Pripustne hodnoty pro Creative Labs Sound Blaster series
+;     1 - Sound Blaster 1.0 or clone (DSP v1.xx)
+;     2 - Sound Blaster 1.5 (DSP v2.00)
+;     3 - Sound Blaster 2.0 (DSP v2.01)
+;     4 - Sound Blaster Pro (DSP v3.xx)
+;     5 - Sound Blaster 16 (DSP v4.00+)
+;
+;  Pripustne hodnoty pro No Sound
+;     1 - No Sound
+;
+;  Neni-li zadano nic, probehne autodetekce.
+
+
+VystupniMod=
+
+;  Urcuje zda bude vystup mono ci stereo a zda 8 ci 16 bitovy.
+;     0 - autodetekce (tez neni-li zadano nic)
+;     5 - 8bit mono
+;     6 - 8bit stereo
+;     9 - 16bit mono
+;    10 - 16bit stereo
+
+
+IRQ=
+
+;Cislo IRQ pouziteho zvukovou kartou.
+;Neni-li zadano nic, probehne autodetekce.
+
+
+DMA=
+
+;Cislo DMA pouziteho zvukovou kartou.
+;Neni-li zadano nic, probehne autodetekce.
+
+
+Port=
+
+;Sestnactkove cislo baze portu pouzitych zvukovou kartou. Obvykle to byva 220.
+;Upozorneni: ve starsich Parenistich (6-8) bylo nutno toto cislo zadavat
+;v desitkove soustave.
+;Neni-li zadano nic, probehne autodetekce.
+
+
+MixovaciFrekvence=
+
+;Frekvence s jakou je mixovan zvuk.
+;Vyssi frekvence znamena vyssi kvalitu zvuku ale i vyssi naroky na pocitac.
+;Na konfiguracich typu 386/16 + SoundBlaster je nutne zadat nizsi
+;hodnotu, asi tak kolem 10000.
+;Neni-li zadano nic, je pouzito maximum pro danou kartu bez ohledu
+;na rychlost pocitace.
+
+
+MaxKanalu=8
+
+;Maximalni pocet kanalu ktere muze mit prehravany modul.
+;Zatim jsem nemel moznost otestovat casovou narocnost
+;na SB, proto jen 8. Muzes-li to zkusit na 386ce, napis mi
+;nakolik zpomali pocitac nastaveni vysokeho poctu kanalu.
+
+
+HlasitostHudby=32
+
+;Hlasitost hudby.
+;Lepsi je nizsi hlasitost ve ktere nezaniknou efekty.
+;Pripustne hodnoty: 0-63
+
+
+HlasitostEfektu=63
+
+;Hlasitost zvukovych efektu.
+;Pripustne hodnoty: 0-63
+
+
+StridaniHudby=5
+
+;Cislo udava po kolika minutach hrani jedne hudby Pareniste automaticky
+;prepne na jinou. Ke stridani nedochazi jsou-li k dispozici mene nez dve
+;skladby nebo je zadano 0. Ke stridani tez nedochazi vyberes-li si sam
+;nejakou skladbu tlacitkem F1-F10.
+
+
+HratSamplyZDisku=2
+
+;Prehravani samplu z disku funguje spravne zatim jen na GUSu.
+;V nejake z dalsich verzi bude tato chyba opravena.
+;Zatim ti radim: kup GUS!
+;
+;     0 - nehrat
+;     1 - hrat vzdy
+;     2 - hrat jen na GUSu
+
+
+;---------------------------- O V L A D A N I ---------------------------
+
+CitlivostMysi=26
+
+;Citlivost mysi na pohyb.
+;Pripustne hodnoty: 0-63
+
+
+RychlostScrollingu=28
+
+;Rychlost scrollingu vyvolaneho mysi (ne sipkami).
+;Pripustne hodnoty: 0-63
+
+
+ScrollLock=ano
+
+;Zakaz scrollingu do stran (v programu se prepina klavesou ScrollLock).
+;Pripustne hodnoty: ano,ne
+
+
+;------------------------------- P A M E T ------------------------------
+
+DetekovatEms=ano
+
+;Nektere pocitace tradicne tuhnou pri detekci EMS. Zde muzes nastavit ne,
+;pak Preniste predpoklada ze EMS mas.
+;Pripustne hodnoty: ano,ne
+
+
+;-------------------------- K L A V E S N I C E -------------------------
+
+RozsvecetDiody=ne
+
+;Na nekterych klavesnicich vznikaji problemy pri pokusu o rozsviceni
+;LED diod (klavesnice pak vubec nereaguje). Proto je zde default "ne".
+;Vyzkousej "ano" a nenastanou-li problemy, nech ho zde.
+;Pripustne hodnoty: ano,ne
+
+
+CistitBuffer=ne
+
+;Nektere klavesnice asi po dvaceti stiscich od spusteni Pareniste zpusobuji
+;pipani pocitace. Tento switch nastaven na 'ano' se je pokusi zpacifikovat.
+;Pripustne hodnoty: ano,ne
+
+
+;-------------------------------- M Y S ---------------------------------
+
+VlastniHandler=ne
+
+;Smi program pouzit vlastni handler pro obsluhu mysich "udalosti" ?
+;Ve vsech starsich Parenistich bylo nastaveno ano, coz pravdepodobne
+;zpusobovalo jiste problemy majitelum PS/2 mysi. Nyni lze pouzit i
+;mene efektivni metodu bez vlastniho handleru.
+;Pripustne hodnoty: ano,ne,<nic>
+;Neni-li zadano nic, probehne autodetekce (pro PS/2 mysi se nastavi
+;ne, pro ostatni ano).
+
+
+;-------------------------------- V G A ---------------------------------
+
+JemneDoladeniScrolu=KMOVPA
+
+;Pri kazdem navratu paprsku program vykonava nekolik cinnosti. Poradi v jakem
+;jsou konany ovlivnuje cistotu scrollingu a to zejmena do stran. Nove poradi
+;muzes urcit tak, ze zadas sekvenci nekolika pismen z nichz kazde symbolizuje
+;jednu z cinnosti. Na naproste vetsine karet je vyhovujici poradi "kmovpa",
+;nektere vyzaduji drivejsi provadeni "v", tedy mozna "vkmopa", ale nemam to
+;kde otestovat. Najdes-li pro nejakou kartu vhodnejsi nastaveni, nenechavej
+;si to pro sebe a dej vedet.
+
+;K - dokresleni te casti obrazu o kterou odscrolloval (pomale)
+;M - obsluha mysi pokud neni povolen vlastni handler (neco mezi)
+;O - ostatni.. vypocet nove pozice obrazu a mysi (rychle)
+;V - setvis do nove pozice (rychla hardwarova vec)
+;P - generovani promenlive palety na pozadi.. pokud je treba (rychle)
+;A - animace.. pokud tam nejaka je (nejpomalejsi) ..z timeru ji sundam
+
+
+VgaDriver=
+
+;Driver pro grafickou kartu. V interni filebazi je nekolik driveru,
+;dalsi muzes jednoduse pridat do adresare odkud diskmag spoustis.
+;Doporucuji vybirat driver v setupu.
+;Neni-li zadano nic, probehne autodetekce.
+
+
+PocetViditelnychBanku=1
+
+;Velikost vyuzite videopameti, jednotkou je 1/4 MB.
+;Na vetsine VGA karet je spravne nastaveni 1 - vyuziva se jen prvnich 256KB.
+
+
+;------------------------------ S Y S T E M -----------------------------
+;
+;Pri hledani souboru na disku jsou vetsinou prohledany tyto adresare:
+; - bezny
+; - ten ve kterem je DISKMAG.EXE
+; - C:\DISKMAGS\PARENIST
+;
+;Vsechny vystupy na disk smeruji do adresare kde je tento INI soubor.
+;Ostatni adresare mohou byt ReadOnly (napr.CD-ROM).
+
+
+VerzeINI=038
+
+;Verze programu ktery vytvoril tento INI soubor.
+;Az budes mit novejsi DISKMAG.EXE, prepis s nim stary program.
+;Upgrade tohoto INI souboru na novou verzi probehne automaticky.
+
+
+UkladatSetup=ano
+
+;Ma Pareniste pred ukoncenim ukladat zmeny v nastaveni do tohoto .INI ?
+;Pripustne hodnoty: ano,ne
+
+
+;------------------------------------------------------------------------
+;  O pripadne nefunkcnosti nekterych prepinacu me informuj, nemam dost
+;  zdroju abych vsechny zcela spolehlive otestoval.             Dement
+;------------------------------------------------------------------------

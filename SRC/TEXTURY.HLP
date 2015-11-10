@@ -1,0 +1,93 @@
+
+                            ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+    ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´  Pozad¡/Textury  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                            ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+.   —vod:
+         Popis textury se skl d  ze slov oddˆlen˜ch mezerou. Ka‘d‚ slovo
+         ©¡k  kterou texturu pou‘¡t, jak˜ obd‚ln¡k na obrazovces n¡ pokr˜t
+         a p©¡padnˆ jak˜ r me‡ek tomu obd‚ln¡ku d t.
+
+.   Sou©adnice (popis obd‚ln¡ku):
+         Definujme obd‚ln¡k parametry Y0 (Y-sou©adnice vr¨ku), VYS (v˜¨ka
+         v pixelech), X0 (X-sou©adnice lev‚ho kraje), SIR (¨¡©ka v pixelech).
+         —mluva: st©ed obrazovky m  sou©adnici X=256, lev˜ a prav˜ kraj
+                 256-180=76 a 256+179=435. Vr¨ek str nky m  Y=16.
+         Nejsou-li zad ny X-sou©adnice, p©edpokl d  se ¨¡©ka p©es celou
+         obrazovku. Nen¡-li zad na v˜¨ka, p©edpokl d  se a‘ do konce str nky.
+
+.   Syntaxe slova [=Y0.][-Y.][(X0,SIR)][VYS]a[(filtr1,filtr2..)][r me‡ek]
+
+         Hranat‚ z vorky ozna‡uj¡ nepovinn‚ ‡ sti.
+
+.   Identifikace textury:
+         Jedin  povinn  ‡ st je jedno p¡smeno kter‚ ©¡k  jakou texturu pou‘¡t.
+           a,b,c,d,e...takov‚ norm ln¡ textury
+           h...hvˆzdi‡ky
+           x...bludi¨tˆ
+           y...‡ern‚
+           z...‘ dn‚ (kdy‘ je cel  strana pokryta obr zkem, nen¡ t©eba
+               generovat texturu)
+           ~...poslednˆ pou‘it  textura v‡etnˆ jej¡ho filtru, prostˆ se
+               vezme ta bitmapa kter  je zrovna p©ipravena v bufferu
+           <file.x>...jako texturu pou‘ije zadan˜ obr zek ve form tu x,
+               mus¡ b˜t nezkomprimov n, maxim lnˆ 16 barev, maxim lnˆ 64KB,
+               pokud mo‘no rozmˆry mocnina dvou. Takov˜ soubor vytvo©¡¨
+               pomoc¡ X.EXE p©¡kazem 'x k r file' (k-bez komprese, r-redukce).
+
+.   R me‡ek:
+         Popis r me‡ku se skl d  z 1 a‘ 3 ‡¡sel. €¡slo nula i znak poml‡ka
+         jsou ekvivalenty situaci kdy nen¡ zad no nic.
+
+         Prvn¡ ‡¡slo popisuje vr¨ek:
+           0...‘ dn˜ r me‡ek
+           1...‡ern  linka
+           2...barevn  linka (barva Ctrl)
+           3...‡ern  a pod n¡ barevn  linka (barva Ctrl)
+           4...p©echod z minul‚ na tuto texturu.. bez okras
+           5...p©echod z minul‚ na tuto texturu.. horn¡ st¡nov n¡
+           6...p©echod z minul‚ na tuto texturu.. doln¡ st¡nov n¡
+
+         Druh‚ ‡¡slo popisuje spodek:
+           0...‘ dn˜ r me‡ek
+           1...‡ern  linka
+           2...barevn  linka (barva A)
+           3...barevn  a pod n¡ ‡ern  linka
+
+         T©et¡ ‡¡slo popisuje boky:
+           nult˜ bit...nedefinov no
+           prvn¡ bit...barevn‚ boky (vlevo Ctrl, vpravo A)
+
+.   Filtry:
+         Za identifikac¡ textury m–‘e b˜t v kulat˜ch z vork ch zad n filtr,
+         p©¡padnˆ v¡ce filtr– oddˆlen˜ch ‡ rkami. Popis filtru za‡¡n  jedn¡m
+         znakem a mohou n sledovat ‡¡seln‚ parametry oddˆlen‚ lom¡tkem '/':
+         +...k textu©e p©i‡te param1=2 a zarovn  vr¨ek na hranici param2=40
+         -...od textu©y ode‡te param1=2 a zarovn  spodek na hranici param2=25
+         *...zdvojn sob¡ hloubku textury, tj pix:=(pix-param1=25)*2+param2=10
+         \...p©evr t¡ texturu podle osy zn zornˆn‚ t¡mto lom¡tkem
+         o...osek  spodek i vr¨ek na hranic¡ch param1=25 a param2=40
+         r...randomy: obarv¡ (param2=100)*100 pixel– na hodnotu param1=32
+         p...p©ejede pluhem
+         a...provede operaci param1=0:
+             param1=0...n hodnˆ p©ehod¡ (param2=100)*256 pixel–
+             param1=1...zkrout¡ texturu do hnusnˆ vypadaj¡c¡ch kornout–
+         m...ml‘¡ (pr–mˆruje sousedn¡ pixely)
+         n...ml‘¡ lehce, jen nepatrn  zmˆna
+         s...sype (po jednotk ch vyrovn v  hodnoty sousedn¡ch pixel–)
+         z...zeƒ, do textury vytla‡¡ cihly o hloubce param1=5
+
+.   P©¡klady:
+         '100a 150b c' pokryje prvn¡ch 100 © dek texturou a,
+           dal¨¡ch 150 texturou b a zbytek a‘ do konce texturou c.
+         'c =50.(250,10)y' v¨echno pokryje texturou c a nav¡c uprost©ed,
+           tj. X od 250 do 259, od © dky 50 do konce str nky pl cne prou‘ek y.
+         '100a -10.b' pokryje 100 © dek texturou a, pak se o 10 © dek vr t¡
+           a pokra‡uje texturou b a‘ do konce. Ned v  to smysl, to byla jen
+           uk zka.
+
+.   Z vˆr:
+         Nepokr˜vej velk‚ plochy v¡ckr t po sobˆ a nekombinuj zbyte‡nˆ mnoho
+         filtr–, zpomaluje to generov n¡ str nky (di s tim Pentiem nˆkam :)).
+
+

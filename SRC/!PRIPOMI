@@ -1,0 +1,28 @@
+0380d0760005400000
+44 << MM*GG LL QQ VV \\ 5W@>C_WW WWW22 >> MM ZZ O::_CC444>>>HHH :: HH UUFGDDDBCB@B@>@>;@;:>98<76" ["'N09A)<3,>5/@81B;5E>
+^0120000270
+`d
+`eReakce na p©ipom¡nky k programu`e
+
+`c`cZmr¨en‚ obr zky`a
+
+Pravdˆpodobnˆ opraveno.
+
+`cZvuk`a
+
+Do¨lo k mnoha zmˆn m, k p©echodu na novou verzi MIDASu (0.40) atd, tak‘e snad ©ada probl‚m– zmiz¡, uvid¡me v p©ipom¡nk ch.. Zvuk se aktivuje a‘ po nakonfigurov n¡ (tla‡¡to setup) nebo p©i vstupu na nˆjakou ozvu‡enou str nku.
+
+`cVt¡pky s HW`a
+
+Ok ok. Nˆkter‚ vˆci jako t©eba hl ¨ka "Nezapome¤ poslat ank.l¡stek!" dˆlaj¡ semtam probl‚my. Ona hl ¨ka se u star¨¡ch ‡¡sel neobjev¡ pouze je-li aktivn¡ program VGA28.
+
+`cErrory po mnoha p©echodech mezi str nkami apod`a
+
+Tahle oblast programu je tot lnˆ p©edˆlan  tak‘e lze o‡ek vat £plnˆ jin‚ chyby ne‘ u p©edchoz¡ch verz¡...
+
+
+`cTrident 9400C`a
+
+Kam ty instrukce "mov ax,1256 out 286,ax" m m d t, do inicializace grf.m¢du (prov d¡ se jednou na za‡ tku) nebo nˆkam jinam? 
+
+
