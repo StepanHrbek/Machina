@@ -4,7 +4,7 @@ Diskmag engine
 Works with
 
 - OS: DOS, older Windows versions, emulators
-- gfx: any (S)VGA in text/8/15/16/24/32bit mode, smooth scrooling
+- gfx: any (S)VGA in text/8/15/16/24/32bit mode
 - audio: SB/GUS/PAS/WSS when running in DOS, any audio device in Windows
 
 Known for
