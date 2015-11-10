@@ -15,3 +15,4 @@ Known for
 
 To see some history, boot from live CD at http://dee.cz/machina
 
+![two instances of Machina running in linux](linux.jpg?raw=true "two instances of Machina running in linux")
