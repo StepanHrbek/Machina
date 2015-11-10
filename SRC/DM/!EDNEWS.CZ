@@ -1,0 +1,74 @@
+nfo:ëmÒagî 311
+tem:!help
+siz:80x69
+pos:slp=1 x=0 line=69 slpline=68 blkStart=120 blkEnd=488
+Ý^0,40,0,80Þ
+
+
+d    Novinky nˆkolika p©edchoz¡ch verz¡ EDITORU
+    ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄa
+
+    verze 3.10
+       - funkce cutChar v Parlanu vrac¡ string a ne int jako d©¡v... zmˆnu jsem
+         si dovolil s p©ihl‚dnut¡m k tomu, ‘e j  s m v˜sledek cutCharu do t‚
+         doby nikdy nepou‘il a nev¡m o nikom jin‚m, kdo je¨tˆ v Parlanu p¡¨e :)
+       + od teƒ je ale cutChar pou‘it v nov‚m mocn‚m skriptu menu.scr (viz bal¡k
+         s podporou editoru)
+    verze 3.04
+       + lep¨¡ implicitn¡ chov n¡ p©i hran¡ sampl–... hudbu si zti¨¡ mp3 del¨¡
+         ne‘ 32KB a wav/iff nad 128KB (d©¡v byl jen spole‡n˜ limit)
+         (jinak jde nad le zad vat zti¨en¡ hudby explicitnˆ)
+    verze 3.03
+       + flag m[x] za©¡d¡, ‘e p©i vlezu na tuto str nku se nepust¡ ze seznamu
+         muzik n hodn , ale jedna z prvn¡ch x (prvn¡ pokud se nezad  x)
+    verze 3.01
+       + P©ipom¡nka: Kdy‘ v hlavi‡ce nen¡ polo‘ka "mus:...", str nka hudbu dˆd¡.
+         D©¡v kdy‘ bylo v hlavi‡ce jen "mus:" bez hodnoty, str nka hudbu taky
+         zdˆdila. Novinka: Teƒ nedˆd¡, pr zdn‚ "mus:" udˆl  ticho.
+       + nov‚ promˆnn‚ Ma¨iny p©¡stupn‚ z cParlanu!parlana
+    verze 3.00
+       + viz p©epsan˜ help co zvuku a hudbˆ!sounda
+       + p©es "Zarovnat odstavec..." v menu jde zarovn vat © dky textu
+         v odstavc¡ch doleva, doprava, doleva i doprava (implicitin¡) nebo
+         centrovat
+       + nov‚ promˆnn‚ dostupn‚ p©es Parlan
+       + ka‘d‚mu obr zku teƒ lze kromˆ popisku a autora zadat i doporu‡en‚
+         rozli¨en¡ pro prohl¡‘en¡ (viz cdescript.ion v helpu k projekt–m!projecta)
+       . codpovˆƒ na jeden dopis!dopis.cza
+    verze 2.40
+       + Shift F3 zobrazuje str nky bez obr zk– a animac¡
+       + jsou-li parametry p©ed van‚ skript–m v uvozovk ch,
+         mohou obsahovat i speci ln¡ znaky (mezera apod)
+       + seznam promˆnn˜ch na str nce o Parlanu byl stvrzen
+         (dosud byl veden jako nez vazn˜) tak‘e je mo‘n‚ bez obav o funk‡nost
+         projektu v dal¨¡ch verz¡ch vkl dat na str nky ¨oup tka reguluj¡c¡
+         hlasitost hudby, checkboxy vyp¡naj¡c¡ slideshow apod.
+    verze 2.33
+       + v ParLanu p©ibyla fce cutString a konstanta endl (=nov˜ © dek)
+       + n zev e_*.scr zna‡¡ skript s exportovateln˜m obsahem, tj. export.scr
+         ho ulo‘¡ do anketn¡ho l¡stku. Zat¡m tu m me e_input.scr na inputlajnu
+         a p©ibyl e_select.scr na v˜bˆr odpovˆdi ze seznamu.
+    verze 2.32
+       + BLOKY (dr‘ Shift a jeƒ kurzorem, copy:Ctrl-Insert, paste:Shift-Insert,
+         cut:Shift-Delete, delete:Ctrl-Delete)
+       + Ctrl-T ma‘e od kurzoru do za‡ tku dal¨¡ho slova
+       + v˜bˆr font– (F6) usnadn¡ pomocn‚ funkce Shift F6 a Ctrl F6
+         (um¡ to u‘ nˆjak˜ ‡as, ale zapomnˆl jsem se zm¡nit v helpu)
+       + TurboVision editor um¡ Search and replace
+       + skripty na inputlajnu a ulo‘en¡ anketn¡ho l¡stku
+       + lze napsat seznam sampl– tam kde se dosud psal jen jeden (v hlavi‡ce
+         str nky), Ma¨ina z nˆj pak poka‘d‚ jeden n hodnˆ vybere
+       + funguj¡ odkazy na TXT, PAS, C apod, chovaj¡ se jako obr zky
+       + funguj¡ anima‡ky automaticky spou¨tˆn‚ p©ed stejnˆ nazvan˜mi str nkami
+    verze 2.31
+       + vˆt¨¡ podpora popisk– str nek, p©e‡ti si o descript.ion v docu
+         o cprojektech!projecta
+       + promˆnn  ZOOM je pry‡, v¨e se detekuje a nastavuje automaticky
+       + whiteborder=on dˆl  kolem obr zk– b¡l˜ r me‡ek
+       + jde p©ehodit Y a Z na kl vesnici
+       ? jejda... v helpu doteƒ stra¨ilo ‘e paleta je¨tˆ nejde nastavovat my¨¡
+         jako d©¡v. ve skute‡nosti u‘ d vno jde, jen to nebylo ohelpov no.
+       + oprava: u‘ jde dˆlat velmi ¨irok‚ sloupce a str nky
+       + p©ibalen FNED - nov˜ fonteditor od Carlose
+
+

@@ -1,0 +1,47 @@
+nfo:ëmÒagî 351
+tem:!setup.cz
+siz:360x726
+pos:slp=3 x=53 line=16 slpline=9
+Ý^0,236,204,245Þ
+Ý~!loco,245x165Þ
+
+Ý^0,54,256,108Þ
+
+Ýf,,3Þ1eDeus
+ex
+Machinaa0
+Ýf,,1Þ
+Ý^0,189,20,150Þ
+c   !checkb.scr enable_buttonpicsa  pictures on buttons
+c   !checkb.scr enable_picturesa  all pictures
+c   !checkb.scr enable_animationsa  animations
+c   !checkb.scr enable_slideshowsa  slideshows
+c   !checkb.scr enable_changemodea  automatic change of mode
+c   !checkb.scr enable_modelista  modelist in main menu
+c   !checkb.scr enable_infopanela  infopanel on some pages
+c   !checkb.scr enable_testsa  graphics card tests
+c   !checkb.scr enable_avoidbadgfxa  only safe modes
+c   !checkb.scr enable_irq2a  irq2 (for better scrolling)
+c   !checkb.scr enable_preciseclocka  precise clock (-"-)
+Ý^0,189,390,296Þ
+c             !slide.scr volume_musica  music volume
+c             !slide.scr volume_samplea  sample volume
+
+c             !slide.scr size_mousea  mouse size
+
+c             !slide.scr speed_mousea  mouse sensitivity
+c             !slide.scr speed_numpada  numpad sensitivity (mouse emulation)
+c             !slide.scr speed_autoscrola  speed of scrolling driven by mouse
+c             !slide.scr speed_arrowsa  speed of scrolling driven by arrow keys
+
+c             !slide.scr delay_nextslidea  delay between pictures in slideshow (0-20sec)
+c             !slide.scr delay_screensavera  time to start screensaver (0-20min)
+
+
+c             !varline.scr shella  first command run in DOS shell
+
+b
+ÝÄÞ
+These parameters are stored in dm.ini file.
+Audiosystem RAIN may be configured by "rain -c" command.
+

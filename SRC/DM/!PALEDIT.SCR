@@ -1,0 +1,23 @@
+{descr: mouse driven color selector}
+{param: }
+{files: }
+
+b=GetAtom("","blue")
+if (b=="") then b=32 else b=val(b) endif
+x=0
+y=0
+z=0
+pressed_z=0
+pressed_x=0
+while (EndPaleting2()==0)
+ sync()
+ mouseGet(PromileScreen,x,y,z)
+ r=(x*64)/1000
+ g=(y*64)/1000
+ GetVar("pressed_z",pressed_z)
+ GetVar("pressed_x",pressed_x)
+ if ((pressed_z!=0)&(b>0 )) then b=b-1 endif
+ if ((pressed_x!=0)&(b<63)) then b=b+1 endif
+ SmoothCols(r,g,b)
+endwhile
+SetAtom("","blue",str(b),forRuntime)

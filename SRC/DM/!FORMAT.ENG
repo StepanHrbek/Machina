@@ -1,0 +1,195 @@
+nfo:ëmÒagî 302
+tem:!help
+siz:80x190
+pos:slp=1 x=0 line=140 slpline=139 blkStart=4731 blkEnd=4889
+İ^0,40,0,80Ş
+
+
+                  cDeus ex Machina - format descriptiona
+
+dÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄVERSION 0.10-0.37ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄa
+
+Lost... but who cares.
+
+dÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄVERSION 0.38-0.99ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄa
+
+CR/LF everywhere.
+First line is header: 18 bytes long.
+Next line may be palette: 40 RGB colors represented by 120 chars #32..#95.
+Next lines may be variables entered by xxx:value where xxx is variable name.
+1-10 layers follow until end of file.
+Detais skipped, see more in the bCzech version!format.czd.
+
+dÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄVERSION 1.xxÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄa
+
+As 2.xx but with or without some variables, commands and modifiers.
+See detais in the bCzech version!format.czd.
+
+dÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄVERSION 2-3.xxÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄa
+
+CR/LF everywhere.
+First lines are variables entered by xxx:value where xxx is variable name.
+First variable must be nfo.
+Text follows until end of file.
+There may be modifiers in text.
+There may be commands in text, but only at beginning of line or after
+another command.
+
+cCommanda has this syntax:
+ İsinglecharacter command and multicharacter parameters separated by ,Ş
+ example: İf0,1Ş
+
+cLinka
+ Link is a filename with optional parameters separated by spaces.
+ It points to a page, a picture, an animation, a module, a sample or
+ a script. Only scripts have parameters.
+
+
+c---COMMANDS---a
+
+bNew layera
+ Command ^ with the following parameters:
+   number of father layer
+   delta x of layer centers
+   delta y of layers
+   layer width
+ This must be the only command on line.
+
+bPicture/animationa
+ Command ~ with the following parameters:
+   filename without extension
+   view size in pixels (independent on real picture size)
+   various variables: var1=value1 var2=value2... (optional)
+     variables could be
+      href=...       - picture/animation will be link to other object
+      shadeborder=on - not transparent picture will have shaded border
+      whiteborder=on - not transparent picture will have thin white border
+      castshadow=on  - not transparent picture will cast shadow
+
+bInsert objecta
+ Command # with the following parameter:
+   link
+
+bFormatting texta
+ Command f with the following parameters:
+   formatting
+     0=primitive formatting without centering and shifting paragraphs
+     1=automatic centering+shifting first lines of paragraphs
+   proportionality
+     0=use prortionality from font
+     nonzero=constant letter width
+   aligning text
+     0=to left
+     1=to left and right (stretch spaces)
+     2=center
+     3=to right
+ Note: all parameters are optional, if you want to set only second one to 8,
+   than the shortest command to make it is İf,8Ş.
+
+bHorizontal line.a
+ Command Ä (#196) without any parameters.
+ Only for backward compatibility.
+
+bStart/end of vertical lines around layer.a
+ Command ³ (#179) without any parameters.
+ Only for backward compatibility.
+
+bResize layera
+ Command r with the following parameters:
+   delta x of left bound
+   delta x of right bound
+
+c---VARIABLES---a
+
+bnfo:ëmÒagî VERa
+ VER is a version of Machina which created this page.
+
+btem:a
+ Name of the template page. Variables they are not defined here are
+ read from the template page. Don't chain many templates and avoid
+ cycles like "page A has tem:B and B has tem:A".
+
+bres:WIDTHxHEIGHTa
+ Recommended resolution for viewing this page.
+ Ussually, page is generated in graphics, but for WIDTH+HEIGHT<300 in textmode.
+ No other changes are neccessary for transitions between graphics and textmode.
+
+bsiz:WIDTHxHEIGHTa
+ Size of this page in pixels.
+ HEIGHT is automaticly adjusted during editation.
+
+bpal:a
+ Palette, 40 RGB colors represented by 120 chars #32..#95.
+
+bfnt:a
+ List of 1..4 fonts in format FN.
+ For fnt:textmode.fn, page is generated in textmode without text formatting
+ and isn't convertable to graphics.
+
+btex:a
+ Description of bbackground and maybe even colours!textureb.
+
+bfla:a
+ Flags. Chain of letters with optional numeric parameters, no separators.
+ Useful flags:
+  a[n] - automaticly update textAreas = variable txa:. it contains list of
+         areas with flat background. If you remove this flag, txa: stays
+         but isn't updated any longer. Areas cover blocks of text separated
+         by empty lines plus n (20) pixels wide surroundings.
+  s    - shading, newly insert pictures will have shaded borders and they
+         will cast shadows (same thing could be done by editing the source)
+  t[n] - timeout, page is automaticly left after n seconds
+  p    - don't save variable Pos:
+  m[n] - (since 3.03) when entering this page first time, music is not selected
+         from whole mus: list, but only from first n items (m equals to m1)
+ Useless flags, only for backwards compatibility:
+  c    - colorframes
+  o[n] - old tabs with n tabstops
+
+bpar:a
+ First letter of paragraph is shifted by this number of pixels in axes X and Y.
+ 24,0 by default.
+
+bfmt:a
+ Initial format. 1,0,1 by default.
+ Inside page it can be changed with command f.
+ See command f for description of those three numbers.
+
+bmus:a
+ List of modules and samples which will be played on page in random order.
+
+bsi1:a
+ List of samples, one is played while entering page from the previous page.
+bsi2:a
+ List of samples, one is played while returning to this page from the next page.
+bsen:a
+ List of samples, one is played while leaving this page to the next page.
+bsou:a
+ List of samples, one is played while leaving this page to the previous page.
+bskr:a
+ List of samples, one is played when scroll-window reaches the page bound.
+
+bpos:a
+ Last cursor position... format is not important. It is saved automaticly.
+ Flag p turns saving off.
+
+
+c---MODIFIERS---a
+
+ They modify attributes of text output: color, font...
+ Modifier is a doublechar #17 x where x is parameter.
+ Admissible parameter values are:
+
+ba..da
+ Change color.
+
+b0..3a
+ Change font. Number is index to fontlist in variable fnt.
+
+ba
+ Link follows until next modifier. It is a filename which won't be shown
+ (filename with optional parameters).
+ Legend between this and previous modifier will be underlined.
+ Legend longer than one line is not allowed.
+
+

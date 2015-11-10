@@ -1,0 +1,21 @@
+{descr: rotate color-range}
+{param: }
+{files: !palrot.pic}
+
+cx=Context(-1,-1,-1)
+
+if (GetAtom(cx,"data")!="") then
+ SetAtom(cx,"data","",forDunno)
+ mapLoad("!palrot.pic")
+ mapRefresh()
+else
+ first=0
+ last=0
+ GetVar("editpal_first",first)
+ GetVar("editpal_last",last)
+ SetVar("editpal_first",last)
+ SetVar("editpal_last",first)
+ todohead=GetAtom("","todohead")
+ SetAtom("","todo"+todohead,Context(-1,-1,1)+" x",forRuntime)
+ SetAtom("","todohead",str(val(todohead)+1),forRuntime)
+endif

@@ -1,0 +1,17 @@
+nfo:ëmÒagî 321
+tem:!help
+siz:60x13
+pos:slp=1 x=27 line=7 slpline=6
+Ý^0,30,1,57Þ
+
+
+dThe most important things in one minutea
+
+c1.a You can start writing. Short lines will be centered
+   automaticly, long ones are bounded to paragraphs.
+
+c2.a What you see is only a textmode editor. Real
+   graphics page will appear after pressing bF3a key.
+
+c3.a When everything else fails, read the help :)
+

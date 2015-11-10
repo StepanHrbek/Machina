@@ -1,0 +1,94 @@
+nfo:ëmÒagî 300
+tem:!help
+siz:80x99
+pos:slp=1 x=14 line=72 slpline=71
+Ý^0,40,0,79Þ
+
+
+d- z emailu -a
+
+Asi p©ed p–l rokem jsem si z jednoho mailu vyst©ih seznam
+n vrh– na vylep¨en¡ Ma¨iny a zapomnˆl kdo byl pisatel.
+Ob v m se, ‘e jsem mu neodpovˆdˆl nebo jen povrchnˆ,
+tehdy jsem moh maxim lnˆ sl¡bit, ‘e se na to pod¡v m.
+Dneska je kone‡nˆ p©¡le‘itost probrat to d–kladnˆji...
+tak‘e jak vypad  situace po p–l roce?
+
+b
+> 1) Mockrat se mi stalo, ze mam obrazky z filmu, ktere ovsem
+> neodpovidaji velikosti nektereho rozliseni. Jestlize vede na obrazky
+> odkaz, tak se napriklad obrazek velky 392x262 zobrazi v roz. 360x270.
+> Mnohdy je neprijemne nejen to scrollovani (na strany), ale i samo
+> rozliseni. Proto bych uvital, kdyby se pri vytvareni odkazu na obr.
+> dalo nastavit royliseni, ve kterem se budou vsechny nasledujici obr.
+> zobrazovat.
+a
+U¨et©¡m si trochu prst¡ky, snad promine¨, a jako takovou stru‡nou ale v˜sti‘nou odpovˆd vyt¡pnu © dek z novinek verze 3.0:
+
+Ka‘d‚mu obr zku teƒ lze kromˆ popisku a autora zadat i doporu‡en‚ rozli¨en¡ pro prohl¡‘en¡ (viz cdescript.ion v helpu k projekt–m!projecta)
+
+b
+> 2) Nekde jsem sehnal super sampl, ktery by se hodil pri kliknuti na
+> odkaz na obrazek. To by sice slo, ale pokdu jde o slideshow, tak se
+> tento sampl prehraje jenom jednou a potom je pouzit vychozi sampl z
+> template. Vyresilo by se to tim, kdyby se pridala na stranku promnenna
+> (stejne jako mus, skr, sou atd.), ktera by automaticky pri kliknuti na
+> odkaz na obrazek prehravala nastaveny sampl i dale v slideshow. Snad
+> me rozumis. (V pripade, ze se rozhodnes toto pouzit, tak jsem ti
+> posilam ten sampl, o kterem jsem mluvil.)
+a
+Kdybych tak vˆdˆl kam jsem ten sampl zachrul... mo‘n  jsem ho i pou‘il ale sp¡¨ ne... ka‘dop dnˆ v tuto chv¡li:
+- samply ve slideshow se dˆd¡ ze str nky odkud tam ‡ten © vlez
+- ale nerozli¨uje se, jestli se kliknut¡m p©en ¨¡ na obr zek nebo str nku,
+  zvuk pro oboje je stejn˜, rozli¨uje se jen "dop©edu" a "dozadu"...
+  (sna‘¡m se nerozli¨ovat str nky psan‚ v editoru a obr zky, pro ‡ten ©e je
+  oboje "str nka")
+
+b
+> 3a) Mozna si reknes, ze mam dlouhy vedeni, ale prislo mi, ze masina pri
+> zobrazovani textury (terba v JPG) neumi vice jak 256 barev, je to
+> pravda? Jestli ne, tak proc nejde nastavit v prohlizeci (F3) stejne
+> barev, jako kdyz se pouzivaji "stare" (dobre) textury (a, b, h, z...)?
+> Jestli toto nepujde v Masine upravit, tak zkus pridat takovychto textur
+> vice (muzu ti jich celkem velke mnozstvi poskytnout).
+>
+> 3b) Bod 3a jsem chtel hlavne proto, ze nekdy pouzivam barvu fontu jako
+> vicebarevnou. Ta jiz v novejsich Masinach neni v menu F5 k dispozici a
+> tak ji vkladam manualne, ve Volkovu, nebo jak se editor pod F4 jmenuje?
+> Kdyz uz tato funkce na strance s texturou jaksi nevypada dobre, mohl
+> bys alespon zavest novou funkci pro ztucneni fontu, treba jako ve Win:)
+>
+> 4) A zase neco s fontama. Jednou se mne stalo, ze jsem na stranku, kde
+> byl pres celou obrazovku obrazek, vlozil font. To neni nic zvlastniho,
+> ale font mel zlutou barvu a protoze obrazek byl do bezova a jina barva
+> fontu nez zluta se na (titulni (title)) stranku nehodila, nebyl text
+> psany zlute vubec videt. Mohl by, kdyby v Masine byla moznost barvy
+> textu s obrysem :-)! Treba by se automaticky nastavila invertovana
+> barva obrazku (resp. textury), ktery je pod textem, nebo tak, jak to
+> dela napriklad PaintShop.
+a
+Aaaaa..na tohle jsem ti odpov¡dal, vzpom¡n m si.
+Dod m, ‘e v¡cebarevn‚ texty jsem zru¨il asi hlavnˆ proto, ‘e ty vykreslovac¡ rutiny byly psan‚ dost nep©ehlednˆ v asm a jen pro 256-barevn‚ m¢dy, musel bych je £plnˆ p©epsat, p©itom stejn‚ho efektu jde dos hnout vlo‘en¡m obr zku s n pisem... = jen p r KB nav¡c a je to mnohem univerz lnˆj¨¡ a standardnˆj¨¡... str nka jde l¡p zkonvertovat t©eba do html.
+
+Jedin‚ co bych r d, kdyby Ma¨ina je¨tˆ umˆla, je to ztu‡nˆn¡, kurz¡va a tak... dokonce to nen¡ probl‚m, do form tu by to zapadlo velice elegantnˆ, sta‡¡ jen se odhodlat, sednout a udˆlat to...
+
+b
+> 5) Posledni pod, ktery je realny, je snad ne tak obtizny. Jde jen o to,
+> ze by se hodila opacna funkce nez ma klavesa TAB, tedy zarovnani textu
+> na konec radku (napriklad klavesami CTRL+TAB).
+a
+Opˆt t¡pnu z novinek:
+
+P©es "Zarovnat odstavec..." v menu jde zarovn vat © dky textu v odstavc¡ch doleva, doprava, doleva i doprava (implicitin¡) nebo centrovat.
+
+b
+> 6) Posledni a zaroven i prvni bod, ktery je nejspis absolutne nerealny.
+> Bude nekdy Masina podporovat XMka? Neee, nekric na me, vzdyt ja se jen
+> ptal. Dobre, dobre. A co treba konvertor XMek do MODu nebo S3Mek? Jo,
+> jo, tak ja uz koncim.
+a
+Wow... pou¨tˆt nar z dva extendery je humus, ale funguje to a XMka hrajou... :)
+
+Jo a d¡k za n vrhy.. ‡ st z tˆch vˆc¡ jsem realizoval jen d¡ky nim.
+
+

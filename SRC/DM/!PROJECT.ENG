@@ -1,0 +1,172 @@
+nfo:ëmÒagî 300
+tem:!help
+siz:80x184
+pos:slp=1 x=0 line=181 slpline=180
+Ý^0,40,0,80Þ
+
+
+cPage orderinga
+
+     When you click to link pointing to some page/picture/animation,
+     you go to there. Right button returns you back. It is behaviour
+     known from many other programs. During time, some extensions
+     has developed in Machina.
+
+     þ You can click on page/picture background.
+
+       If you are on page, Machina tries to enter the slideshow of this page.
+       It means series of pictures in any formats, but named like ABC00, ABC01,
+       ABC02... this slideshow belongs to page ABC. Page ABCDEFGH has slideshow
+       like ABCDEF00,ABCDEF01,etc..
+
+       If you are on the page without slideshow or at the end of the slideshow,
+       Machina tries to enter page+1, last character increased by 1.
+       For example from ABC1 to ABC2, from ABC to ABD.
+       When you reach end of such series, Machina returns you to its begin.
+
+     þ When you enter page or picture, Machina looks for the animation with
+       the same name. If found, it is played before entering page/picture.
+       If there is anim and sample with the same name, both are played.
+
+
+cProjecta
+     Example: Pa©eni¨tˆ 23 is project consisting of three .DM files:
+     par23a.dm, par23b.dm a par23c.dm.
+     In general, project is one DM-root and optional DM-addons.
+     Only root is necessary to view the project.
+
+     Each .DM file is a pack of smaller files (pages, pictures etc).
+     If more .DM files contain file with the same name, the file from the
+     .DM file with the most fresh datetime is used. Projects are put together
+     from single .DM files at runtime, so anytime you can add new addon to
+     project or create new project by adding new root to existing addons.
+     Root's header contains the project name.
+     Addon's header contains the addon name (without special meaning)
+     and wildcarded project name saying what project(s) does it belong to.
+
+     Because user can delete addons anytime, all important files should
+     be in the root. Only one file is absolutely necessary in each
+     project, it's the starting page 'title'.
+
+
+cTemplatesa
+
+     It's wise to start project with templates. At first the main one,
+     'template', which affects whole project. Then other templates for specific
+     parts of project. In case of magazine with several specific corners,
+     each one could have its own template.
+
+
+cDescript.iona
+Ýr5Þ
+Each page can have description and name of its author. They are saved in the page header, you can edit them via editor menu. Descriptions of pictures in slideshow and pages without description in header can be in textfile descript.ion. Each line of this file has form bfilename data_separated_by_|a where data are bpage description, author and recommended resolutiona. Filename with extension .pic is expanded to existing picture filename. Description may be quite long, but if it's longer than half of page, Machina shows only its start. Resolution has form like 640x480 and it has meaning only for pictures as pages have their resolutions inside which is more trustworthy. P©¡klad © dk– v descript.ion:
+
+dement.pic Dis iz mee, yez yez!
+kachna.pic And dis iz made by duck.|Donald
+tekno1.pic I want it in 640...||640x480
+tekno2.pic ||640x480
+
+During compilation, descriptions taken from pages are automaticly included to descript.ion. In case of collision, informations from pages have higher priority, they are expected to be up to date.
+
+Sometimes, article consists from several pages. In such case I advise to use one of its pages as template (or make new one) and set page description and author only in it. We want to have all pages described, even if they have the same description. But what happens if you select articles by authors (F3 in viewer)? Duplicates are hidden, description common for whole group of pages leads to that one of them, which filename is alphabeticly lowest.
+
+Ýr-5Þ
+cCreating .DM - compiling and linking projecta
+
+     Parameter 1 compiles project:
+     - puts all pages in the project directory into a project filelist
+       and then adds all supporting files (pictures,sounds...) used by pages.
+       The files that are never used by the project are ignored.
+     - checks that everything is ok (no files missing, all pages accessible..)
+     - writes project.lst - list of files to link together.
+
+     Project could consist of several .DM files - empty lines in project.lst
+     split list to parts. Each part represents one .DM file.
+     My algorithm (described below) lets whole project in one file or splits
+     it into two files, where the second one contains files with low
+     importance per byte. But it only guesses what you really want.
+     If you are not satisfied with file dislocation, take generated
+     project.lst and reorganize it by hand or by your program.
+
+     Parameter 2 links project:
+     - asks you for some project related informations and writes them into
+       project.hea. They are fresh for about two weeks, then linker asks
+       you again.
+     - links the files from project.lst into .DM files
+
+     You can specify destination directory from commandline.
+     No checks are done here, incomplete list is compiled as well as the
+     complete one. So when you remove something from generated project.lst,
+     some errors would appear during project viewing.
+
+     Move generated .DM files to different directory and view them there
+     (in order to deny Machina the access to the sources and make the
+     program use only the compiled .DM files).
+     Hidden errors are sometimes revealed in this phase. It could be missing
+     file, broken page syntax, etc..
+
+
+cOutput redirectiona
+
+     Also during project compilation, it is often useful to redirect Machina
+     output to file. It is standard DOS function... for example command
+     "DM 1 >A" sends compiler output to file A. If you found an error and
+     you don't know what file caused it, then you may also use a redirection.
+
+
+cWhat files are put to the first and which ones to the second .DM filea
+
+     Into second .DM file come
+      - files over 500000 bytes
+      - pictures in slideshows
+      - pictures/anims reached by link
+      - pictures/anims over 30000 bytes
+         except title page and pages with three objects or links to other pages
+      - anims called automaticky before entering page
+     Both .DM files are joined if the second one is under 1000000 bytes
+     or shorter than the first one.
+
+     If you want, before linking you can reorganize files in project.lst.
+
+
+cFiles outside .DMa
+
+     When some file is not found inside .DM files, Machina takes a look
+     around, outside .DM. So for example in case of project with
+     2MB of necessary texts and pictures and one not so necessary 3MB
+     .FLC animation, you could distribute project as one .DM and one .FLC,
+     not at two .DM, where second one contains only .FLC.
+
+
+cLibrariesa
+
+     Libraries of standard pages, pictures, modules, fonts... could be made.
+
+     Let's say, you create diskmag and each issue contains some standard data.
+     For example, page with contacts to authors, animated diskmag logo,
+     your pictures, curriculum vitae :)...
+     It would be inefficient to put them into each issue.
+     They could be in one .DM file shared by all issues.
+     In case of, hm...dunno... Imphobia :)), I would create imp_lib.dm
+     as addon 'Standard library' for 'Imphobia*'. (That asterisk is
+     important for every Imphobia issue to be assigned to it.)
+
+     By the way, the files in libraries should not be compiled and linked
+     while compiling project. The way to tell Machina what files not to
+     compile and link is to create or generate a list of such files.
+     You can create it yourself or simply generate this file by compiling
+     and linking your library - just rename the project.lst file to
+     library.lst. 
+
+     Something absolutely different is 'common' variable in the INI file.
+     It is directory which contents is common for all edited projects.
+     So you can put all fonts, standard scripts, library files, etc there.
+
+
+cAdditional listsa
+
+     library.lst  - these files won't be inserted into project
+     descript.ion - pages/pictures and descriptions (can be also in page
+                    headers)
+
+

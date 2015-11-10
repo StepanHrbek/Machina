@@ -1,0 +1,51 @@
+{descr: simple checkbox}
+{param: number:initial_state_0_or_1}
+{param: number:initial_state_0_or_1 sound:check sound:uncheck}
+{param: string:variable_name}
+{param: string:variable_name sound:check sound:uncheck}
+{files: chkbox.iff !checkb0.gif !checkb1.gif}
+
+cx=Context(-1,-1,-1)
+data=GetAtom(cx,"data")
+state=GetAtom(cx,"state")
+name=GetAtom(cx,"name")
+
+proc ReadState()
+ if ((state != "0") & (state != "1")) then state="1" endif
+ state=Val(state)
+ GetVar(name,state)
+ if ((state != 0) & (state != 1)) then state=1 endif
+endproc
+
+proc WriteState()
+ SetVar(name,state)
+ state=Str(state)
+endproc
+
+if (data!="") then
+ if (state=="") then
+  state=CutName(data)
+  if ((state != "0") & (state != "1")) then name=state else name="" endif
+  smp1=CutName(data)
+  smp0=CutName(data)
+  if (smp1=="") then smp1="chkbox.iff" endif
+  if (smp0=="") then smp0="chkbox.iff" endif
+  SetAtom(cx,"name",name,forRuntime)
+  SetAtom(cx,"smp1",smp1,forRuntime)
+  SetAtom(cx,"smp0",smp0,forRuntime)
+ endif
+ SetAtom(cx,"data","",forDunno)
+ ReadState()
+ WriteState()
+ mapLoad("!checkb"+state+".gif")
+else
+ ReadState()
+ state=1-state
+ mapLoad("!checkb"+str(state)+".gif")
+ WriteState()
+ Play(GetAtom(cx,"smp"+state))
+ mapLoad("!checkb"+state+".gif")
+ mapRefresh()
+endif
+
+SetAtom(cx,"state",state,forRuntime)

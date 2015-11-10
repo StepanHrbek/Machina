@@ -1,0 +1,47 @@
+nfo:ëmÒagî 300
+tem:!doc
+tex:d(*,s,s,-2) =24.(39,282)80c()222
+pal:^  ]( ]1 ]9 \B \J \S \\ XN@OS_]Y WWW22 >> MM ZZ O::_CC444>>>HHH :: HH UU!- !3(   #" &% )( ,) /, 1. 40 72  /(#4-':3+>8/C=
+fnt:tenkej.fn;bigpul.fn
+siz:360x1140
+pos:slp=1 x=58 line=45 slpline=44
+Ý^0,181,0,276Þ
+
+
+e1Ovl d n¡0a
+
+
+bTla‡¡tka my¨ia
+
+Pokud jsi na to je¨tˆ nep©i¨el metodou pokus omyl, pak vˆz, ‘e clev‚a tla‡¡tko znamen  volbu toho na co klik ¨, posun o str nku vp©ed, cprav‚a pak zru¨en¡ akce, p©¡padnˆ n vrat o str nku zpˆt, cprost©edn¡a otv¡r  hlavn¡ menu (jinak Esc), chv¡li podr‘en‚ otv¡r  pomocn‚ menu (jinak F1).
+
+
+bNavigacea
+
+Oproti klasick‚mu syst‚mu klik n¡ na odkazy lev˜m a vracen¡ se zpˆt prav˜m tla‡¡tkem m  Ma¨ina jedno vylep¨en¡. T¡m je cklik lev˜m tla‡¡tkem na pozad¡a. Pokud existuje nˆjak  'n sleduj¡c¡' str nka, p©ejde¨ na ni. Pokud u‘ jsi na konci, vr t¡¨ se zpˆt. Tak‘e nehroz¡ zu©iv‚ klik n¡ prav˜m tla‡¡tkem (n vrat zpˆt), kdy‘ se zano©¡¨ p©¡li¨ hluboko, vracen¡ je automatick‚. Nic se po kliknut¡ na pozad¡ nestane pouze na str nk ch, kter‚ nemaj¡ n sledn¡ka a obsahuj¡ odkazy, smyslem je nenechat tˆ tyto odkazy p©ehl‚dnout.
+
+bSimulace my¨ia
+
+Pro pohyb ¨ipky my¨i r–zn˜mi smˆry lze pou‘¡t numerickou kl vesnici (c1a,c2a,c3a,c4a,c6a,c7a,c8a,c9a). Tla‡¡tk–m my¨i odpov¡daj¡ kl vesy cNumLocka, c/a, c*a.
+
+
+bHudba/Zvuka
+
+Hlasitost lze se©¡dit kl vesami c+a a c-a na numerick‚ kl vesnici. Zvl ¨Ÿ hlasitost hudby a zvl ¨Ÿ efekt– lze mˆnit v setupu nebo ji v p©¡padˆ hudby p©¡mo nastavit jednou kl vesou z ©ady c1a a‘ c0a. Dal¨¡ funkce jsou v menu pod cF8a, jde t©eba nechat si p©ehr vat v¨echny mp3 a moduly z vybran‚ho adres ©e na disku, v abecedn¡m po©ad¡ nebo n hodnˆ, st©¡dat je po dohr n¡, po n minut ch nebo ru‡nˆ...
+
+
+bSetupa
+
+Tla‡¡tkem Setup (pop©.kl vesou cF2a) se dostane¨ na obrazovku plnou ‡udl¡k– a hejbl tek. D  se do nich dloubat a tahat za nˆ. M–‘e¨ si nastavit t   khle velkou my¨.
+
+
+bShella
+
+Tla‡¡tkem Shell zavol ¨ libovoln˜ DOSov˜ p©¡kaz nastaven˜ v DM.INI. Kdy‘ se p©i kliknut¡ na Shell nic nestane, je chyba v p©¡kazu. P©¡klad: je nastaven VC, ale na po‡¡ta‡i Volkov Commander nen¡.
+
+
+bOstatn¡ funkcea
+
+Nˆkolik dal¨¡ch funkc¡ se skr˜v  v pomocn‚m menu pod kl vesou cF1a (export do r–zn˜ch form t–, pou¨tˆn¡ vlastn¡ hudby, p©ehled str nek podle autor– atd).
+
+

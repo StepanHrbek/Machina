@@ -1,0 +1,164 @@
+nfo:ëmÒagî 300
+tem:!help
+siz:80x177
+pos:slp=1 x=0 line=1 slpline=0
+Ý^0,40,0,80Þ
+
+
+cSyst‚m ©azen¡ str neka
+
+     Kdy‘ klikne¨ na link vedouc¡ na jinou str nku/obr zek/animaci,
+     p©ejde¨ na onu str nku/obr zek/animaci. Prav˜m tla‡¡tkem se vrac¡¨
+     zpˆt. To je chov n¡ zn m‚ i z jin˜ch program–. Kromˆ toho ale v Ma¨inˆ
+     postupnˆ vznikla tato roz¨¡©en¡:
+
+     þ M–‘e¨ kliknout na pozad¡ str nky/obr zku.
+
+       Pokud jsi na str nce, Ma¨ina se pokus¡ vstoupit do slideshow t‚to
+       str nky. To je s‚rie obr zk– v libovoln˜ch form tech, ale se jm‚ny
+       jako ABC00,ABC01,ABC02... Jak asi tu¨¡¨, toto slideshow p©¡slu¨¡
+       str nce ABC. Str nka ABCDEFGH m  slideshow ABCDEF00,ABCDEF01...
+
+       Pokud jsi na str nce kter  nem  slideshow nebo na konci slideshow,
+       Ma¨ina se pokus¡ p©ej¡t na str nku+1, posledn¡ znak zv˜¨it o jedni‡ku.
+       Tedy nap©¡klad z ABC1 na ABC2, z ABC na ABD apod.
+       Kdy‘ takhle proch z¡¨ s‚ri¡ str nek a dojde¨ na konec, Ma¨ina tˆ vr t¡
+       zase na za‡ tek, na m¡sto odkud jsi do s‚rie vstoupil.
+
+     þ P©i ka‘d‚m p©echodu na str nku nebo obr zek se Ma¨ina pod¡v , jestli
+       nem  k dispozici stejnˆ nazvanou animaci. Pokud ano, p©ehraje ji.
+       M -li k dispozici stejnˆ nazvan˜ sampl, hraje ho bˆhem animace.
+
+
+cProjekta
+
+     P©¡klad: Pa©eni¨tˆ 23 je projekt slo‘en˜ ze t©¡ .DM soubor–:
+     par23a.dm, par23b.dm a par23c.dm.
+     Obecnˆ ©e‡eno, projekt je jeden DM-root a voliteln‚ DM-addony.
+     K prohl¡‘en¡ projektu je nezbytn˜ pouze root.
+
+     Ka‘d˜ .DM soubor je bal¡k men¨¡ch soubor– (str nek, obr zk– atd).
+     Pokud je stejnˆ nazvan˜ soubor ve v¡ce DM souborech t‚ho‘ projektu,
+     prioritu dostane ten z DM souboru s nej‡erstvˆj¨¡m datem. Projekty
+     se z nalezen˜ch DM soubor– skl daj¡ p©i spu¨tˆn¡ Ma¨iny, lze tedy
+     kdykoliv projekt roz¨¡©it o dal¨¡ addony nebo vytvo©it nov˜ projekt
+     p©id n¡m nov‚ho rootu ke st vaj¡c¡m addon–m. Addon m  v hlavi‡ce
+     jm‚no rootu, ke kter‚mu n le‘¡. Jm‚no m–‘e obsahovat ? * apod
+     (roz¨¡©en  hvˆzdi‡kov  konvence), addon pak p©¡slu¨¡ v¡ce root–m.
+
+     Jeliko‘ u‘ivatel m–‘e addony kdykoliv t©eba z nedostatku m¡sta na disku
+     smazat, mˆly by b˜t v¨echny d–le‘it‚ soubory u‘ v rootu. Jedin˜m absolutnˆ
+     nezbytn˜m souborem v projektu je v˜choz¡ str nka Title.
+
+
+c›ablonya
+
+     Je rozumn‚ zah jit projekt ¨ablonami. Nejprve tou hlavn¡, 'template',
+     kter  m  vliv na cel˜ projekt. Pod n¡ mohou b˜t dal¨¡ ¨ablony zamˆ©en‚
+     na r–zn‚ ‡ sti projektu. Nap©¡klad p–jde-li o ‡asopis s nˆkolika z©etelnˆ
+     odli¨en˜mi rubrikami, m–‘e m¡t ka‘d  svou ¨ablonu.
+
+
+cDescript.iona
+Ýr+5Þ
+Ka‘d  str nka m–‘e m¡t popisek a jm‚no autora, kter‚ se p©i prohl¡‘en¡ mohou zobrazovat ve spodn¡ li¨tˆ. Popisek str nky je ulo‘en v jej¡ hlavi‡ce, zad v  se p©es menu editoru. Popisky obr zk– ve slideshow a str nek bez popisku v hlavi‡ce mohou b˜t v textov‚m souboru descript.ion. Ka‘d˜ jeho © dek m  tvar bjm‚no_souboru £daje_oddˆlen‚_svisl¡tkema, p©i‡em‘ v¨echny £daje jsou nepovinn‚ a jsou to bpopisek str nky, autor a doporu‡en‚ rozli¨en¡a. Pokud m  jm‚no souboru p©¡ponu pic, rozum¡ se t¡m nˆjak˜ obr zek. Popisek m–‘e b˜t pomˆrnˆ dlouh˜, ov¨em pokud zabere p©es p–l obrazovky, Ma¨ina ho o©¡zne. Rozli¨en¡ je ve tvaru jako nap©. 640x480 a m  v˜znam pouze pro obr zky, str nky maj¡ £daj o rozli¨en¡ v sobˆ a ten je v‘dy d–vˆryhodnˆj¨¡. P©¡klad © dk– v descript.ion:
+
+dement.pic Tak tohle jsem j , yez yez!
+kachna.pic A tohle nafotil ka‡er.|Donald
+tekno1.pic A tuto chci vidˆt v 640...||640x480
+tekno2.pic ||640x480
+
+P©i kompilaci je descript.ion automaticky obohacen o popisky vytahan‚ ze str nek. P©i kolizi maj¡ informace ze str nek vˆt¨¡ prioritu - p©edpokl d  se, ‘e jsou aktu lnˆj¨¡.
+
+Nˆkdy je ‡l nek slo‘en z v¡ce str nek. V takov‚m p©¡padˆ doporu‡uji pou‘¡t jednu z jeho str nek jako template (nebo vytvo©it novou) a pouze v n¡ nastavit popisek a jm‚no autora. C¡lem je m¡t v¨echny str nky popsan‚, i pokud spadaj¡ pod stejn˜ popisek. Ov¨em co se dˆje p©i v˜bˆru ‡l nk– od zvolen‚ho autora (F3 v prohl¡‘e‡i)? Duplicity se nezobrazuj¡, popisek spole‡n˜ cel‚ skupinˆ str nek vede na tu z nich, jej¡‘ jm‚no(souboru) je abecednˆ nejni‘¨¡m.
+
+Ýr-5Þ
+cTvorba .DM - kompilace a linkov n¡ projektua
+
+     Parametrem 1 vytvo©¡¨ project.lst - seznam soubor– nutn˜ch pro
+     rozpracovan˜ projekt. Projekt se m–‘e skl dat z v¡ce .DM soubor–,
+     pak jsou v project.lst pr zdn‚ © dky na hranici .DM soubor–.
+     Standardnˆ vytv ©¡m u men¨¡ch projekt– jen jeden .DM, u vˆt¨¡ch
+     dva - druh˜ obsahuje postradateln‚ ‡ sti. Ale ne v‘dy dok ‘e program
+     rozeznat co je pro ‡ten ©e nepostradatejn‚, potom mus¡¨ seznam
+     soubor– je¨tˆ ru‡nˆ nebo vlastn¡m programem poupravit.
+
+     Pot‚ ho p©edhod¡¨ parametru 2, kter˜ soubory slinkuje do .DM.
+     Jako dal¨¡ parametr m–‘e¨ zadat adres ©, ve kter‚m m  b˜t .DM vytvo©en.
+     Zde se neprov d¡ ‘ dn‚ kontroly => kdy‘ v seznamu nˆco chyb¡,
+     projekt se zkompiluje bez toho a chyba nastane a‘ p©i prohl¡‘en¡.
+     Hotov˜ DM zkop¡ruj do jin‚ho adres ©e (aby nebyl p©¡stup
+     ke zdroj k–m) a tam ho ve vlastn¡m z jmu cel˜ projdi/zkontroluj.
+     €asto se p©i kompilaci nebo a‘ p©i prohl¡‘en¡ hotov‚ho DM
+     objevuj¡ probl‚my zp–soben‚ chybami na str nk ch (n hodn˜ znak
+     na m¡stˆ kde nem  co dˆlat dok ‘e divy).
+     Pozn: pou‘it¡m parametru 2 spust¡¨ dialog, ve kter‚m se tˆ program
+     zept  na nˆkter‚ £daje kolem projektu (n zev, zkratka, soubory..).
+     Tyto £daje se zap¡¨¡ do souboru project.hea. —daje jsou aktu ln¡ asi 14
+     dn¡, pak se tˆ na nˆ program zept  znovu.
+
+
+cP©esmˆrov n¡ v˜stupua
+
+     Nej‡astˆji pr vˆ p©i kompilaci projektu se hod¡ p©esmˆrov n¡ v˜stupu
+     do souboru. To je standardn¡ funkce DOSu... nap©¡klad p©¡kazem
+     "DM 1 >A" po¨le¨ v˜stup z kompil toru do souboru A. Kdy‘ se p©i hl ¨en¡
+     chyby sma‘e obrazovka a nevid¡¨, kter˜ soubor ji zp–sobil, pou‘ij
+     p©esmˆrov n¡.
+
+
+cPodle jakeho algoritmu se soubory rozdˆluj¡ do prvn¡ho a druh‚ho .DM ?a
+
+     Do druh‚ho p©ijdou
+      - soubory nad 500000 bajt–
+      - obr zky ve slideshow
+      - obr zky dostupn‚ odkazem
+      - obr zky/animace vˆt¨¡ 30000 bajt–
+         mimo tituln¡ str nky a str nek bez t©¡ objekt– nebo odkaz–
+      - animace volan‚ automaticky p©ed str nkou
+     Druh˜ se slou‡¡ s prvn¡m pokud by mˆl m‚nˆ ne‘ 1000000 bajt–
+     nebo byl krat¨¡ ne‘ prvn¡.
+
+     Jestli chce¨, soubory si m–‘e¨ v project.lst p©ed linkov n¡m
+     podle libosti p©eorganizovat.
+
+
+cSoubory mimo .DMa
+
+     Pokud Ma¨ina p©i prohl¡‘en¡ nenajde nˆjak˜ soubor uvnit© .DM, porozhl‚dne
+     se jestli nen¡ na disku vnˆ .DM. Tak‘e kdybys mˆl nap©¡klad takov˜to
+     projekt: 2MB nepostradateln˜ch text– a obr zk– a jednu postradatelnou
+     3MB FLC animaci, mohl bys projekt distribuovat jako jeden DM a jeden FLC,
+     ne jako dva DM, kde druh˜ obsahuje pouze FLC.
+
+
+cKnihovnya
+
+     Lze vytv ©et knihovny standardn¡ch str nek, obr zk–, modul–, font–,
+     zvuk–, animac¡ apod...
+
+     žeknˆme, ‘e dˆl ¨ ‡asopis a v ka‘d‚m ‡¡sle se opakuj¡ stejn  data.
+     T©eba str nka s kontakty na redakci, animovan‚ logo ‡asopisu,
+     obr zky redaktor– nebo rovnou jejich ‘ivotopisy :)...
+     Bylo by neefektivn¡ tˆmi daty zvˆt¨ovat ka‘d‚ ‡¡slo.
+     Mohou b˜t ve zvl ¨tn¡m .DM souboru spole‡n‚m pro cel˜ ‡asopis.
+     Pro p©¡klad, ‘e by ¨lo o Pa©eni¨tˆ, soubor bych nazval t©eba
+     par_lib.dm a byl by to AddOn 'Standardn¡ knihovna' for 'Pa©eni¨tˆ*'
+     (ta hvˆzdi‡ka je d–le‘it , aby se knihovna hl sila ke v¨em ‡¡sl–m,
+      viz roz¨¡©en  hvˆzdi‡kov  konvence).
+
+     P©i kompilaci projektu se mus¡ Ma¨ina nˆjak dozvˆdˆt kter‚ soubory
+     u‘ jsou v knihovnˆ a nem  je za©azovat do projektu. Proto po
+     kompilaci knihovny p©ejmenuj vznikl˜ seznam project.lst na library.lst.
+
+     Nˆco zcela jin‚ho je promˆnn  common v INI souboru. Ta ur‡uje adres ©,
+     jeho‘ obsah je spole‡n˜ v¨em editovan˜m projekt–m. Tak‘e si do nˆj m–‘e¨
+     d t v¨echny fonty, standardn¡ skripty, soubory z knihoven atd.
+
+
+cPomocn‚ seznamya
+
+     library.lst - tyto soubory nebudou za©azeny do projektu
+     descript.ion - str nky/obr zky a popisky (mohou b˜t i v hlavi‡k ch str nek)
+
+

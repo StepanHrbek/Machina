@@ -1,0 +1,30 @@
+nfo:ëmÒagî 352
+res:640x480
+tem:!doc
+tex:text=#C0C0C0 cowriter=#E88C00 link=#FCFC00 strong=#FCFCFC
+nam:Possibly bad drivers
+fnt:tenkej.fn;bard.fn
+siz:640x473
+pos:slp=1 x=51 line=23 slpline=22
+Ý^0,180,0,360Þ
+
+b1Note0a
+
+Your graphics card drivers may contain serious bugs. Now, for your safety, Machina uses only resolutions your driver is known to support smoothly.
+
+You can turn this precaution off in csetup!setupa by unchecking cOnly safe modesa, Machina will trust then that your drivers are fixed.
+
+
+
+Ý~!zlahve,110x73Þ
+
+	dMatroxa - Windows 2000 driver from feb-2002 doesn't handle VESA modes, developers say that fixing it has low priority
+
+	dNVidiaa - driver Detonator XP from feb-2002 doesn't handle VESA and VGA modes together, so we avoid VGA, company hasn't replied yet
+
+	d3DFx/Bansheea - driver from 2001 doesn't handle few low VESA resolutions, current state is not known
+
+	dCirrus Logic GD-54xxa - VBE incorrectly handles 15 and 24bit modes
+
+Ý^0,515,0,250Þ
+Ý~!title.png,250x465Þ

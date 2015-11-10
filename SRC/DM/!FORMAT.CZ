@@ -1,0 +1,333 @@
+nfo:ëmÒagî 302
+tem:!help
+siz:80x328
+pos:slp=1 x=0 line=272 slpline=271 blkStart=8347 blkEnd=8494
+İ^0,40,0,80Ş
+
+
+                  Deus ex Machina - popis form tu str nek
+
+
+dÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄVERZE 0.10-0.37ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄa
+
+Popis ztracen... katastrofa :)
+
+
+dÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄVERZE 0.38-0.99ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄa
+
+ dkov n¡ je CR/LF.
+
+Na prvn¡ © dce je 18bajtov˜ header.
+
+Na dal¨¡ © dce m–‘e n sledovat paleta, 40 RGB barev 0..63 reprezentov no
+ve 120 znac¡ch #32..#95.
+
+Na dal¨¡ch © dk ch mohou b˜t promˆnn‚ zadan‚ zp–sobem xxx:hodnota
+kde xxx je t©¡p¡smenn˜ n zev promˆnn‚.
+
+A‘ do konce souboru n sleduj¡ sloupce textu (1 a‘ 10 sloupc–).
+
+
+c---FILE HEADER---a
+
+OFS LEN MEANING
+ 0   3  celkem radek v clanku (radka=16 pixelu)
+ 3   1  0
+ 4   1  textura na pozadi
+ 5   3  0 (startup vis.x)
+ 8   3  0 (startup vis.y)
+11   1  0
+12   1  flags
+13   5  0
+
+
+c---FLAGS---a
+
+BIT  VZNAM
+ 0 =0 v¨echny r me‡ky jsou svˆtle modr‚
+   =1 ka‘d˜ r me‡ek m  takovou barvu, v jak‚ je
+      v textm¢du vidˆt prvn¡ znak r me‡ku: ³
+ 1 =0 norm ln¡ stav
+   =1 posunut¡ togl– kousek doprava, na to pe‡
+ 2 =0 je pou‘ita bˆ‘n  paleta
+   =1 v hlavi‡ce souboru je vlastn¡ paleta
+ 3 =0 zadan‚ moduly jsou p©id ny do seznamu hran˜ch
+   =1 seznam je smaz n, p©ep¡¨¡ ho zadan‚ moduly
+ 4 =1
+ 5 =1
+ 6 =0 norm ln¡ stav
+   =1 str nka se po 4 sekund ch automaticky odentruje
+ 7 =0
+
+
+c---SLOUPEC HEADER---a
+
+OFS LEN MEANING
+ 0   1  ^
+ 1   1  cislo otcovskeho odstavce
+ 2   3  delta x1 levych kraju
+ 5   3  delta y16
+ 8   3  sirka sloupce
+
+
+c---PROM‰NN---a
+
+btex:a
+ Viz bhelp k popisu pozad¡!texturea (podporov n je pouze star˜ form t).
+ Pokud tato promˆnn  nen¡ nastavena, je pou‘it znak z headeru (offset 4)
+ a interpretov n jako star˜ form t.
+
+btro:a
+ Ozna‡en¡ str nky jako intro k recenzi, zadej ‡¡sla oddˆlen‚ ‡ rkami:
+ - kolikan sobnˆ ztloustnout © dky obrazu (doporu‡uji 2 a v¡c)
+ - ¨¡©ka obrazu v pixelech, maxim lnˆ 512 (doporu‡uje se)
+ - v˜¨ka obrazu v pixelech, maximum je z visl‚ na prvn¡m £daji (to uvid¡¨)
+ Samply hran‚ na str nce:
+   na za‡ tku               - 'vstup sem'
+   p©i bo‡n¡ch odrazech     - zat¡m nelze mˆnit
+   po dojezdu               - 'n vrat sem'
+   p©echod na dal¨¡ str nku - zat¡m nelze mˆnit
+ Po p©ehr n¡ intra se p©ech z¡ na dal¨¡ str nku.
+ Tento p©¡¨ern˜ p©¡kaz u‘ pochopitelnˆ nebyl p©eveden do verz¡ 1.xx.
+
+
+bpal:a viz dal¨¡ verze
+bmus:a
+bsi1:a
+bsi2:a
+bsen:a
+bsou:a
+bskr:a
+bank:a
+bhes:a
+
+
+dÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄVERZE 1.xxÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄa
+
+Od verze c2.xxa se li¨¡ pouze t¡mto:
+
+cJednodu¨¨¡ linka
+
+ Link je jm‚no souboru, na kter˜ se odkazuje¨. ’ dn‚ parametry nem .
+
+cOdli¨n‚ promˆnn‚a
+
+bank:a
+ N zev anketn¡ho l¡stku, do kter‚ho se ulo‘¡ stav checkbox– na t‚to str nce
+ p©i opou¨tˆn¡ Ma¨iny. V¡ce str nek m–‘e ukl dat £daje do jednoho souboru.
+ Otazn¡ky v n zvu se nahrad¡ n hodnou cifrou 0..9.
+bhes:a
+ Zaheslovanej link... syntaxe zapomenuta.
+btex:a
+ Byl podporov n pouze star˜ form t, viz bhelp k popisu pozad¡!textureb.
+btem:,txa,par,fmt:a
+ Je¨tˆ neexistovaly.
+
+cOdli¨n‚ flagya
+
+ba,sa
+ Je¨tˆ neexistovaly.
+
+cOdli¨n‚ p©¡kazya
+
+bObr zek/animacea (zmˆnily se parametry)
+ P©¡kaz ~ s parametry
+   jm‚no souboru bez koncovky
+   rozmˆry vyobrazen¡ v pixelech (nez vis¡ na skute‡n‚ velikosti obr zku)
+   obr zek/animace tvo©¡ odkaz na jin˜ objekt (nepovinn˜ parametr)
+
+bCheckboxa (je¨tˆ existoval)
+ P©¡kaz ş (znak #254) s parametry:
+   delta x od prost©edku sloupce k lev‚mu kraji checkboxu
+   delta y k horn¡mu kraji checkboxu
+   ¨¡©ka checkboxu
+   v˜¨ka checkboxu
+   sampl hran˜ p©i zapnut¡ (nepovinn˜ parametr)
+   sampl hran˜ p©i vypnut¡ (nepovinn˜ parametr)
+   jm‚no souboru kter˜ checkbox ripne na disk (nepovinn˜ parametr)
+ P©¡klad: İş-45,0,16,16,,,zdrojak.pasŞ Popisek
+
+bVlo‘en¡ objektua (je¨tˆ neexistoval)
+
+
+dÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄVERZE 2-3.xxÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄa
+
+ dkov n¡ je CR/LF.
+
+Na prvn¡ch © dk ch jsou promˆnn‚ zadan‚ zp–sobem xxx:hodnota
+kde xxx je t©¡p¡smenn˜ n zev promˆnn‚. Prvn¡ promˆnn  mus¡ b˜t nfo.
+A‘ do konce souboru n sleduje text. Do textu lze vkl dat p©¡kazy.
+P©¡kazy mohou b˜t pouze na za‡ tku © dky. A‘ na v˜jimky m–‘e n sledovat
+v¡c p©¡kaz– za sebou.
+
+cP©¡kazya maj¡ tuto syntaxi:
+ İjednoznakov˜ p©¡kaz a v¡ceznakov‚ parametry oddˆlen‚ ‡ rkouŞ
+ p©¡klad: İf0,1Ş
+
+cLinka
+ Link je jm‚no souboru, na kter˜ se odkazuje¨ a p©¡padn‚ parametry oddˆlen‚
+ mezerami. T¡mto souborem m–‘e b˜t str nka, obr zek, animace, modul, sampl,
+ skript. Paramery maj¡ pouze skripty.
+
+
+c---P‹KAZY---a
+
+bNov˜ sloupeca
+ P©¡kaz ^ s parametry:
+   ‡¡slo otcovsk‚ho odstavce
+   delta x prost©edk– sloupc–
+   delta y
+   ¨¡©ka odstavce
+ Toto mus¡ b˜t jedin˜ p©¡kaz na © dce.
+
+bObr zek/animacea
+ P©¡kaz ~ s parametry:
+   jm‚no souboru bez koncovky
+   rozmˆry vyobrazen¡ v pixelech (nez vis¡ na skute‡n‚ velikosti obr zku)
+   r–zn‚ promˆnn‚ zadan‚ stylem var1=value1 var2=value2... (nepovinn˜ parametr)
+     mohou to b˜t
+      href=...       - obr zek/animace je odkazem jinam
+      shadeborder=on - netransparentn¡ obr zek bude m¡t ztmaven˜ okraj
+      whiteborder=on - netransparentn¡ obr zek bude m¡t tenk˜ b¡l˜ okraj
+      castshadow=on  - netransparentn¡ obr zek bude vrhat st¡n
+
+bVlo‘en¡ objektua
+ P©¡kaz # s parametrem:
+   link
+
+bVodorovn  ‡ ra p©es celou ¨¡©ku sloupce.a
+ P©¡kaz Ä (znak #196) bez parametr–.
+
+bZa‡ tek/konec svisl‚ ‡ ry po okraj¡ch sloupce.a
+ P©¡kaz ³ (znak #179) bez parametr–.
+ Pozn: p©¡kazy ³ a Ä jsou tu v¡cem‚nˆ kv–li kompatibilitˆ, nevid¡m d–vod
+   pro‡ je pou‘¡vat (v¡c pr ce ne‘ u‘itku).
+
+bResize (zmˆna ¨¡©ky sloupce nebo posunut¡ do strany)a
+ P©¡kaz r s parametry:
+   delta x lev‚ho kraje sloupce
+   delta x prav‚ho kraje sloupce
+ Pozn: opˆt jeden p©¡kaz zaveden˜ kv–li kompatibilitˆ se star¨¡m form tem.
+
+bForm tov n¡ textua
+ P©¡kaz f s parametry:
+   form tov n¡
+     0=primitivn¡ form tov n¡ ala T602, co si neudˆl ¨ nem ¨
+     1=automatick‚ centrov n¡+odsazov n¡ odstavc–
+   proporcionalita
+     0=pou‘¡t proporcionalitu obsa‘enou ve fontu
+     nenula=konstantn¡ ¨¡©ka p¡smen
+   zarovn v n¡ textu ke kraj–m
+     0=zarovn vat doleva
+     1=zarovn vat doleva i doprava (roztahovat mezery)
+     2=centrovat
+     3=zarovn vat doprava
+ Pozn: v¨echny parametry jsou nepovinn‚, kdy‘ chce¨ zadat t©eba jen druh˜ 8,
+   nejkrat¨¡ p©¡kaz na to je İf,8Ş.
+
+
+c---PROM‰NN---a
+
+bnfo:ëmÒagî VERa
+ VER je verze ma¨iny kter  str nku vytvo©ila (t©¡cifern‚ ‡¡slo).
+
+btem:str nkaa
+ Jm‚no template str nky, ze kter‚ jsou na‡¡t ny hodnoty promˆnn˜ch
+ na na¨¡ str nce nedefinovan˜ch.
+ D©¡ve to byla implicitnˆ str nka 'template', nyn¡ je voliteln .
+ Pokud ov¨em nezad ¨ nic, nad le se implicitnˆ nahr v  'template'.
+ Vyh˜bej se ©etˆzen¡ template str nek.
+ Pozor na zacyklen¡, p©¡klad: str nka A m  tem:B a B m  tem:A.
+
+bres:SIRxVYSa
+ SIR a VYS ud vaj¡ rozli¨en¡ doporu‡en‚ pro prohl¡‘en¡ str nky.
+ Norm lnˆ se str nka generuje v grafice, pro SIR+VYS<300 v textm¢du.
+ ’ dn‚ jin‚ £pravy pro p©enos mezi grafikou a textm¢dem nejsou t©eba.
+
+bsiz:SIRxVYSa
+ SIR a VYS jsou rozmˆry str nky v pixelech.
+ VYS se mˆn¡ automaticky bˆhem editace.
+ Pokud obsah str nky nedopat©en¡m p©ete‡e za tento rozmˆr, dojde k chybˆ.
+
+bpal:a
+ Paleta zadan  jako ve verz¡ch 0.xx.
+
+bfnt:a
+ Seznam 1..4 font– ve form tu FN.
+ Pokud je font jedin˜ a to textmode.fn, str nka se generuje v textm¢du
+ s vypnut˜m form tov n¡m textu a do grafiky je nep©enosn .
+
+btex:a
+ Viz bhelp k popisu pozad¡ a mo‘n  i barev!texturea. Podporov ny oba form ty.
+
+bfla:a
+ Flagy. Sekvence p¡smen s voliteln˜m ‡¡seln˜m parametrem, ‘ dn‚ oddˆlova‡e.
+ U‘ite‡n‚ flagy:
+  a[n] - textAreas, automaticky generuje polo‘ku txa:, kter  obsahuje seznam
+         oblast¡ s jednobarevn˜m pozad¡m. po zru¨en¡ flagu a txa: z–stane,
+         pouze se p©estane aktualizovat. oblasti pokr˜vaj¡ pr zdn˜mi © dky
+         ohrani‡en‚ bloky textu v‡etnˆ n pixel– okol¡, implicitnˆ 20.
+  s    - shading, novˆ vkl dan˜m obr zk–m se automaticky nastav¡ vyst¡ov n¡
+         okraj– a vrh n¡ st¡nu na pozad¡ (tot‚‘ lze udˆlat i ru‡nˆ editac¡
+         zdroj ku)
+  t[n] - timeout, str nka se automaticky odentruje po n sekund ch
+  p    - don't save Pos, neukl dej promˆnnou pos:
+  m[n] - (od verze 3.03) p©i vlezu na tuto str nku se nepust¡ ze seznamu
+         muzik n hodn , ale jedna z prvn¡ch n (prvn¡ pokud se nezad  n)
+ Neu‘ite‡n‚ flagy udr‘ovan‚ jen kv–li zpˆtn‚ kompatibilitˆ:
+  c    - colorframes, ka‘d˜ r me‡ek m  takovou barvu, v jak‚ je
+         v textm¢du vidˆt prvn¡ znak r me‡ku: ³
+  o[n] - star‚ tabel tory, n zar ‘ek
+
+bpar:a
+ O kolik odsadit nov˜ odstavec v os ch X a Y. Implicitnˆ 24,0.
+ I pr zdn˜ © dek je odstavec. Tabel torem ke kraji p©ira‘en˜ nebo centrovan˜
+ text nen¡ odstavec.
+
+bfmt:a
+ Po‡ te‡n¡ form t. Implicitnˆ 1,0,1.
+ Uvnit© str nky ho lze mˆnit p©¡kazem f, u kter ho je i popis onˆch t©¡ ‡¡sel.
+
+bmus:a
+ Seznam modul– a sampl–, kter‚ se na str nce n hodnˆ st©¡daj¡.
+
+bsi1:a
+ Seznam sampl–, jeden zahr n p©i vstupu na str nku ze str nky p©edchoz¡.
+bsi2:a
+ Seznam sampl–, jeden zahr n p©i n vratu na tuto str nku z n sleduj¡c¡ str nky.
+bsen:a
+ Seznam sampl–, jeden zahr n p©i opou¨tˆn¡ str nky a p©echodu na dal¨¡.
+bsou:a
+ Seznam sampl–, jeden zahr n p©i opou¨tˆn¡ str nky a n vratu na p©edchoz¡.
+bskr:a
+ Seznam sampl–, jeden zahr n p©i n razech do kraj– str nky.
+
+bpos:a
+ Pozice kurzoru na str nce... form t nen¡ d–le‘it˜. Ukl d  se automaticky.
+ Ukl d n¡ lze vypnout flagem p.
+
+
+c---MODIFIKTORY---a
+
+ Kdekoliv v textu (tedy ne v p©¡kazech apod) lze modifikovat vlastnosti
+ textov‚ho v˜stupu, jako barvu, font..
+ K tomu slou‘¡ dvojznak #17 x kde x je parametr. P©¡pustn‚ hodnoty parametru
+ jsou:
+
+ba..la
+ Zmˆna barvy. a-d odpov¡d  ‡ty©em polo‘k m v editoru pod F5, e-l jsou
+ podporov ny pouze kv–li zpˆtn‚ kompatibilitˆ a jen v 8bit m¢dech,
+ jejich pou‘¡v n¡ se nedoporu‡uje.
+
+b0..3a
+ Zmˆna fontu. €¡slo je index do seznamu font– v promˆnn‚ fnt.
+ Pokud je seznam font– krat¨¡, sm¡¨ pou‘¡t jen odpov¡daj¡c¡ parametry.
+
+ba
+ A‘ do p©¡¨t¡ho modifik toru nebo konce © dku n sleduje link - popis nˆ‡eho
+ na co se odkazuje¨ (jm‚no str nky, obr zku, skript s parametry apod),
+ tento popis nebude zobrazen. Aktivn¡ oblast¡ se st v  text
+ od p©edchoz¡ho modifik toru sem. Linky s v¡ce© dkov˜mi texty nejsou
+ o¨et©eny (text sm¡ p©et‚ct na dal¨¡ © dek, ale nesm¡ b˜t del¨¡ ne‘ 1 © dek).
+
+

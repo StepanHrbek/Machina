@@ -1,0 +1,66 @@
+nfo:ëmÒagî 303
+tem:!help
+siz:80x61
+pos:slp=1 x=0 line=61 slpline=60
+İ^0,40,0,80Ş
+
+d
+                      ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´  Everything related to sound  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                      ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙa
+
+cSound categories offered by Machinaa
+  - bmusica (plays just one, loops or rotates with another music)
+  - bpiece of musica (plays just one, doesn't loop, silences music)
+  - bsamplea (may play more samples at once, don't loop)
+
+cSupported formatsa
+  It's matter of RAIN, formats supported by RAIN are:
+  - MOD
+  - S3M
+  - XM
+  - partially IT
+  - MP3
+  - standard WAV (not compressed)
+  - small subset of IFF, just for backwards compatibility
+
+cWhich file belongs to which categorya
+  All formats are equivalent, their categories depend on circumstances.
+  Following rules look complicated, but they were choosen to help you,
+  you won't have to do any extra work in most cases.
+
+  - in variable mus: there is always bmusica
+  - in variables sxx:, in link to file and in script
+    file name and size matters:
+     *_s.* is bsamplea
+     *_d?a.* is bpiece of musica (silences music down to d?a0% of its volume)
+     *.mod, *.s3m, *.xm, *.it is bpiece of musica (silences music)
+     *.mp3 longer than 32KB and *.wav/*.iff longer than 128KB is bpiece of musica
+       (silences music)
+     rest of files are bsamplesa
+
+  So small samples are played as they are, without any care about music,
+  everything else silences music and sounds alone... if you don't need
+  different behaviour, you don't have to know about _.
+
+cHow to play somethinga
+  - You can enter list of modules/mp3s on each page (into mus: variable),
+    they will be played in alphabetical or random order.. as user wishes.
+    Pages without "mus:..." variable inherit list from previously visited page.
+    Pages with "mus:" without value are silent (note, empty mus: may be
+    set only in F4 editor).
+  - On each page you can enter (into sxx: variables) samples played while
+      entering page
+      clicking to link to next page
+      returning to page
+      leaving page
+      hitting the end of page
+    In fileselector you can select only one sample for each cathegory,
+    but it's possible to add samples in source editor (simply run source editor
+    and write filenames after first name selected via fileselector).
+  - There could be link to module/sample. Clicking it selects category for file
+    (see previous paragraph) and plays it.
+  - Module/sample may be called from script. It has the same effect as clicking
+    link to file.
+
+

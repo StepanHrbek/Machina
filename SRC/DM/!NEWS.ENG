@@ -1,0 +1,377 @@
+nfo:ëmÒagî 352
+tem:!news.cz
+siz:360x6352
+pos:slp=1 x=50 line=10 slpline=9
+Ý^0,185,0,324Þ
+
+d
+2News of particular versions0
+
+
+e1-3.52-0a
+
+		+ higher compatibility to old projects made by version 0.xx
+		+ avoids bugs in Cirrus Logic GD-54xx
+		+ dm ? prints commandline-help in your language
+
+
+e1-3.51-0a
+
+		+ Sometimes it's not possible to know if graphics card driver is
+		  still buggy (and will eventually crash machine) or is fixed. So
+		  there is new option in setup - ability to use bonly safe modesa
+		  (=assume that driver is bad). With fixed drivers it's possible
+		  to turn this behaviour off in setup (F2). Now it affects
+		  . Matrox (VESA modes (SVGA) are not safe)
+		  . NVidia Detonator (VGA modes are not safe)
+		  . 3DFx/Banshee (low VESA resolutions are not safe)
+		+ beter prepared for viewing old projects (version 0.xx)
+		  . fixed font styles (inside texture, transparent etc)
+		  . doesn't bother with small problems on single pages
+		  . just warns several times that viewing is not safe
+		+ better prepared for viewing many projects at once
+		  . loads 100 projects at once
+		  . when name doesn't fit into button, shows its right end
+		+ menu is closeable by left button, on title page also openable
+		+ RAIN 1.5
+		  . in DOS without soundcard runs Machina without RAIN
+		    (=Machina has more memory)
+		  . in Windows without soundcard too, no more complaining about
+		    "Device busy"
+		+ more Windows support
+		  . Machina is distributed also as Windows installer
+		  . it's first time in history Machina could be uninstalled :)
+		  . added .pif files for smoother start under Windows
+		  . with dm.pif machina.exe was removed as obsolete
+
+
+e1-3.50-0a
+
+		+ picture buttons (may be turned off in setup)
+		+ faster machine (photo) (old one stays in safe mode)
+		+ sexy 4KB chiptune inside doc
+		+ new fonts in editor support (see page doc/editor)
+		+ tiny changes (+1 button in menu)
+		+ bugfixes (blackpixels in 256color, bug at shutdown,
+		   layer rehook in editor)
+
+
+e1-3.20-0a
+
+		+ switches console to fullscreen under Windows to get access
+		  to VBE modes
+		+ enhanced Parlan (new eventGet(), new scripts ripf.scr and
+		  ripexec.scr included, small bugfixes)
+		+ another buggy Banshee supported (Machina avoids its bugs)
+
+
+e1-3.12-0a
+
+		+ MP3s with WAV header spread like plague, so new RAIN
+		  servers 1.4 play them too
+		+ DM.INI contains new variable StaticMode (if set, it says:
+		  Machina Machina, don't change mode, use just this one)
+		+ but when Machina does select mode, it shouldn't crash
+		  anymore as it did due to bad guess which bitdepth fits into
+		  available memory
+		+ pages edited by hand like RT70 title are allowed now
+		+ warning 'Shortening text' on pages edited by hand or
+		  converted from version 1.xx appears only with DumbMode=no
+
+
+e1-3.11-0a
+
+		+ file for immediate open entered on commandline is searched
+		  in whole dirlist (in all important directories)
+		
+
+e1-3.10-0a
+
+		+ creating your own projects is easier
+		  . script parameters up to 64KB long
+		  . support package for editor contains script menu.scr, which
+		    shows your questions to user and makes actions depending
+		    on answers, actions like message, sound, anim, music, jump
+		    to page, another question...
+		  . small Parlan change (cutChar returns string)
+		+ bugfixes (link to animation)
+		
+
+e1-3.05-0a
+
+		+ runs even in Windows NT/2000 with their tragically incorrect
+		  emulation of DOS mouse
+		- worse mouse behaviour in DOSemu window in Linuxu (due to
+		  Windows NT/2000 support), I suggest staying with version 3.04
+		  or running in fullscreen
+		+ mouse sensitivity setting has wider range
+		+ if Windows NT bothered you with many "no floppy disc in A:"
+		  messages, expect no more than one message now
+		+ RAIN servers in version 1.3
+		  . play even MP3 with ID3 header
+		  . Machina w/o RAIN is offered when both together don't run
+
+
+e1-3.04-0a
+
+		+ just small changes and fixes (eg. large menus are able
+		  to scroll up and down)... btw it showed that only older
+		  Windows support windowed scrolling and only 320x200/8.
+		  But Machina can run windowed in any resolution and any
+		  depth... where? In DOSemu under Linux.
+
+
+e1-3.03-0a
+
+		+ just for fun: Machina can live also in Windows window (how to
+		  do it? go to setup, turn IRQ2 off, set up 320x200/8 and
+		  turn automatic modechange off (or run Machina with
+		  parameters vga x=320 y=200) and press Alt-Enter)
+
+
+e1-3.02-0a
+
+		+ new RAIN 1.2 uses DirectSound in Windows (you can disable it
+		  in RAIN config in case of troubles) and has higher priority
+		? ok...it was false alarm around IRQ2 and clock, turn them on if
+		  you want smoother scrolling. mousehandler was that Windows
+		  killer. it's Borland's, Microsoft's or mouse driver's bug,
+		  everything I can do I have already done, mousehandler is
+		  optional since 3.01
+		+ amplification value is shown during its adjustments (+,-)
+
+
+e1-3.01-0a
+
+		+ something from previously gloriously announced IRQ2 and
+		  precise clock may be source of headache to some Windows,
+		  therefore both is turned off by default now. you may turn it
+		  on again (which I advise) in setup or dm.ini
+		+ also mousehandler is turned off and I advise to turn it on.
+		  I have seen one computer, that occasionally crashed with
+		  mousehandler (probably bug in its mouse driver)
+		+ lower consumption in some cases and better behaviour when
+		  low on memory (but everything is limited by Borlands buggy
+		  memory manager)
+
+
+e1-3.00-0a
+
+		d[audio]a
+		+ new audiosystem RAIN
+		  . plays on any soundcard with Windows driver
+		  . but still plays also in DOS via GUS/SB/PAS/WSS
+		  . plays MOD, S3M, XM, (IT), WAV, MP3
+		  . 16bit stereo + interpolation
+		  . not needed, but may be configured by "rain -c"
+		  . dee.cz/rain
+		+ new music menu under F8
+		  . it's possible to play all modules and mp3 from your directory
+		  . alphabetical or random order
+		  . automatic switch after end or x minutes
+		  . play previous, next or random module/mp3
+		? previously used keys F9, F10 and F11 are free now
+		+ plus and minus on numpad control amplifier
+		+ music sample plays always just one and its volume is
+		  controlled by Machina music volume (so by keys 1..0)
+		+ clicking on module plays it once and then returns old music
+		+ completely new default sounds; I hope you like them
+		d[scrolling]a
+		+ new methods how to reach smooth scroling even in Windows
+		  or in another inhospitable lands, during playing MP3 or so
+		  . IRQ2 generated by graphics card
+		  . microsecond precise clock
+		d[misc]a
+		+ new setup with lots of stuff (F2 or button Setup)
+		  . lots of stuff
+		  . and things
+		+ support package for editor contains also
+		  . FNED version 1999/10/17
+		  . some new fonts
+		? lang.cz and lang.eng were packed into dm.exe -> less files,
+		  but users can't add new languages from now
+		+ prevents another buggy VBE on Voodoo3 from crashing
+		+ small things like: fileselectors at editor startup and at
+		  searching your music starts where they finished last time
+		+ authors may recommend viewing resolution to each picture
+		  in slideshow
+		+ mothership reconnected from scene.org to scene.cz, old
+		  mothership is not even a bit broncsy as you can see from
+		  true story that happened: I filled up an apply form, attached
+		  we r0mb ya dont (true art), realtime radiosity (true art) and
+		  fuck you (true art) and they haven't even replied, ugly little
+		  dwarfz. so secret of life is now at broncs.scene.cz
+
+
+e1-2.40-0a
+
+		+ prepared for soundsystem change in version 3.00, binary
+		  compatibility will stay until 3.09, later created projects
+		  can't be viewed by 2.40.
+		? some change that make scrolling on Cirrus Logic 5436/46
+		  smoother (tell me if it gets worse on other cord)
+		+ preserves buggy VBE on Banshee before crash
+		+ bugfixes
+		  . HTML export of pages with many emails and http addr.
+		  . dlgMenu in Parlanu
+		
+
+e1-2.34-0a
+
+		+ much better support for Czech and Slovak languages
+		  (details in cCzech version!news.cza)
+		+ bitdepth autoselection now looks also on amount of system
+		  memory, expect less ends due to low memory
+		+ 4 and 16 color PNG support
+		+ runs also on systems without retrace and system clock
+		+ support package for editor contains also
+		  . voting sheets processor with source code
+		+ under Y2k hype I checked what Machina does with date
+		  and with pleasure in my heart I can say, that first
+		  problems (caused by filesystemem FAT, not Machina)
+		  may appear in 2100
+		+ bugfixes
+		  . graphics on Voodoo 3
+		  . graphics on Cirrus Logic 5436/46
+		  . cards with extreme amounts of vram
+		  . ini files under NT
+		  . expression evaluation in ParLan
+
+
+e1-2.33-0a
+
+		+ support package for editor contains also
+		  . script to select one option from list (for voting forms)
+		+ click white box in palette editor to write rgb values of
+		  selected colors to file
+		+ monochromatic PNG support
+
+
+e1-2.32-0a
+
+		+ ParLan has new functions for file handling,
+		  typical application is saving voting forms
+		+ Machina now works also without 'retrace in progress' VGA
+		  register, for example in Linux's DOSEmu
+		+ support package for editor contains also
+		  . converter TTF2PCX 
+		  . Aceman's PIC2FN (so any TTF can be converted to FN)
+		  . inputline script
+		  . save voting form script
+		  . (and newer versions of FNED and FN)
+		+ commandline parameter to create and run with swapfile
+		  (but it's not much safe)
+		+ there could be links to TXT, PAS, C etc files
+		+ single samples could be replaced by lists of samples;
+		  one item is randomly selected each time
+		+ bugfixes
+
+
+e1-2.31-0a
+
+		+ F3 = access to articles by authors
+		+ better export to TXT
+		+ font editor FNED included to support package for editor
+		+ bugfixes and features only for Czech
+
+
+e1-2.30-0a
+
+		+ save screenshot via F7 menu
+		+ bugfixes and minor format changes and engancements
+
+
+e1-2.20-0a
+
+		+ all checks removed, program is smaller and faster
+		+ you can view pages in textmode
+		+ set of resolutions may be adjusted from commandline
+		+ cmdline parameters VGA, VESA, NOVGA, NOVESA instead of V
+		+ F4 = project selector (alternative to main menu)
+		+ F5 = resolution selector (alternative to main menu)
+		   see Facts for more info about modes and resolutions
+		+ bugfixes and features only for Czech
+
+
+e1-2.10-0a
+
+		+ any page can have an infobar with its description
+		  (infobar can be enabled in ini)
+		+ improved editor and format (details in help)
+		+ Machina x.yz views .DM files up to version x.y9
+		+ bugfixes
+
+
+e1-2.00-0a
+
+	This is the first international version so only brief featurelist follows. To see some history, you can have a look at the cCzech version!news.cza of this page.
+
+		dunique graphics enginea
+		  . scrolls smoothly when it is technically possible
+		    using four different methods
+		  . supports all textmodes and all 8,15,16,24 and 32 bit
+		    graphics modes with bgr or rgb ordering
+		  . recognizes tens of buggy graphics cards and VESA BIOSes
+		    Extensions and avoids their bugs
+		  . bit depth is choosen dynamically to get the best picture
+		    available while still scrolling smoothly
+		  . all of this still works on VGA card with 256KB of memory
+		  . several bit depths can be disabled from commandline
+		  . uses but doesn't depend on precise timing (which is not
+		    available under Windows)
+		  . interactive tests can be turned on in INI file,
+		    without tests the engine can't use all gfx card features
+		  . all sources are available in CiA library
+		dmultilingualitya
+		  . Machina and projects can support any language
+		    with left-right letter and top-bottom line ordering
+		  . Machina currently supports English and Czech.
+		  . support in projects depends only on their makers.
+		  . new languages can be easily added to Machina/projects
+		dprogramabilitya
+		  . objects written in ParLan language can live on pages
+		  . objects can change page image
+		  . objects can communicate with other objects and user
+		  . objects can create new objects
+		  . objects can watch and change behaviour of Machina
+		  . objects can execute external programs
+		  . objects can last when you turn Machina off and on
+		dconfigurabilitya
+		  . runs for multiple users and on multiple computers
+		    with no need to reconfigure each time
+		  . INI file with lots of parameters
+		  . important things can be done from commandline
+		  . user's mouse arrow picture, a title picture
+		dmore friendly navigationa
+		  . click left button on background
+		    when there is some 'next page', you enter it
+		    when there is no 'next page', you return
+		    (to be precise, when there is no 'next page', but some
+		     links, nothing happens, which should draw your
+		     attention to them)
+		  . so there is not many right button clicks (going back)
+		    when you dive too deep, returning is automatic
+		  . almost everything can be done by mouse
+		  . everything can be done by keyboard
+		  . important functions are concentrated in F1 menu
+		dexporta
+		  . able to export to TXT, picture, V˜he¤, HTML, Machina
+		  . able to export single page or whole subtree
+		  . HTML exporter has bunch of parameters in INI file
+		dbuilt-in editor, compiler and linkera
+		  . supports common file formats
+		    pictures JPG, PNG, GIF, X, PCX, TGA
+		    animations FLI, FLC
+		    sounds WAV, IFF (both only 8bit mono)
+		    modules MOD, MTM, S3M
+		    fonts FNT,FNP,RIF,FON can be converted to native FN
+		  . templates
+		  . generating pages by objects
+		  . shade casting
+		  . darkening picture borders
+		  . compiler detects and reports problems in your project
+		  . linker links thousands of files into single DM file
+
+
+
+

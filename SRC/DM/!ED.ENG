@@ -1,0 +1,19 @@
+nfo:ëmÒagî 220
+tem:!ed.cz
+siz:360x464
+pos:ofs=677 slp=2 x=42 line=15 slpline=11
+Ý^0,157,53,246Þ
+
+e1integrated editor0a
+
+Ý^0,190,160,281Þ
+
+Machina isn't only for reading, it's also an environment for creating your own projects - magazines etc. Run Machina with parameter e to enter the editor. There you can layout your pages. Compilation and linking makes .DM file from them. There is a help for your first steps...
+
+cSelect directory and install package of fonts and scripts.!common.scr Select directory for common filesa
+
+If the claims of your interesting project exceed the features Machina offers, I could try to fit your requirements in next version.
+I recommend you to keep only one copy of Machina and config files on your harddisk and run them from your project directories. Avoid useless chaos and don't copy them to other directories.
+
+
+

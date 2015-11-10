@@ -1,0 +1,97 @@
+nfo:ëmÒagî 303
+tem:!help
+siz:80x92
+pos:slp=1 x=0 line=90 slpline=89
+Ý^0,40,0,80Þ
+d
+                             ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ editor  menu ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                             ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙa
+
+ Editor menu appears after pressing cAlt-sa (yeah, I know it doesn't make
+ sense, but choose something better... clicking right button does the same).
+ cAlt-da is shortcut for repeating last menu selection.
+ Now lets talk about menu items:
+
+bPage size [siz:]a
+ Size in pixels.. you may change only first number (width) and not below
+ bound set by the rightmost layer edge. This bound is shown while entering
+ new value. If you try to set lower number, bound number is used instead.
+ Second number (height) is calculated automaticly and depends only on
+ page contents.
+
+bTemplate page [tem:]a
+ Following right-shifted variables don't have to be set directly on page,
+ you can set them on template page and this one inherits them. Here you
+ set what page is template for the current page.
+
+b  Page name [nam:]a
+   Page name is shown on infobar and may be used by objects on page.
+
+b  Page author [aut:]a
+   Name of author is shown on infobar and may be used by objects on page.
+
+b  Recommended resolution [res:]a
+   Each card offers different resolutions, so it's useless to require the
+   exact ones. Machina tries to choose and set as near resolution to the
+   entered one as possible.
+
+b  Background picturea
+   What picture to place on the page background.
+   Other attributes may be set in background description [tex:].
+   As the tex: syntax has two different variants and only one supports
+   any picture on background, it is necessary to change variant
+   and destroy old tex: settings to place picture on background...
+   In this case Machina asks you if you really want it.
+
+b  Background description [tex:]a
+   Edit bbackground description!texturea by hand = access all features.
+
+b  List of fonts [fnt:]a
+   List of fonts used on page, not more than 4.
+
+b  Sample >þ  [si1:] (welcome)a
+   Sample played while entering page from the previous one.
+
+b  Sample  þ [si2:] (welcome again)a
+   Sample played while returning to page from the following one.
+
+b  Sample  þ> [sen:] (yes sir)a
+   Sample played while leaving page and going to the following one.
+
+b  Sample þ  [sou:] (go back)a
+   Sample played while leaving page and retirning to the previous one.
+
+b  Sample þ [skr:] (boom)a
+   Sample for hitting the start or end of this page.
+
+b  Music [mus:]a
+   Only one module may be entered from editor, others have to be written by
+   hand to the page source. This modules are played in random order while
+   watching page. They are inherited to next pages without their own module
+   lists. No samples may be heard before first run of module, it initializes
+   MIDAS, so some module should be on title page. List shouldn't contain
+   more than 4 modules.
+
+b  Flags [fla:]a
+   Different flags for page look and editor behaviour.
+   See bpage format description!formata.
+
+bAlign paragraph...a
+ Align textlines in current paragraph as you wish: to the left, right, both
+ sides or to center.
+
+bCenter columna
+ Center current layer in horizontal direction.
+
+bResolution in editora
+ What resolution (chars x chars) should editor use.
+ Setting has no effect until editor restart.
+
+bSwitch Y and Za
+ Hack for people with wrong keyboard :)
+
+bLanguage selectora
+ Selects language used by Machina interface... help etc.
+
+

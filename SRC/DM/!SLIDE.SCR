@@ -1,0 +1,43 @@
+{descr: simple white slider with gray backgroud}
+{param: number:initial_slide_position_0_to_1000}
+{param: string:name_of_system_variable_assigned_to_slide}
+{files: }
+
+a=50
+
+proc show()
+ if (state<=0) then state=0 endif
+ if (state>=1000) then state=1000 endif
+ mapFillTo(mapColor(85,85,85),PromileRelLeftSize,0,0,1000,150)
+ mapFillTo(mapColor(160,160,160),PromileRelLeftSize,0,850,1000,150)
+ mapFillTo(mapColor(128,128,128),PromileRelMidSize,500,500,1000,750)
+ mapFillTo(mapColor(255,255,255),PromileRelMidSize,(state*1000)/(1000+a)+a/2,500,a,750)
+endproc
+
+cx=Context(-1,-1,-1)
+data=GetAtom(cx,"data")
+name=data
+state=GetAtom(cx,"state")
+if (state=="") then state=data endif
+state=val(state)
+GetVar(name,state)
+
+if (GetAtom(cx,"click")=="") then
+ show()
+else
+ x=0
+ y=0
+ z=1
+ while (z!=0)
+  sync()
+  mouseGet(PromileObject,x,y,z)
+  state=x
+  show()
+  mapRefresh()
+  SetVar(name,state)
+ endwhile
+ GetVar(name,state)
+ show()
+ SetAtom(cx,"state",str(state),forRuntime)
+endif
+

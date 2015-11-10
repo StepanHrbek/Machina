@@ -1,0 +1,28 @@
+{descr: install object in desired position}
+{param: number:dx_mid2left number:dy_top number:width number:height link:obj}
+{files: }
+
+cx=Context(-1,-1,-1)
+data=GetAtom(cx,"data")
+rect=GetAtom(cx,"rect")
+
+ax=cutInt(rect)
+ay=cutInt(rect)
+bx=cutInt(rect)
+by=cutInt(rect)
+
+dx=cutInt(data)
+dy=cutInt(data)
+width=cutInt(data)
+height=cutInt(data)
+cutChar(data)
+
+newax=(ax+bx+2*dx)/2
+neway=ay+dy
+rect=str(newax)+" "+str(neway)+" "+str(newax+width)+" "+str(neway+height)
+
+SetAtom(cx,"rect",rect,forPagetime)
+SetAtom(cx,"script",cutName(data),forPagetime)
+todohead=GetAtom("","todohead")
+SetAtom("","todo"+todohead,cx+" "+data,forRuntime)
+SetAtom("","todohead",str(val(todohead)+1),forRuntime)

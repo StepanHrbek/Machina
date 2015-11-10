@@ -1,0 +1,377 @@
+nfo:ëmÒagî 321
+tem:!help
+fmt:0,1,0
+pos:slp=1 x=0 line=296 slpline=295
+siz:80x385
+Ý^0,40,0,80Þ
+
+
+                         dParLan - skriptovac¡ jazyk
+                         ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄa
+
+Skripty v Parlanu (soubory s p©¡ponou .scr) se p¡¨¡ mimo Ma¨inu, v libovoln‚m textov‚m editoru. Z Ma¨iny se pouze vkl daj¡ do str nek (pomoc¡ F7, p©¡padnˆ F10). Syntaktick‚ chyby se ohl s¡ p©i spu¨tˆn¡ skriptu.
+
+Varov n¡: ParLan je p©i pr ci s Ma¨inou mocn˜, a tedy nebezpe‡n˜ n stroj. D v  ti mo‘nost sledovat vnit©n¡ z le‘itosti Ma¨iny a zasahovat do nich. Pokud zas hne¨ nekorektnˆ, snadno ji zhrout¡¨.
+
+Nˆkter‚ funkce zat¡m nebyly nasazeny v praxi a otestov ny. Funkce pou‘it‚ v p©ilo‘en˜ch uk zkov˜ch skriptech u‘ ur‡itˆ mˆnit nebudu, ostatn¡ na 99% tak‚ ne, ale vylou‡it to nemohu. Pokud chce¨ ps t nˆco vˆt¨¡ho, rad¨i mˆ nejprve kontaktuj.
+
+
+dT©i druhy promˆnn˜ch
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄa
+
+cPromˆnn‚ Ma¨iny
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄa
+ Existuj¡ trvale v DM.INI souboru, pou‘¡v  je Ma¨ina. Skript je m–‘e ‡¡st a mˆnit funkcemi bGetVara a bSetVara, co‘ m  okam‘it˜ vliv na chov n¡ Ma¨iny. Enable_xxx nab˜vaj¡ hodnot nula=disable, nenula=enable. Dir_xxx, shell a language jsou stringy. Ostatn¡ jsou integery: delay_nextmusic m  povolen‚ hodnoty tak jak jsou popsan‚ v dm.ini (-2,-1,kladn‚), ostatn¡ 0=minimum a‘ 1000=maximum.
+
+    benable_buttonpicsa
+    benable_picturesa
+    benable_animationsa
+    benable_slideshowsa
+    benable_changemodea
+    benable_modelista
+    benable_infopanela
+    benable_testsa
+    benable_irq2a
+    benable_preciseclocka
+    benable_handlermousea
+    benable_handlerkeyboarda
+    bvolume_musica
+    bvolume_samplea
+    bspeed_mousea
+    bspeed_numpada
+    bspeed_autoscrola
+    bspeed_arrowsa
+    bsize_mousea
+    bdelay_nextslidea
+    bdelay_nextmusica
+    bdelay_screensavera
+    bdir_commona
+    bshella
+    blanguagea
+
+cPromˆnn‚ ParLanu
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄa
+ Existuj¡ pouze za bˆhu skriptu, po skon‡en¡ zanikaj¡.
+ Promˆnn‚ se nedeklaruj¡, ale rovnou pou‘¡vaj¡.
+  (jako v basicu, deklaruje se pouze pole)
+ Promˆnn‚ jsou polymorfn¡, m–‘e¨ jim kdykoliv p©i©adit hodnotu libovoln‚ho
+  typu. I prvky pole mohou m¡t ka‘d˜ jin˜ typ.
+
+cAtomy
+ÄÄÄÄÄa
+ Doba existence atom– je voliteln . Ty trval‚ jsou ulo‘eny v DM.ATO souboru.
+ Skript je m–‘e ‡¡st a mˆnit funkcemi bGetAtoma a bSetAtoma.
+ Atom je textov  promˆnn  s textov˜m n zvem a atributem trvalosti.
+ Kontext je jm‚no mno‘iny r–znˆ pojmenovan˜ch atom–.
+ Jm‚na kontext– vrac¡ fce bContexta.
+ Existuj¡ r–zn‚ kategorie kontext– (‘lutˆ) a v nich r–zn‚ atomy (mod©e):
+
+  cglob ln¡a
+   jm‚no kontextu: ""
+
+    bprograma       - jm‚no programu
+    bversiona       - verze programu
+    bgotoa          - na jakou str nku j¡t po skon‡en¡ skriptu
+    btodoheada      - index voln‚ polo‘ky p©ed za‡ tkem todolistu
+    btodotaila      - index posledn¡ obsazen‚ polo‘ky todolistu
+                     (todolist je fronta objekt– ur‡en˜ch k zavol n¡
+                      po skon‡en¡ skriptu)
+    btodoINDEXa     - k¢d a parametry objektu ur‡en‚ho k zavol n¡
+                     (k¢d je po©adov‚ ‡¡slo objektu na str nce)
+                     (m¡sto INDEX dosaƒ ‡¡slo - index do todolistu)
+    bscreen_widtha
+    bscreen_heighta
+
+  cpro ka‘d˜ projekta
+   jm‚no kontextu: jm‚no root .DM souboru
+   p©¡klad: "rt41"
+
+    bshortnamea     - kr tk‚ jm‚no projektu, zkratka
+    blongnamea      - dlouh‚ jm‚no projektu
+
+  cpro ka‘dou str nkua
+   jm‚no kontextu: jm‚no root .DM souboru ; jm‚no str nky
+   p©¡klad: "rt41;menu"
+
+    bnamea          - dlouh‚ jm‚no str nky
+    bauthora        - autor str nky
+    bobjectsa       - po‡et objekt– na str nce
+    bpala           - paleta: jen pro str nky vytv‚©en‚ ve star‚m re‘imu s paletou
+
+  cpro ka‘d˜ objekta
+   jm‚no kontextu: jm‚no root .DM souboru ; str nky ; po©adov‚ ‡¡slo objektu
+   p©¡klad: "rt41;menu;4"
+
+    brecta          - obd‚ln¡k p©i©azen˜ skriptu na str nce, tam reaguje na klik.
+                    je to ‡tve©ice ‡¡sel oddˆlen˜ch mezerou,
+                    lev‚ horn¡ x a y a prav‚ doln¡ x a y,
+                    prvn¡ pixel str nky by mˆl rect "0 0 1 1"
+    bscripta        - jm‚no skriptu
+    bdataa          - parametry p©ed van‚ skriptu volaj¡c¡m
+    bclicka         - pokud byl objekt vyvol n kliknut¡m, jsou zde relativn¡
+                    sou©adnice kliknut¡ od 0 0 do 10000 10000
+
+ Toto byly pouze kontexty a atomy spravovan‚ Ma¨inou. Vytv ©en¡ a pr ce
+ s dal¨¡mi kontexty a atomy je pouze na fantazii tv–rc– skript–.
+ Jm‚na standardn¡ch kontext– vrac¡ funkce bContexta.
+
+ cAtribut trvalostia
+  bforPagetimea     - atom zanik  spolu s opu¨tˆn¡m str nky
+  bforRuntimea      - atom zanik  s ukon‡en¡m programu
+  bforImplicita     - jako forRuntime nebo forImplicit, podle nastaven¡ v DM.INI
+  bforEvera         - atom trv , ukl d  se do DM.ATO
+  bforDunnoa        - p©i nastavov n¡ atributu znamen : nech ho b˜t, nemˆ¤ ho
+
+
+dSkripty
+ÄÄÄÄÄÄÄa
+
+ Skript je textov˜ soubor obsahuj¡c¡ progr mek v jazyce ParLan.
+ Mˆl by za‡¡nat koment ©em definuj¡c¡m nˆkter‚ £daje:
+
+ {descr: stru‡n˜ popis skriptu}
+ {param: deklarace_parametru1 deklarace_parametru2 ...}
+ {param: deklarace_parametru1 deklarace_parametru2 ...}
+ ...
+ {files: pomocn‚ soubory vy‘adovan‚ skriptem}
+
+ Skript m–‘e m¡t v¡c zp–sob– vol n¡, pak mus¡ b˜t v¨echny uvedeny.
+ Deklarace_parametru m  syntaxi typ_parametru:jm‚no_parametru.
+ cTypy parametr–a jsou:
+  bnumbera     ‡¡slo
+  bstringa     string bez mezer
+  bfilea       jak˜koliv soubor
+  bloadablea   nahrateln˜ (obr zek)
+  bplayablea   p©ehrateln˜ (animace, sampl, modul)
+  bexecutablea spustiteln˜ (exe, com, bat)
+  bsounda      zvuk (sampl, modul)
+  bsamplea     sampl
+  bmodulea     modul
+  banimationa  animace
+  bfonta       font
+  bscripta     skript a jeho p©¡padn‚ parametry, mus¡ b˜t na konci
+  blinka       odkaz a jeho p©¡padn‚ parametry, mus¡ b˜t na konci
+  b...a        libovoln‚ dal¨¡ parametry, mus¡ b˜t na konci
+
+
+dObjekty
+ÄÄÄÄÄÄÄa
+
+ Objekt je kontext s mno‘inou atom–. Ty ur‡uj¡ aktivn¡ oblast na str nce,
+ co dˆlat, kdy‘ se na n¡ klikne apod. Typick  akce je spu¨tˆn¡ skriptu.
+ Jak takov˜ objekt vytvo©it?
+  cF7a
+    Vlo‘¡ do textu odkaz, to u‘ je objekt.
+    Jeho aktivn¡ oblast je d na podtr‘en˜m textem.
+    Kam odkaz vede je vidˆt a lze editovat v editoru.
+  cF10a
+    Vlo‘¡ p©¡kaz vytvo©en¡ objektu.
+    Aktivn¡ oblast je cel˜ aktu ln¡ © dek.
+    Kam odkaz vede je vidˆt a lze editovat pouze ve zdroj ku.
+  cvygenerovat skriptema
+    Jeliko‘ objekt je jen mno‘ina atom– a skript m–‘e s atomy manipulovat,
+    m–‘e vytv ©et i nov‚ objekty. J  to je¨tˆ nikdy nezkou¨el, ale mus¡ to j¡t.
+    Kdybych psal pro Ma¨inu pi¨kvorky, pro ka‘d‚ pole hrac¡ plochy vygeneruji
+    jeden objekt. V¨em p©i©ad¡m stejn˜ skript, ale p©i generov n¡ jim do jejich
+    atom– nastav¡m r–zn‚ sou©adnice.
+
+
+dVol n¡ objekt–
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄa
+
+ Ka‘d˜ objekt je zavol n
+  - p©i sv‚m vzniku (tˆsnˆ po vstupu na str nku)
+      atom bclicka je pr zdn˜
+      atom bdataa obsahuje parametry, s jak˜mi je na str nce uveden
+  - p©i kliknut¡ na nˆj
+      atom bclicka obsahuje relativn¡ sou©adnice kliku
+      atom bdataa obsahuje to, co v nˆm p©edchoz¡ vol n¡ zanechalo
+  - pokud ho jin˜ skript zavol  (p©esnˆji za©ad¡ do TODO listu, vno©ov n¡ nen¡)
+      atom bclicka je pr zdn˜
+      atom bdataa obsahuje parametry, s jak˜mi je vol n
+ Vol n¡ objektu je spu¨tˆn¡ jeho skriptu.
+ Ka‘d˜ skript je sou‡ st¡ nˆjak‚ho objektu, nelze ho zavolat "jen tak".
+
+
+dSyntaxe jazyka
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄa
+
+ Dokumentace p©¡mo od autora je v parlan.doc.
+ Nˆco m–‘e¨ pochytit z p©ilo‘en˜ch skript–.
+
+
+dNˆkter‚ p©¡kazy jazyka
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄa
+
+cpr ce se stringya
+
+bval(string):inta               - p©evede string na ‡¡slo
+bstr(int):stringa               - p©evede ‡¡slo na string
+
+bcutChar  (string):chara        - z kraje stringu odst©ihne jeden znak
+bcutInt   (string):inta         - z kraje stringu odst©ihne ‡¡slo
+bcutString(string,char):stringa - z kraje stringu odst©ihne v¨e a‘ do znaku
+bcutName  (string):stringa      - z kraje stringu odst©ihne jm‚no souboru
+
+bendla                          - konstanta obsahuj¡c¡ konec © dku
+bcra                            - konstanta obsahuj¡c¡ #13
+blfa                            - konstanta obsahuj¡c¡ #10
+
+cpr ce s obrazema
+
+bmapColor    (r,g,b):color
+mapLoad     (picture)
+mapLoadTo   (picture,rect)
+mapFill     (color)
+mapFillTo   (color,rect)
+mapText     (text,font,color,pos)
+mapRefresh  ()
+mapRefreshTo(rect)a
+
+ picture - jm‚no souboru
+ r,g,b   - ‡¡sla o hodnot ch 0..255
+ text    - text ur‡en˜ k zobrazen¡
+ font    - jm‚no souboru
+ rect    - typ a ‡ty©i ‡¡sla, jejich‘ v˜znam je d n typem
+ pos     - typ a dvˆ ‡¡sla, jejich‘ v˜znam je d n typem
+ typ     - jedna z n sleduj¡c¡ch konstant
+
+  bPixelsRelLeftRight
+  PixelsRelLeftSize
+  PixelsRelMidSize
+  PixelsAbsLeftRight
+  PixelsAbsLeftSize
+  PixelsAbsMidSize
+  PromileRelLeftRight
+  PromileRelLeftSize
+  PromileRelMidSize
+  PromileAbsLeftRight
+  PromileAbsLeftSize
+  PromileAbsMidSizea
+
+ morfologie typ–:
+  pixels    - £daje budou v pixelech
+  promile   - £daje budou v tis¡cin ch velikosti r mce (viz rel/abs)
+  abs       - £daje budou absolutn¡, vzta‘eny k cel‚ str nce
+  rel       - £daje budou relativn¡, vzta‘eny k aktu ln¡ poloze objektu
+
+ 4 ‡¡sla za typem ud vaj¡ tyto sou©adnice obd‚ln¡ku:
+  leftright - lev˜ kraj, horn¡ kraj, prav˜ kraj, doln¡ kraj
+  leftsize  - lev˜ kraj, horn¡ kraj, ¨¡©ka, v˜¨ka
+  midsize   - st©ed v ose X, st©ed v ose Y, ¨¡©ka, v˜¨ka
+
+cd‚letrvaj¡c¡ skriptya
+
+bSync()a
+ Synchronizace scrollingu a jin‚ procesy prob¡haj¡c¡ na pozad¡
+ v‡etnˆ p©ehr v n¡ animac¡, aktualizace my¨i...
+ Pokud je skript interaktivn¡, nezapome¤ volat Sync, jinak se my¨ ani nehne.
+
+bInstallAnim(animation):atomnamea
+ Do oblasti objektu um¡st¡ animaci a vr t¡ jm‚no atomu.
+ Podle tebou nastaven‚ hodnoty atomu se pak p©i ka‘d‚m bSync()a zachov .
+  hodnota "frame" - ubˆhl-li u‘ p©¡slu¨n˜ ‡as,posune se o sn¡mek a vynuluje atom
+  hodnota "loop"  - animace hraje a loopuje
+  hodnota "noloop"- animace dohraje do konce, zastav¡ se a vynuluje atom
+  jin  hodnota    - animace stoj¡
+ Zmˆnou atomu brecta m–‘e¨ s animac¡ pohybovat po str nce (netestov no).
+
+bEventGet(typ,x,y,e):booleana
+ Fce vrac¡ jestli vyzvedla nˆjak˜ event z fronty.
+ Pokud ano, napln¡ e=event a x,y=sou©adnice my¨i v dobˆ eventu.
+ Event je pops n v CiA, stru‡nˆ ©e‡eno
+   event od kl vesnice=65536*extended_char+256*normal_char+scancode
+   event od my¨i=...
+ Typ m  stejn˜ v˜znam jako u star¨¡ funkce MouseGet:
+
+bMouseGet(typ,x,y,z)a - vrac¡ polohu a stav my¨i
+ kde typ je jedna z n sleduj¡c¡ch konstant:
+
+  bPixelsScreen
+  PixelsPage
+  PixelsObject
+  PromileScreen
+  PromilePage
+  PromileObjecta
+
+ morfologie typ–:
+  pixels    - £daje budou v pixelech
+  promile   - £daje budou v tis¡cin ch velikosti r mce (viz rel/abs)
+  screen    - £daje budou vzta‘eny k obrazovce
+  page      - £daje budou vzta‘eny k str nce
+  object    - £daje budou vzta‘eny k objektu
+
+catomy a promˆnn‚a
+
+bContext(project,page,object)a - vrac¡ kontext (string) p©¡slu¨n˜ zadan‚ trojici
+ hodnota parametru=0  znamen , ‘e kontext nez vis¡ na tomto parametru
+ hodnota parametru=-1 znamen  pou‘¡t hodnotu p©¡slu¨nou tomuto skriptu
+ Context(-1,-1,-1) je kontext tohoto objektu
+ Context(-1,-1,0) je kontext t‚to str nky
+ Context(0,0,0) je glob ln¡
+ atd...
+
+bGetVar(name,int)a - vr t¡ hodnotu syst‚mov‚ promˆnn‚ Ma¨iny
+bSetVar(name,int)a - nastav¡ hodnotu syst‚mov‚ promˆnn‚ Ma¨iny
+
+bSetAtom(cx,name,value,permanency)a- nastav¡ hodnotu (nebo ho zru¨i kdy‘ zad ¨ "")
+bGetAtom(cx,name):valuea           - vr t¡ hodnotu atomu (nebo "" kdy‘ neexistuje)
+
+ cx je kontext v jak‚m se atom nach z¡, z¡skan˜ fc¡ Context()
+
+ name je jm‚no atomu
+
+ value je hodnota atomu
+
+ permanency je ‡¡slo z n sleduj¡c¡ch:
+  bforDunnoa    - nech p–vodn¡ permanency atomu
+  bforPagetimea - nastav aŸ atom zanikne p©i opu¨tˆn¡ str nky
+  bforRuntimea  - nastav aŸ atom zanikne p©i ukon‡en¡ programu
+  bforImplicita - jako forRuntime nebo forEver, podle p© n¡ u‘ivatele
+  bforEvera     - nastav aŸ atom nezanikne nikdy
+
+chardcore, v¨e vrac¡ £spˆ¨nost zp–sobem 0=chyba, nenula=£spˆcha
+
+bExec(exectype,command)a- provede dosov˜ p©¡kaz, p©i‡em‘ exectype m–‘e b˜t
+ 0 - p©¡kaz probˆhne na pozad¡
+ 1 - p©epne do textm¢du a p©¡kaz probˆhne na pop©ed¡
++2 - bˆhem prov dˆn¡ p©¡kazu vypne hudbu
+
+bReadOnly()a         - je Ma¨ina v readonly re‘imu?
+bRip(filename,dest)a - zkop¡ruje soubor z intern¡ fileb ze ven na disk
+bPlay(filename)a     - spust¡ sampl/modul/p©ehraje animaci
+
+cjm‚na adres ©–a
+
+bdirCur()a - aktu ln¡ adres ©
+bdirIni()a - adres © s pou‘it˜m DM.INI a dal¨¡mi konfigura‡n¡mi soubory
+bdirRun()a - adres ©, ze kter‚ho byla Ma¨ina spu¨tˆna
+bdirExe()a - adres © s DM.EXE
+bdirPrj()a - adres © s rootem pr vˆ otev©en‚ho projektu
+bdirIns()a - adres ©, do kter‚ho se Ma¨ina instaluje, je-li o to po‘ d na
+bdirTmp()a - adres © na pracovn¡ soubory
+
+coperace s adres ©i a soubory, vrac¡ £spˆ¨nost zp–sobem 0=chyba, nenula=£spˆcha
+
+bdirExists(dir)a   - ovˆ©¡ zda adres © existuje
+bdirMake(dir)a     - vytvo©¡ adres ©
+bdirChange(dir)a   - p©ejde do adres ©e
+
+bfileExists(file)a         - ovˆ©¡ zda soubor existuje
+bfileLoad(file,@contents)a - nahraje soubor do stringu
+bfileSave(file,contents)a  - ulo‘¡ string do souboru
+
+Upozornˆn¡: adres © v‘dycky kon‡¡ znakem : nebo \
+
+cdialogya
+
+bdlgMsg(message)a
+bdlgLine(flags,title,preselect):resulta
+bdlgMenu(array,preselect):linenumbera ...array[0]=nadpis, array[1..n]=polo‘ky menu
+bdlgFile(flags,title,mask,preselect):filenamea
+bdlgPath(flags,title,mask,preselect):patha
+
+Upozornˆn¡: hodnoty flags jsou nadeklarov ny v CiA, ale nikdo nezaru‡uje, ‘e se nebudou mˆnit, zat¡m zad vej 0. Pokud je k nˆ‡emu pot©ebuje¨, dej vˆdˆt, dodeklaruji je v Parlanu.
+
+
+

@@ -1,0 +1,66 @@
+nfo:ëmÒagî 300
+tem:!help
+siz:80x61
+pos:slp=1 x=4 line=59 slpline=58
+İ^0,40,0,80Ş
+
+d
+    ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+    ³  Pictures and animations                                             ³
+    ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙa
+
+
+  cSupported formats, sorted by compression ratioa
+
+     bJPGa - The best compression, but loss of quality in areas with sharp
+           brightness changes, for example around letters.
+     bPNGa - The best loseless compression. For the cases where lossy JPG
+           is not suitable.
+     bGIFa - Like PNG, but little bit weaker compression.
+     bXa   - Poor or no compression.
+     bPCXa - Very poor compression and I support only 256 colors.
+     bTGAa - Very poor or no compression and I support only no compression.
+
+     bFLIa - Animations. Unlimited while playing in fullscreen.
+     bFLCa   Frame size (width*height) is limited to 65520 while playing
+           on page.
+
+  cFormat and resolution independencea
+
+     While inserting picture to page, only filename without extension
+     and picture size are stored. Therefore you are allowed to convert from
+     one format to another and change a resolution. It won't affect the
+     page layout. When there are more formats available for one picture,
+     the one with the best compression (order is sorte in the previous
+     paragraph) will be used.
+
+  cAnimationsa
+
+     Fullscreen animations are played once, animations on pages loop.
+     You may override it by setting byte at offset 20 to 'l' for looping
+     or 'n' for no looping.
+
+     If the first frame in animations conains at least 33% of zeroes,
+     zeroes in whole animations are treated as transparent pixels
+     and page background is to be seen through them (nevertheless the
+     playing the animation is then more time-demanding).
+     You may override it by setting byte at offset 21 to 't' for transparent
+     or 'n' for not transparent.
+
+     Animations on pages have frame size (width*height) limited to 65520 bytes,
+     so 320x200 is ok, lager ones not.
+     Fullscreen animations are not limited.
+
+     Playing animations on pages is much more time-consuming than in fullscreen,
+     I suggest you to put only one, two small things on one page, say 100x100
+     pixels. Larger ones make smooth scrolling unreal.
+
+  cResizinga
+
+     Resizing pictures and animations is possible. The command which places
+     picture/animation on a page looks like this: İ~picture.jpg,320x200Ş.
+     You can simply overwrite the size in the command.
+     But note, for slow computers, resizing of animations is very
+     time-demanding.
+
+

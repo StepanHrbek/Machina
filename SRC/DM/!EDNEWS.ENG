@@ -1,0 +1,67 @@
+nfo:ëmÒagî 310
+tem:!help
+siz:80x62
+pos:slp=1 x=41 line=8 slpline=7
+İ^0,40,0,80Ş
+
+    dNews from last versions of EDITOR
+    ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄa
+
+    versione 3.10
+       - Parlan function cutChar returns string instead of int now...
+         it's incompatibility, but it seems not to make anybody angry...
+       + new mighty script menu.scr in support package for editor
+    version 3.04
+       + better default behaviour when playing samples... mp3 longer than 32KB
+         and wav/iff over 128KB automaticly silences music (there was just one
+         limit for all samples in previous versions)
+         (btw, you can still adjust volume levels explicitely)
+    version 3.03
+       + new flag m[n] does: when entering page 1st time, music is not selected
+         from whole mus: list, but only from first n items (m equals to m1)
+    version 3.01
+       + Note: When header doesn't contain "mus:...", page inherits music.
+         When there was only "mus:" without value, page also inherited music.
+         New: But now it doesn't, empty "mus:" makes silence.
+       + new Machina variables accessible from cParlan!parlana
+    version 3.00
+       + see rewritten help to csound and music!sounda
+       + "Align paragraph..." in menu allows you to align to left, to right, 
+         to both sides (default) or center
+       + new variables accessible via Parlan
+       + each picture may still have its description and author, but now also
+         recommended resolution for vieweing (see cdescript.ion in projects help!projecta)
+    version 2.40
+       + Shift F3 shows page w/o pics and anims
+       + if you enclose script parameters by "", they can contain also special
+         characters like space
+    version 2.33
+       + new ParLanu function cutString and constant endl (=end of line)
+       + name e_*.scr means script with exportable contents, eg. export.scr
+         saves it to voting sheet. Currently we have e_input.scr for inputline
+         and new e_select.scr to select one option from list.
+    version 2.32
+       + BLOCKS (hold Shift and move cursor, copy:Ctrl-Insert,
+         paste:Shift-Insert, cut:Shift-Delete, delete:Ctrl-Delete)
+       + Ctrl-T deletes from cursor to begin of next word
+       + Shift F6 and Ctrl F6 make font selection (good old F6) easier
+         (it works for some time, but I forgot to mention it here)
+       + TurboVision editor supports Search and replace
+       + scripts for inputline and saving voting form
+       + you can write list of samples instead of one sample in page header
+       + links to TXT, PAS, C etc do work, they act as pictures
+       + animations automaticly played before pages of the same name do work
+    version 2.31
+       + better support for page descriptions, read about descript.ion
+         in doc to cprojects!projecta
+       + variable ZOOM is dead, all is detected and set up automaticly
+       + whiteborder=on makes white border around picture
+       + it's possible to switch Y and Z on keyboard (dunno if it helps you,
+         but Carlos must be happy :))
+       ? mouse driven color setting is described here finally...
+         that message "it doesn't work..." was lie.
+       + bugfix: it's possible now to make very wide layers and pages
+       + more textmode resolutions
+       + FNED - new fonteditor included..by Carlos
+
+

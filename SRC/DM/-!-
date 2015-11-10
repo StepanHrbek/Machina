@@ -1,0 +1,12 @@
+
+ dokumentace k Masine
+
+ 0.bat - vyprazdni dm.dm
+ e.bat - spusti editor (dm.dm musi byt prazdne, jinak editor misto
+          zdejsich souboru otevre ty ktere ma interne v dm.dm)
+ 2.bat - zkompiluje editovana data do noveho dm.dm
+
+ mimo dokumentace a helpu jsou zde dalsi soubory, ktere
+  masina ocekava v dm.dm (napr nejake fonty pro zobrazovani historickych
+  .dm dokumentu)
+

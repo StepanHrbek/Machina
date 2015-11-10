@@ -1,0 +1,44 @@
+nfo:ëmÒagî 300
+tem:!control.cz
+siz:360x1077
+pos:slp=1 x=58 line=57 slpline=56
+Ý^0,181,1,276Þ
+
+
+e1Controls0a
+
+
+bMouse buttonsa
+
+In general, clefta button selects, confirms, moves you to next page, crighta one aborts action, returns you back. cMiddlea one opens the main menu (Esc), hold for a while opens the function menu (F1).
+
+
+bNavigationa
+
+In addition to classical system (left click to enter link, right click to return), Machina has cleft click to backgrounda. If there is some 'next page', you enter it. When there isn't any, you return. So, there's no need to click right button many times to return back if you dived too deep, it is automatic. The only case when nothing happens after clicking to background is when there isn't a 'next page', but some links. It should draw your attention to links.
+
+bMouse simulationa
+
+Keypad can be used instead of mouse. Use c1a,c2a,c3a,c4a,c6a,c7a,c8a,c9a keypad keys to move mouse cursor and cNumLocka, c/a, c*a to simulate pressing mouse buttons.
+
+
+bMusic/Sounda
+
+You can adjust volume with c+a and c-a keys on numpad. Just music volume or just effects volume may be set in setup or - in case of music - by c1a..c0a keys. Other functions are in menu under cF8a, you can play all mp3 and modules from your directory, in alphabetical or random order, switch after end, after x minutes or by hand...
+
+
+bSetupa
+
+Button Setup (or key cF2a) opens page full of stuff. You can do things there. You can make mouse soooooo big.
+
+
+bShella
+
+The 'Shell' buttons in the main menu execute your DOS command (see setup page) or plain command.com. If you click on Shell and nothing happens, error may be in the command. Example: command is VC, but Volkov Commander is not installed.
+
+
+bOther functionsa
+
+There are many other functions in the cF1a menu (export to different formats, selecting music to play, articles sorted by authors etc).
+
+

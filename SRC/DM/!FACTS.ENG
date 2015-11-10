@@ -1,0 +1,254 @@
+nfo:ëmÒagî 321
+tem:!facts.cz
+tex:e(*35/45,s) =120.(30,300)5450~(+9,\)222 =30.(80,200)100~(+3)222
+siz:360x5650
+pos:slp=1 x=27 line=17 slpline=16
+Ý^0,180,2,262Þ
+
+
+
+
+e1* facts *0a
+
+
+
+
+	d2Minimal configuration0a
+
+	  - 386, 2-4MB RAM, VGA, DOS 4.0
+
+
+	d2Recommended configuration0a
+
+	  - 400MHz CPU, 32MB RAM
+	  - SVGA 4MB with properly implemented VBE
+	    or running UniVBE
+	  - three button mouse
+	  - soundcard
+
+
+	d2Operating systems and their behaviour0a
+
+	  - MS-DOS at least 4.0 and compatible systems
+		no problems
+
+	  - OpenDOS 7.1
+		it has task switching, but taskmgr doesn't
+		 preserve whole vram, holes may appear in page
+
+	  - Windows
+		fullscreen works
+		graphics and text in window is not emulated
+		 properly
+		some NT versions incorrectly emulate several keys 		some cards/drivers in NT incorrectly emulate VBE
+		XP are said to hide VBE and support only VGA
+		
+	  - Linux
+		with VMware: not tested but must run
+		with WINE from spring 99: doesn't run
+		with DOSEmu 0.66 in fullscreen:
+		- sound is not emulated yet
+		with DOSEmu 0.66 in X window:
+		- sound is not emulated yet
+		- no SVGA modes (bug in VBE emulation)
+		- unchained modes not emulated (you'll see
+		  garbage)... so only 320x200 goes
+		- several keys don't do
+		- emulated mouse is strange
+		- worse scrolling, nor precise timer nor CRT ray
+		  emulated
+
+	  - OS/2
+		please, send any report from battlefield
+		years ago somebody reported me that everything
+		 works in fullscreen and even in window
+
+	  - Mac OS
+		please, send any report from battlefield
+		
+
+	d2Source code of Machina0a
+
+	  - Deus ex Machina
+		570K pas+asm
+		author: D.
+		http://dee.cz/machina
+	
+	  - CIA
+		library for everything, especially gfx
+		1150K pas+asm
+		authors: D. and others
+		free
+		http://dee.cz/cia
+
+	  - Loadery
+		JPG,PNG,GIF,PCX,TGA,X,FLI,FLC
+		160K asm+pas
+		author: Jan Patera
+
+	  - ParLan
+		interpret of script language
+		100K pas
+		author: Martin Halama
+
+	  - Scripts
+		25K parlan
+
+	  - Rain
+		audio system
+		version 1.x
+		uses Midas and amp11
+		40K c+pas+asm
+		author: D.
+		free
+		http://dee.cz/rain
+
+	  - Midas
+		audio system
+		modified version 1.1.2
+		1400K c+asm
+		authors: Sahara Surfers
+		free
+		http://www.s2.org/midas
+
+	  - amp11
+		MP3 decoder
+		modified version 990908
+		120K cpp
+		author: Niklas Beisert
+		free
+		http://www.ph.tum.de/~nbeisert/amp11.html
+
+
+	d2RAIN0a
+
+Audiosystem RAIN uses available audio services - Windows services in Windows (WinAPI, DirectSound) or direct access to hardware in DOS or DOS emulating systems. Supported soundcards in DOS are SoundBlaster, Gravis UltraSound, Pro Audio Spectrum and Windows Sound System. By default, everything (except WSS in DOS) is autodetected at startup, no config files are stored. Default values are high quality mixing (with interpolation), 100ms buffer for DirectSound and 500ms for Wave device (when DirectSound is not available or emulated).
+Sometimes it may happen that setting up different values is necessary. When?
+	- sound is broken, setting up longer buffer or lower
+	  quality may help
+	- it's not possible to tolerate sound delay in Windows,
+	  setting up shorter buffer will help
+	- WSS card in DOS is not autodetected
+RAIN config is run by brain -ca command. Your settings are stored to MIDAS.DOS or MIDAS.WIN file, matters if you are in DOS or Windows. These files will be used every next time in the same system. You can delete MIDAS.DOS or MIDAS.WIN any time or change them by reconfiguring RAIN. If they are readonly, they will be ignored, because such files often come from different computer with different soundcard.
+Standard command that runs Machina is bdma or bdm.coma (or bmachinaa, everything does the same), it starts also audiosystem. bdm.exea starts Machina without audiosystem - it's little bit faster and it takes less memory, but you won't hear anything of course.
+
+
+	d2Multilinguality0a
+
+Machina fully supports English and Czech now. Language can be switched any time. To add support for another language, simple translation of about 115kB of text files is needed. If you know such an enthusiast, I'll be glad to send him that files and include their translation to next version.
+Although Machina itself can speak only English and Czech, your projects are not limited, they can contain pages in other languages and user may select between them.
+
+
+	d2Configuring0a
+
+The most important parameters of Machina are accessible via setup (F2 or button Setup).
+When Machina ends, these parameters together with other ones are stored in DM.INI file. You can edit them there.
+Audiosyst‚m RAIN autodetects everything necessary each time, but may be also configured by RAIN -c.
+For full use of graphics card, interactive tests may be neccessary. To make your first encounter with Machina more friendly, they are turned off, but you can turn them on in setup.
+If you like other picture more than Machina title picture, place it to the directory with the INI file and rename it to b2!title.*a0 file.
+You can also have your own mouse arrow. Just put the cursor picture b2!mouse.*0a to the directory with the INI file (color 0 is transparent).
+
+
+	d2Installation0a
+
+Machina called with bia parameter tries to install itself onto your harddisk. For that purpose, directory C:\DISKMAGS\DM is selected (installation has to be fully automatic). If you don't want Machina to install onto this directory, you can redirect installation by setting the 'DM' DOS variable to the directory you want Machina to install to (for example by using command SET DM=directory). Already installed Machina is only updated (if needed).
+
+
+	d2Protection0a
+
+I wrote tricky protection against commercial abuse, but just before the release I disabled it not to annoy you - a fair user. I hope no lamer will make me regret it.
+At same time I disabled also protection against inserting unefficiently saved pictures (I have seen many gigantic JPEGs, which could be stored in 10x smaller files without any visible loss). Now it's all up to you.
+
+
+	d2Resolutions, bit depths, VGA, VESA0a
+
+Each page may be layouted for different resolution. Machina tries to satisfy pages and set their or as close as possible resolution. So even with old VGA card you don't lose anything except right resolution. The only exceptions are FLC animations bigger than 320x200, which are skipped on VGA card.
+If resolutions and bit depths selected by Machina doesn't suit your needs, you (user) can change them. There are several different tools. Change of resolution on runtime (bF5a or sidebars in main menu when ShowResolutions in INI are turned on) affects only current page. All pages together are affected by commandline parameters. You can force (or disable) VGA or VESA (SVGA) modes with parameters bVGAa, bVESAa (or bNOVGAa, bNOVESAa). More, you can force (or disable) bit depths with parameters b+bitsa (or b-bitsa), where bits is number of bits per pixel from 4, 8, 15, 16, 24, 32 (4 is textmode). Note that scripts don't work in textmode. And last but not least, resolution in axis X or Y may be limited by top or bottom bound. It's done by operators b<a,blta, b<=a,b=<a,blea, b=a,b==a,beqa, b!=a,bnea, b=>a,b>=a,bgea, b>a,bgta and parameters AxisOperatorBound (e.g. xht320 x<800 or x=80 y=30). Note that characters b<a and b>a have special meaning, redirection, in DOS. Special meaning may be removed (at least in DOS 7.0) by enclosing whole parameter into "" (e.g. xht320 "x<800").
+
+
+	d2Manipulation with .DM files0a
+
+List of available .DM files is created after Machina's startup, so it's not possible to change media with .DMs when Machina runs, shell to DOS and manipulate with .DMs etc.
+
+
+	d2Export to .TXT0a
+
+Exporting page to TXT file is a very difficult thing. Text written in fonts of different sizes is to be shown in single font, but text composition should stay unchanged. Machina splits and aligns lines exactly as in graphics. Though two following problems may appear. (1) One line contains much more characters than the others (many full stops, small font etc). And we have to put too many spaces to other lines to widen them, to get right alignment. It doesn't look well. (2) Amongst normal lines, there are some low ones (with low font). Example: normal 16-pixel lines and low 8-pixel ones. Exporter detects 16 as base height and every two 8-pixel lines fuse into one. The same routine is used when viewing page in textmode.
+
+
+	d2Export to V˜he¤0a
+
+Only text, colours and links are converted. Also page name and its author. Note that text from lower layer could be hidden under text from higher layer and two very near lines (with small font) could be placed to one line of output.
+
+
+	d2Export to HTML0a
+
+Some stuff is converted: text, pictures, links to pages, new backgrounds... and some not: layers, fonts, modules, samples, scripts, old backgrounds. Pictures remain in original format (some PNGs etc), conversion is up to you. See [HTML] section of INI file for several useful conversion parameters.
+
+
+	d2Memory0a
+
+When there is not enough memory for pictures, you see only empty frames. It is typical for computers with 4MB RAM. When there is far less memory even for skint page without pictures, you can not visit the page. That's the case of almost every page on computers with 2MB RAM. When neither a title page can be visited, Machina ends immediately. Note: It's not necessary to start with title picture of locomotive. Run Machina with .DM filename as parameter to skip the locomotive picture and jump right to the title page of the project.
+
+
+	d2Scrolling:0a
+
+	dABSOLUTELY SMOOTH scrolling in all directions is impossible:a
+
+	  - Without interactive tests (turn them on in setup).
+	  - On some buggy cards (bug in card or bios).
+	  - In some resolutions (technically impossible).
+
+	dWhen something looks strangea
+
+	  - You might do something wrong in interactive tests.
+	    Delete your [SVGA:...] section in DM.INI and repeat
+	    the tests.
+	  - Or you have buggy graphics card/bios. I have
+	    already found tens of such bugs and Machina knows
+	    about them. Others wait to be discovered. Contact 
+	    me if you think, that it is your case.
+
+
+	d2While coding Machina, I've upgraded0a
+
+	  386 AMD -> 486 AMD -> 5x86 AMD -> 6x86 Cyrix
+	   -> Cyrix MII (yo, I'm independent :)))
+	  Trident 8900 -> Tseng ET4000 -> ET6000
+	   -> Western Digital VGA!! -> Cirrus Logic -> ET6000
+	  GUS -> the same GUS ... no upgrades needed :)
+	  Borland Pascal 7 -> ... no upgrades possible :)
+
+
+
+	d2Colours when run with DP parametrem0a
+
+	  loading picture (decoding JPG etc)
+	  histogram+quantisation (creating palette)
+	  model conversion (8,15,16,24,32,rgb,bgr)
+
+	  hiding mouse
+	  when mouse is hidden
+	  drawing mouse
+
+	  script run
+	  garbage collector
+	  screensaver
+
+
+
+
+
+
+Ý^2,110,-272,66Þ
+	- red
+	- white
+	- grey
+
+	- red
+	- green
+	- blue
+
+	- dark yellow
+	- white
+	- grey

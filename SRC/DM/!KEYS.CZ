@@ -1,0 +1,76 @@
+nfo:ëmÒagî 300
+tem:!help
+siz:80x71
+pos:slp=1 x=0 line=1 slpline=0
+Ý^0,40,0,80Þ
+
+
+dHlavn¡ funkce editoru
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄa
+
+    c[hlavn¡ funkce]a
+    bF1a       - help
+    bF2a       - ulo‘it (save)
+    bF3a       - ulo‘it a uk zat v grafice !
+    bF4a       - ulo‘it a spustit editor zdroj ku str nky
+    bF5a       - zmˆna barvy v m¡stˆ kurzoru
+    bF6a       - zmˆna fontu v m¡stˆ kurzoru
+    bShift F6a - zmˆna fontu v m¡stˆ kurzoru na jeden z na str nce u‘ pou‘it˜ch
+    bCtrl F6a  - n hrada v¨ech v˜skyt– jednoho fontu jin˜m fontem
+    bF7a       - link na jinou str nku nebo skript
+                Po vybr n¡ str nky se objev¡ stranka. N pis, kter˜ bude
+                tvo©it odkaz na str nku dopi¨ takto: n pisstranka.
+    bShift F7a - link na jinou str nku/obr zek/animaci/sampl/modul/skript
+    bF8a       - vlo‘en¡ obr zku nebo animace
+    bShift F8a - vlo‘en¡ obr zku nebo animace jako linku na jinou str nku
+    bF10a      - vlo‘en¡ objektu (ale vˆt¨inou jde tot‚‘ l‚pe s F7)
+    bF12,Alt-Xa- ukon‡en¡ editoru
+    bTABa      - Jeden na za‡ tku © dky zarovn  text ke kraji.
+                Dva na za‡ tku text odsad¡ jako nov˜ odstavec (m  v˜znam jedinˆ
+                pokud je text p©¡li¨ kr tk˜ a automaticky se centruje).
+
+    c[sloupce]a
+    bF9a        - v m¡stˆ kurzoru rozdˆl¡ sloupec na dva nad sebou
+    bShift F9a  - slou‡¡ tento a p©edchoz¡ sloupec do jednoho, inverze k F9
+    bAlt 1..9a  - sko‡¡ na za‡ tek sloupce ‡¡slo 1..9
+    bta‘en¡ lev˜m my¨¡tkema              - p©em¡stˆn¡ cel‚ho sloupce
+    bta‘en¡ prav˜m my¨¡tkem do stranya   - roz¨¡©en¡/z£‘en¡ sloupce
+    bta‘en¡ prav˜m my¨¡tkem nahoru/dol–a - p©eh knut¡ sloupce k jin‚mu
+
+
+dBˆ‘n‚ funkce
+ÄÄÄÄÄÄÄÄÄÄÄÄa
+
+    c[pohyb kurzoru]a
+    b¨ipkya                - pohyb po znac¡ch
+    bCtrl ¨ipkya           - pohyb po slovech
+    bHomea                 - na za‡ tek © dku
+    bEnda                  - na konec © dku
+    bPageUpa               - o 20 © dk– v˜¨
+    bPageDowna             - o 20 © dk– n¡‘
+    bCtrl Homea            - na za‡ tek sloupce
+    bCtrl Enda             - na konec sloupce
+    bCtrl PageUpa          - na za‡ tek souboru
+    bCtrl PageDowna        - na konec souboru
+    bklik lev˜m my¨¡tkema  - um¡stˆn¡ kurzoru
+
+    c[maz n¡/psan¡]a
+    bDeletea               - ma‘e znak nad kurzorem
+    bBackspacea            - ma‘e znak p©ed kurzorem
+    bCtrl Ya               - ma‘e jeden © dek
+                           pokud na n sleduj¡c¡m za‡¡n  obr zek, sma‘e i ten
+    bCtrl Ta               - ma‘e od kurzoru do za‡ tku dal¨¡ho slova
+    bInserta               - vlo‘¡ nov˜ © dek p©ed ten s kurzorem
+
+    c[bloky]a
+    bShift [pohyb kurzoru]a- ozna‡ blok
+    bShift Deletea         - (cut) vyst©ihni blok do pamˆti
+    bShift Inserta         - (paste) vlo‘ blok z pamˆti
+    bCtrl Inserta          - (copy) zkop¡ruj blok do pamˆti
+    bCtrl Deletea          - (delete) sma‘ blok
+
+    c[ostatn¡]a
+    bklik prav˜m my¨¡tkema - pomocn‚ menu (t‚‘ bAlt-Sa menu, bAlt-Da zopakov n¡)
+    bEsca                  - opu¨tˆn¡ str nky
+
+

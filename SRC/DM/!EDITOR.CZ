@@ -1,0 +1,142 @@
+nfo:ëmÒagî 350
+tem:!help
+siz:80x137
+pos:slp=1 x=48 line=124 slpline=123
+İ^0,40,0,80Ş
+
+d
+    ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+    ³  Deus ex Machina                                             Editor  ³
+    ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙ
+
+c    Form tov n¡ textua
+       Vˆt¨ina lid¡ je z jin˜ch editor– zvykl  ru‡nˆ odsazovat odstavce
+       a ru‡nˆ centrovat nadpisy. V krajn¡m p©¡padˆ (T602) i ru‡nˆ zarovn vat
+       k okraj–m. Ma¨ina to v¨e dˆl  automaticky. Ot zky a odpovˆdi:
+        1) M m nadpis ale nechci ho centrovat. AŸ je hezky u kraje.
+           - Na za‡ tku © dky stiskni TAB.
+        2) M m mal˜ odstavec, kter˜ se cel˜ vejde na jeden © dek, tak‘e se
+           vycentruje. Chci aby byl spr vnˆ odsazen (jako ostatn¡ odstavce).
+           - Na za‡ tku © dky stiskni dvakr t TAB.
+        3) Chci udˆlat tabulku s polo‘kami zarovnan˜mi pod sebou.
+           - Nastav neproporcion ln¡ font (courXX.fn, moder_np.fn)
+             a zarovn vej prostˆ vkl d n¡m mezer (ne tabel tor–) mezi polo‘ky.
+             Tak jak to zarovn ¨ v textm¢du, tak to bude vypadat v grafice.
+        4) M m hotov˜ zarovnan˜ ‡l nek v T602. Jak ho nejsn z dostat do Ma¨.?
+           - Jedna mo‘nost je export do ASCII2, import do Ma¨iny a ru‡n¡
+             umaz n¡ p©ebyte‡n˜ch mezer, kter‚ T602 strk  mezi slova.
+           - Druh  mo‘nost je export do ASCII1, import do Ma¨iny, nastaven¡
+             neproporcion ln¡ho fontu (nap©¡klad moder_np.fn), vypnut¡
+             automatick‚ho form tov n¡ textu (F4, vlo‘en¡ p©¡kazu İf0Ş)
+             a roz¨¡©en¡ sloupce (Ctrl ) tak, aby se © dek textu ve¨el
+             na © dek editoru.
+        5) Chci nˆco napsat, ale ne v tomhle editoru.
+           - Klidnˆ si to pi¨ v T602, ale aspo¤ tam proboha vypni
+             zarovn v n¡, pak to jednodu¨e exportne¨ do ASCII2 a
+             naimportuje¨ do Ma¨iny. Pro jin‚ editory obdobnˆ.
+
+c    My¨¡ ©¡zen‚ nastavov n¡ bareva
+       P©i prohl¡‘n¡ libovoln‚ str nky s textem zobrazen‚ ve 256 barv ch
+       (pr vˆ editovan  str nka to spl¤uje v‘dy...pokud nezak ‘e¨ 256 barevn‚
+       m¢dy parametrem z p©¡kazov‚ © dky) jde mezern¡kem spustit dialog
+       nastavov n¡ barev. Barvy se zad vaj¡ pohybem my¨i a zmˆna je na str nce
+       bezprost©ednˆ vidˆt. Hlavn¡ v dialogu je pole obd‚ln¡‡k– - barev.
+       Jsou buƒ 4 (jen barvy textu) nebo 40 (i barvy pozad¡ a dal¨¡).
+       My¨¡ lze ozna‡it jednu nebo v¡ce sousedn¡ch barev. Krajn¡ lze mˆnit
+       a ostatn¡ vytvo©¡ plynul˜ p©echod k druh‚ krajn¡ barvˆ. To se dˆje
+       po dal¨¡m stisku mezern¡ku, kdy pohyb my¨i ovliv¤uje Red a Green slo‘ky
+       barvy a dr‘en¡ Z a X Blue slo‘ku. Vybranou barvu lze potvrdit
+       nebo zru¨it a vr tit se k p©edchoz¡. ›oup tka mˆn¡ jas a kontrast.
+       3 checkboxy ur‡uj¡ kter˜ch z R G B slo‘ek se zmˆny jasu a kontrastu
+       t˜kaj¡. ›ipka p©ehazuje kter˜ z kraj– ozna‡en˜ch barev je ten
+       v˜znamnˆj¨¡.
+
+c    ›ablonya
+       Ka‘d  str nka m  sadu vlastnost¡ (barvy, pozad¡, doporu‡en‚ rozli¨en¡,
+       hudbu, zvuky...). Ka‘d  vlastnost m–‘e b˜t pops na v hlavi‡ce str nky
+       nebo zdˆdˆna z ¨ablony (nen¡-li v hlavi‡ce). Ka‘d  str nka by mˆla m¡t
+       p©i©azenu nˆjakou str nku-¨ablonu. Pokud nem , editor se automaticky
+       sna‘¡ dosadit implicitn¡ ›ablonu 'template'. Jeliko‘ i ¨ablony, jako
+       ka‘d‚ jin‚ str nky, mohou m¡t sv‚ ¨ablony, v˜sledkem je stromov 
+       struktura, kde ko©enem ovliv¤uj¡c¡m v¨echny ostatn¡ str nky je ¨ablona
+       'template'. —pravou jedin‚ str nky tak lze mˆnit cel˜ projekt. Pouze
+       pokud m  str nka nˆjakou vlastnost pops nu ve vlastn¡ hlavi‡‡e, ¨ablona
+       na n¡ nem  vliv.
+
+c    Sloupce (layery)a
+       Jen v˜jime‡nˆ pot©ebuje¨ v¡c ne‘ jeden sloupec, kter˜ se otv¡r 
+       automaticky p©i zalo‘en¡ str nky. Tak‘e se jimi t‚mˆ© nemus¡¨ zab˜vat.
+       Str nka m–‘e m¡t a‘ 10 sloupc–. Ka‘d˜ sloupec m  sv‚ ‡¡slo v lev‚m
+       horn¡m a doln¡m rohu a h k v prav‚m horn¡m rohu. Kdy‘ posouv ¨ nˆjak˜
+       sloupec, v¨echny zah knut‚ k nˆmu se h˜bou tak‚. Sloupec m–‘e b˜t
+       zah knut k vr¨ku jin‚ho sloupce (p©¡klad k vr¨ku 3. sloupce: Ú3¿),
+       ke spodku (À3Ù) nebo ukotven (ÄÄÄ). Nov˜ sloupec je v‘dy ukotven.
+       Aby nevznikaly cykly, sloupec nelze zah knout ke sloupci s vy¨¨¡m
+       ‡¡slem. Sloupec 1. se kresl¡ prvn¡, tak‘e dal¨¡ ho mohou p©ekr˜t.
+       Odkaz na cpopis ovl d n¡!keysa layer–.
+
+c    Editor zdroj ku (F4)a
+       Zde m–‘e¨ editovat p©¡mo zdrojov˜ text str nky.
+       Jak‚ to m  klady a z pory?
+        + lze pracovat s bloky
+        + lze importovat a exportovat texty
+        + jen zde lze editovat jm‚na obr zk–, checkboxy a dal¨¡
+        - lze snadno naru¨it syntaxi a zp–sobit tak okam‘it˜ f‚rov˜
+          nebo pozdˆj¨¡ z ludn˜ kolaps, ztr tu dat apod.
+       Jeho opu¨tˆn¡m (s ulo‘en¡m ‡i bez) se vr t¡¨ zpˆt do scrolovac¡ho
+       editoru. P©i ukl d n¡ z lohuje minulou verzi str nky do .BAK.
+      Pro program tory: kdybys mˆl zdroj k lep¨¡ho editoru v pascalu,
+       klidnˆ ho sem m–‘u d t. Chtˆlo by to search/replace, undo apod.
+       Tohle je jen jednoduch˜ p©¡klad z TurboVision od Borlandu.
+
+c    Dal¨¡ featury (r me‡ky, checkboxy, form tov n¡ textu...)a
+       Nˆkter‚ m‚nˆ frekventovan‚ nebo zastaral‚ prvky p©i tvorbˆ str nky
+       nemaj¡ v editoru ‘ dnou podporu. Kdo je chce pou‘¡vat, mus¡ si p©e‡¡st
+       popis form tu a p©¡slu¨n‚ p©¡kazy ru‡nˆ vepsat do str nky v editoru
+       zdroj ku.
+
+c    Podpora v¡ce jazyk–a
+       P©i po‘adavku na otev©en¡ nˆjak‚ str nky je p©ednostnˆ hled na verze
+       s p©¡ponou danou aktu ln¡m jazykem. Moment lnˆ jsou podporov ny
+       .CZ a .ENG. A‘ pokud nen¡ nalezena, hled  se univerz ln¡ verze bez
+       p©¡pony. V projektu m–‘e¨ v¡cejazy‡n‚ str nky libovolnˆ kombinovat.
+
+c    Textm¢dov‚ str nkya
+       Jsou dva zp–soby tvorby textm¢dov˜ch str nek.
+       Kdy‘ zad ¨ n¡zk‚ doporu‡en‚ rozli¨en¡, str nka se objev¡ v tomto
+       textm¢dov‚m rozli¨en¡. Kdy‘ ho zv˜¨¡¨ nad ur‡itou mez, vr t¡ se
+       do grafiky. Internˆ se ale st le po‡¡t  s r–znˆ velk˜mi fonty a p©i
+       zobrazov n¡ v textm¢du se v¨echny sou©adnice dˆl¡ a zaokrouhluj¡.
+       Pokud ov¨em nastav¡¨ promˆnnou fnt:textmode.fn
+       (textmode.fn m  v¨echny znaky velk‚ 1x1 a bez vizu ln¡ podoby),
+       str nka se bude generovat bez zaokrouhlov n¡ p©¡mo pro textm¢d
+       a do grafiky bude nep©enosn . Tak je tvo©ena tato dokumentace.
+       Kdy‘ do str nky naimportuje¨ oby‡ejn˜ textov˜ soubor, s textmode.fn
+       bude vypadat £plnˆ stejnˆ, jako v ka‘d‚m jin‚m textm¢dov‚m editoru.
+       Pr ce se skripty nen¡ v textm¢du o¨et©ena, asi budou padat.
+
+c    Moment ln¡ limitya
+       ¨¡©ka str nky                            -  32767 pixel–
+       v˜¨ka str nky                            -  16380 pixel–
+       ¨¡©ka textov‚ str nky v editoru          -  32760 sloupc–
+       © dek textu v editoru                    -  10000 © dek
+       velikost tx. str. v ed. (¨¡©ka*v˜¨ka*2)  - 400000 bajt–
+       d‚lka textu ve scrollovac¡m editoru      -  65520 bajt–
+       d‚lka textu v editoru zdroj ku           -  65520 bajt–
+       po‡et sloupc– na str nce                 -     10 sloupc–
+       po‡et obr zk– a animac¡ na str nce       - bez omezen¡
+       po‡et font– na str nce                   -      4 fonty
+       po‡et link– a jin˜ch objekt– na str nce  - bez omezen¡
+       po‡et soubor– v jednom .DM               -   2000 soubor–
+       po‡et .DM v projektu                     -     10 .DM
+       po‡et soubor– v projektu                 -  16380 soubor–
+
+       Pro velikost vkl dan˜ch obr zk– plat¡ tot‚‘, co pro velikost grafick‚
+       bitmapy, pouze ¨¡©ka u JPG je omezenˆj¨¡ (z le‘¡ na okolnostech).
+       Nic z toho jsem nezkou¨el, ale zhruba do tˆchto mez¡ by mˆl b˜t
+       editor funk‡n¡. P©i p©ekro‡en¡ se nejsp¡¨ bez omluvy zhrout¡.
+
+       Pozn: velk‚ str nky zaberou hodnˆ pamˆti a ‡asu na generov n¡.
+       Sna‘ se vˆt¨¡ ‡l nky dˆlit na nˆkolik men¨¡ch str nek.
+
+

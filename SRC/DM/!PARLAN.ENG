@@ -1,0 +1,19 @@
+nfo:ëmÒagî 300
+tem:!parlan.cz
+siz:80x19
+pos:slp=1 x=55 line=18 slpline=17
+İ^0,40,0,80Ş
+
+
+
+                          dParLan - script language
+                          ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄa
+
+ParLan scripts (files with .scr extension) are written outside Machina, in any text editor. Machina editor allows you only to place them on page (with F7 or F10). Syntax errors are reported at runtime.
+
+Warning: When working with Machina, ParLan is powerful and therefore dangerous tool. It gives you a chance to control Machina internal affairs. If you do it incorrectly, you can crash Machina.
+
+
+
+13KB of text should follow but it isn't translated from cCzech version!parlan.cza. Please mail me if you like to use Parlan and need English help.
+

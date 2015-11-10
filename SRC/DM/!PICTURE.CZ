@@ -1,0 +1,84 @@
+nfo:ëmÒagî 300
+tem:!help
+siz:80x79
+pos:slp=1 x=61 line=77 slpline=76
+İ^0,40,0,80Ş
+
+d
+    ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+    ³  Obr zky a animace                                                   ³
+    ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙa
+
+
+  cPodporovan‚ form ty, ©azeno podle kvality kompresea
+
+     bJPGa - Nejvy¨¨¡ komprese, ale ztr ta kvality v oblastech s velk˜mi
+           zmˆnami jasu, nap©¡klad kolem textu.
+           Beru pouze neprokl dan‚+p r dal¨¡ch omezen¡.
+           P©i ukl d n¡ lze obvykle nastavit cosi jako m¡ru neztr tovosti
+           od 0% do 100% (standardnˆ 75%). P©i zvy¨ov n¡ m¡ry neztr tovosti
+           roste velikost souboru zhruba t¡mto tempem:
+             15%  40KB  --
+             25%  60KB  --
+             35%  80KB  ---
+             45%  95KB  ----
+             55% 110KB  ----
+             65% 125KB  -----
+             75% 150KB  ======
+             85% 250KB  ----------
+             95% 450KB  ------------------
+            100% 830KB  ---------------------------------
+           Kompresn¡ algoritmus d v  optim ln¡ v˜sledky p©i nastaven¡ 75%
+           procent. P©i hodnot ch bl¡‘¡c¡ch se 100% je extr‚mnˆ neefektivn¡,
+           ulo‘en˜ obr zek m–‘e zab¡rat i nˆkolikr t v¡c m¡sta, ne‘ kdyby byl
+           ulo‘en bez komprese, a i p©esto st le doch z¡ k m¡rn˜m ztr t m.
+           Nen¡ to chyba form tu JPG. Ten v sobˆ zahrnuje i algoritmy
+           neztr tov‚ komprese, kter‚ maj¡ b˜t pou‘ity pr vˆ v p©¡padech,
+           kdy velmi z le‘¡ na kvalitˆ. Ale programy je prostˆ nevyu‘¡vaj¡.
+     bPNGa - Nejvy¨¨¡ neztr tov  komprese, tedy vhodn‚ tam, kde se z nˆjak‚ho
+           d–vodu nehod¡ ztr tov˜ JPG.
+     bGIFa - Podobnˆ jako PNG, ale malinko slab¨¡ komprese.
+     bXa   - Velmi slab  nebo ‘ dn  komprese.
+     bPCXa - Velmi slab  komprese a podporuji pouze 256 barevn‚.
+     bTGAa - Velmi slab  nebo ‘ dn  komprese a stejnˆ podporuji jen ty bez.
+
+     bFLIa - Animace. P©i p©ehr v n¡ ve fullscreenu na nˆ nekladu ‘ dn  omezen¡.
+     bFLCa   P©i p©ehr v n¡ na str nk ch (vkl daj¡ se £plnˆ stejnˆ jako obr zky)
+           je velikost sn¡mku (¨¡©ka*v˜¨ka) omezena na 65520.
+
+  cNez vislost na form tu a rozli¨en¡a
+
+     Do str nek se ukl d  pouze n zev obr zku a velikost, ne koncovka.
+     Tak‘e obr zky m–‘e¨ kv–li £spo©e m¡sta volnˆ konvertovat z form tu
+     do form tu i mˆnit rozli¨en¡, vzhled str nky se t¡m nezmˆn¡.
+     Kdy‘ je obr zek k dispozici ve v¡ce form tech, pou‘ije se podle v˜¨e
+     uveden‚ho po©ad¡ ten s nejvy¨¨¡ kompres¡.
+
+  cAnimacea
+
+     Fullscreenov‚ animace se p©ehraj¡ jednou, animace na str nk ch loopuj¡.
+     Toto rozvr‘en¡ lze p©eb¡t nastaven¡m bajtu na offsetu 20
+     na 'l' jako loopovat nebo 'n' jako neloopovat.
+
+     Pokud prvn¡ sn¡mek z animace na str nce obsahuje aspo¤ 33% nul,
+     jsou nuly v cel‚ animaci pova‘ov ny za pr–hledn‚ a je skrz nˆ vidˆt
+     pozad¡ str nky (p©ehr v n¡ je potom n ro‡nej¨¡).
+     Toto rozvr‘en¡ lze p©eb¡t nastaven¡m bajtu na offsetu 21
+     na 't' jako transparentn¡ nebo 'n' jako netransparentn¡.
+
+     Animace na str nk ch maj¡ omezenou velikost sn¡mku na 65520 bajt–,
+     tj. animaci o rozmˆrech 320x200 to je¨tˆ zvl dne, ale vˆt¨¡ u‘ ne.
+     Fullscreenov‚ animace jsou bez omezen¡ rozmˆr–.
+
+     Provoz animac¡ na str nk ch je mnohem n ro‡nej¨¡ ne‘ ve fullscreenu,
+     doporu‡uji d vat na str nky jen jeden dva men¨¡ kousky, ©ekneme
+     do 100x100 pixel–. Vˆt¨¡ by asi dost ru¨ily plynulost scrollingu.
+
+  cResizov n¡, zmˆna rozmˆr– bez z sahu do obr zku/animacea
+
+     Resizov n¡ obr zk– a animac¡ je mo‘n‚. P©¡kaz, kter˜ na str nku vkl d 
+     obr zek, vypad  nˆjak takto: İ~animace.fli,320x200Ş.
+     M–‘e¨ jednodu¨e p©epsat tu velikost.
+     Pozor, resizov n¡ animac¡ d  pomalej¨¡m po‡¡ta‡–m zabrat.
+
+

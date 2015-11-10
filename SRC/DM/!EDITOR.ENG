@@ -1,0 +1,143 @@
+nfo:ëmÒagî 321
+tem:!help
+siz:80x138
+pos:slp=1 x=0 line=75 slpline=74
+İ^0,40,0,80Ş
+
+d
+    ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+    ³  Deus ex Machina                                             Editor  ³
+    ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙa
+
+    cText formattinga
+       Most is done automaticly... titles (short lines) are centered,
+       paragraphs (long lines) are aligned and first line in paragraph shifted.
+       FAQ:
+        Q: I want my title to be aligned left rather than centered.
+        A: Press TAB on the beginning of line.
+
+        Q: I have paragraph so short, that it is automaticly centered
+           I want it to be treated as normal paragraph, not a title.
+        A: Press TAB twice on the beginning of line.
+
+        Q: How to create table with aligned data?
+        A: Set nonproportional font (courXX.fn, moder_np.fn...)
+           and align simply by inserting spaces (not tabs) between data.
+           What you see in textmode is what you get in graphics mode.
+
+        Q: How to convert layouted TXT article to Machina quickly?
+        A: Import it to the editor (rename the 'article.txt' to 'article.'
+           and open OR create article and insert article.txt via source editor).
+           Set some unproportional font (moder_np.fn...).
+           Diasable advanced formatting (set par:f0 or insert command İf0Ş in
+           source editor).
+           Sprawle the layer (Ctrl ) so that the original line fits one line
+           in editor.
+
+        Q: I want to write in a different editor.
+        A: Ok, but use some editor which
+           - uses CR+LF to mark new paragraph
+           - doesn't insert mark for end of line inside paragraph
+           - doesn't make gaps between words to align text to both sides.
+
+    cMouse driven color settinga
+       While watching any page with text in 256 colors (edited page matches
+       these conditions if you don't disable 256 color modes from commandline),
+       Space runs dialog for color setting. Colors are changed by mouse motion
+       and everything is immediately visible. The main part of dialog is array
+       of rectangles - colors. They are 4 (only text colors) or 40 (also
+       background colors and others). You can select one or more neighbouring
+       colors by mouse. Left or rightmost can be changed and others make smooth
+       row between left and right. It happens after next Space press, when
+       mouse motion affects Red a Green parts of color and holding Z a X affects
+       Blue part. You can confirm choosen colors or abort and return to previous
+       palette. Sliders change brightness and contrast. 3 checkboxes tell them
+       which ones of R G B parts to change. Arrow switches whether left or
+       rightmost color is more important.
+
+c    Templatesa
+       Each page has its set of attributes (colours, background, recommended
+       resolution, music, sounds...). Each attribute could be described in page
+       header or inherited from template (if not in header). Each page should
+       have some template. Otherwise the editor tries to set implicit template
+       automaticly - page named 'template'. Because even templates are pages
+       as any other one, they could have its templates. It results in the tree
+       structure, where its root controlling every other page is 'template'.
+       Therefore modifying one single page could change whole project. Only if
+       the page has some attribute described in header, template default won't
+       be used.
+
+c    Layersa
+       Seldom you need more than one layer, which is automaticly opened after
+       page creation. For that reason you don't nearly need to care about them.
+       Page can contain up to 10 layers. Each layer has its number in its top
+       and bottom left corner and its hook in its top right corner. When you
+       move some layer, all layers hooked to it move along. Layer could be
+       hooked to the top of another layer (for example top of third layer: Ú3¿)
+       or bottom (À3Ù) or anchored (ÄÄÄ). New layer is always anchored.
+       To avoid cycles, layer can't be hooked to the layer with higher number.
+       Layer 1. is first to be drawn, so it can be overlayed by next layers.
+       Link to layer ckeyboard+mouse controls!keysa.
+
+    cSource editor (F4)a
+       You can directly edit source text of your page in the editor.
+        + you can cut/copy/move blocks
+        + you can import texts from other files
+        + you can insert/modify/delete less frequent commands,
+          that has no support in the scrolling editor
+        - you can break syntax which may cause the program to
+          collapse and lose all data
+       Leaving the source editor (with or without saving) returns you back
+       to the scrolling editor.
+      For coders: if you want a better editor instead of this simple
+       example from the TurboVision library, please send me the sources.
+
+    cOther features (text formatting, checkboxes, frames...)a
+       Some less frequent or outdated features has no support in editor.
+       If you want to use them, read format description and insert your
+       commands directly into page source in source editor.
+
+c    Multilingual supporta
+       When some page is requested, Machina prefers its version with
+       current language extension. Currently, .ENG and .CZ are supported. 
+       When not found, universal version without extension is used.
+       You can mix any single/multi/universal pages into one project.
+
+c    Textmode pagesa
+       There are two ways how to create the textmode pages.
+       If you recommend a low resolution, page is shown in the textmode
+       resolution. If you trespass some limit, page returns to graphics.
+       Internally, everything is still calcullated with fonts of different
+       sizes and while showing in textmode, coordinates are divided and rounded.
+       But when you set variable fnt:textmode.fn in the header of your page
+       (the textmode.fn file has all characters of size 1x1 and without bitmap),
+       page is generated without roundidng, directly for the textmode
+       and is not portable to graphics. This documentation is made by this way.
+       If you import plain textfile to your page, with textmode.fn
+       it looks like in any other textmode editor.
+       Work with scripts is not treated in textmode, expect crash.
+
+    cCurrent limitsa
+       page width                              -  32768/sizeof(pixel) pixels
+       page height                             -  16380 pixels
+       text page width in editor               -  32760 columns
+       text lines in editor                    -  10000 rows
+       text page size in ed. (width*height*2)  - 400000 bytes
+       text length in editor                   -  65520 bytes
+       text length in source editor            -  65520 bytes
+       layers in page                          -     10 layers
+       pictures and animations in page         - no limit
+       fonts in page                           -      4 fonts
+       links and other objects in page         - no limit
+       files in one .DM                        -   2000 files
+       .DM files in project                    -     10 .DM
+       files in project                        -  16380 files
+
+       Inserted pictures has the same size limit as page, only JPG width
+       is more limited. None is tested, but it should work...
+       If you accidentally break some limit, expect crash.
+
+       Note: big pages require lots of memory and time to be generated.
+       Try to split large articles to a smaller pages.
+
+

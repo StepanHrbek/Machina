@@ -1,0 +1,65 @@
+{descr: color-range selector}
+{param: number:firstcol number:colors}
+{files: }
+
+backcol=mapColor(0,104,104)
+forecol=mapColor(220,220,0)
+
+proc show()
+  if last<0 then last=0 endif
+  if last>colors-1 then last=colors-1 endif
+  mapFillTo(backcol,PromileRelLeftRight,0,0,1000,300)
+  if first<=last then
+    mapFillTo(forecol,PromileRelLeftRight,(first*1000)/colors,0,((last+1)*1000)/colors,300)
+    mapFillTo(backcol,PromileRelLeftRight,((first+last+1)*500)/colors,0,((last+1)*1000)/colors,150)
+  else
+    mapFillTo(forecol,PromileRelLeftRight,(last*1000)/colors,0,((first+1)*1000)/colors,300)
+    mapFillTo(backcol,PromileRelLeftRight,(last*1000)/colors,0,((first+last+1)*500)/colors,150)
+  endif
+endproc
+
+proc readRange()
+  range=GetAtom(cx,"range")
+  firstcol=CutInt(range)
+  colors=CutInt(range)
+endproc
+
+cx=Context(-1,-1,-1)
+data=GetAtom(cx,"data")
+SetAtom(cx,"data","",forDunno)
+
+if (data!="") then
+ if (data!="x") then
+   SetAtom(cx,"range",data,forPagetime)
+ endif
+ ReadRange()
+ mapFill(backcol)
+ for i from 0 to colors-1
+   mapFillTo(firstcol+i,PromileRelLeftSize,(i*1000)/colors,400,1000/colors+3,600)
+ endfor
+ first=0
+ last=0
+ GetVar("editpal_first",first)
+ GetVar("editpal_last",last)
+ first=first-firstcol
+ last=last-firstcol
+ show()
+ SetAtom(cx,"inited","x",forPagetime)
+else
+ x=0
+ y=0
+ z=1
+ ReadRange()
+ mouseGet(PromileObject,x,y,z)
+ first=(x*colors)/1000
+ last=first
+ while (z!=0)
+  sync()
+  mouseGet(PromileObject,x,y,z)
+  last=(x*colors)/1000
+  show()
+  mapRefresh()
+ endwhile
+ SetVar("editpal_first",first+firstcol)
+ SetVar("editpal_last",last+firstcol)
+endif

@@ -1,0 +1,592 @@
+nfo:Îm“agÓ 352
+tem:!doc
+fnt:tenkej.fn;bard.fn;tenkejh.fn
+tex:b(\) =28.(20,320)44~(+1)222
+pal:\< \@'\D/\I7\N?\RG\WO]\X%[ SVZ]Z_^]_22 >> MM ZZ O::_CC444>>>HHH :: HH UU & /50.10)+*$%%    8  5  2  0  -  *  (  %  "    
+siz:360x10016
+pos:slp=1 x=44 line=10 slpline=9 blkStart=137 blkEnd=184
+›^0,185,0,324ﬁ
+
+d
+2Novinky jednotlivòch verz°0
+
+
+e1-3.52-0a
+
+		+ vy®®° kompatibilita s nejstar®°mi projekty verze 0.xx
+		+ vyhòb† se chyb†m karty Cirrus Logic GD-54xx
+
+
+e1-3.51-0a
+
+		+ Nàkdy nejde zjistit zda je driver grafickÇ karty ve Windows
+		  vadnò (a eventu†lnà zhrout° poá°taá) nebo uë je opravenò.
+		  Proto je v setupu novà moënost pouë°vat bjen bezpeánÇ m¢dya
+		  (=p©edpokl†dat ëe driver je vadnò). S opravenòmi drivery lze
+		  nastaven° v setupu (F2) vypnout. Nastaven° se tòk† driverñ
+		  . Matrox (bezpeánÇ nejsou VESA m¢dy (SVGA))
+		  . NVidia Detonator (bezpeánÇ nejsou VGA m¢dy)
+		  . 3DFx/Banshee (bezpeán† nejsou nië®° VESA rozli®en°)
+		+ lÇpe adaptov†no na prohl°ëen° staròch projektñ z verze 0.xx
+		  . opravenÇ kreslen° n†pisñ (zap°jen° do textury, skl†pàn° atd)
+		  . neotravuje hl†®en°m drobnòch problÇmñ na str†nk†ch
+		  . prostà jen p†rkr†t varuje ëe prohl°ëen° nen° 100% spolehlivÇ
+		+ lÇpe adaptov†no na prohl°ëen° mnoha projektñ nar†z
+		  . naá°t† aë 100 projektñ
+		  . kdyë se jmÇno nevejde do tlaá°tka, zobraz° pravò konec
+		+ menu jde zav©°t levòm tlaá°tkem, na tituln° str†nce i otev©°t
+		+ RAIN 1.5
+		  . v DOSu bez zvukovky pust° Ma®inu bez RAINu (=v°c pamàti)
+		  . ve Windows bez zvukovky taky, uë nebàduje "Device busy"
+		+ vàt®° podpora Windows
+		  . Ma®ina je ®°©ena i v podobà instal†toru pro Windows
+		  . poprvÇ v historii moënost odinstalace :)
+		  . nastaven° .pif souborñ umoën° hlad®° spou®tàn° ve Windows
+		  . po p©id†n° dm.pif mohl bòt odstranàn machina.exe
+
+
+e1-3.50-0a
+
+		+ obr†zkov† tlaá°tka (lze vypnout v setupu)
+		+ rychlej®° ma®ina (zn†te-li autora fotky, dejte mi vàdàt)
+		+ uvnit© dokumentace p©ibyla sexy áty©kilov† chiptuna
+		+ novÇ fonty v podñrnÇm bal°ku k editoru (str†nka doc/editor)
+		+ p†r drobnost° (+1 tlaá°tko v menu)
+		+ opravy (blackpixely v 256 barv†ch, chyba p©i vyp°n†n° ma®iny,
+		   p©eh†knut° layeru v editoru)
+
+
+e1-3.20-0a
+
+		+ pod Windows Ma®ina sama p©ep°n† konzoli do fullscreenu,
+		  aby p©ed n° systÇm neskròval VBE
+		+ obohacenò Parlan (nov† fce eventGet(), p©iloëeny novÇ
+		  skripty ripf.scr, ripexec.scr, p†r drobnòch oprav)
+		+ snese dal®° Banshee s vadnòm VBE (vyhòb† se jeho chyb†m)
+
+
+e1-3.12-0a
+
+		+ MP3 s p©ilepenou WAV hlaviákou se ®°©° jako mor a tak se
+		  nedalo nic dàlat, novÇ RAIN servery 1.4 je um° p©ehr†t
+		+ v DM.INI p©ibyla promànn† StaticMode (je-li nastavena, ©°k†:
+		  Ma®ino Ma®ino, nemà§ po©†d m¢d, pouë°vej jen tento)
+		+ pokud si ale m¢d vyb°r† Ma®ina sama, nemàla by jako dosud
+		  p©°leëitostnà padat, lÇpe h†d† na jakou bitovou hloubku bude
+		  dost pamàti
+		+ p©eëije ruánà upravovanÇ str†nky jako t©eba tituln°
+		  z RT70 (d©°ve to nebylo dovoleno a Ma®ina mohla ëuchnout)
+		+ varov†n° 'Zkracuji text' u str†nek ruánà upravovanòch nebo
+		  konvertovanòch z verz° 1.xx hl†s° jen p©i DumbMode=no
+
+		
+e1-3.11-0a
+
+		+ soubor k okamëitÇmu otev©en° zadanò na commandlajnà hled†
+		  v celÇm dirlistu (ve v®ech vòznamnòch adres†©°ch)
+		
+
+e1-3.10-0a
+
+		+ p†r zmàn usnad§uj°c°ch tvorbu vlastn°ch projektñ
+		  . parametry skriptñ dlouhÇ aë 64KB
+		  . p©iloëenò skript menu.scr um° na áten†©e vysypat ©adu
+		    zadanòch ot†zek a podle odpovàd° prov†dàt akce typu
+		    hl†®ka, zvuk, hudba, anim, skok na str†nku, jin† ot†zka...
+		  . drobn† zmàna Parlanu (cutChar vrac° string)
+		+ opravy (link na animaci)
+		
+
+e1-3.05-0a
+
+		+ bàë° i ve Windows NT/2000 s jejich tragicky nekorektn°
+		  emulac° DOSovÇ my®i
+		- v DOSemu oknà v Linuxu se n†sledkem podpory Windows
+		  NT/2000 zhor®ilo chov†n° my®i, doporuáuji zñstat zat°m
+		  u verze 3.04 nebo Ma®inu pou®tàt ve fullscreenu
+		+ nasteven° citlivosti my®i m† vàt®° rozsah
+		+ pokud Windows NT po©†d otravovaly hl†®kou, ëe v A: nen°
+		  disketa, teÉ to udàlaj° maxim†lnà jednou
+		+ RAIN servery ve verzi 1.3
+		  . p©ehr†vaj° i MP3 s ID3 hlaviákou
+		  . pokud Ma®inu nelze spustit s RAINem, nab°dnou bàh bez nàj
+
+
+e1-3.04-0a
+
+		+ jen drobnÇ zmàny a opravy jako ëe menu co by se neve®lo
+		  na obrazovku scrolluje... jinak ten scrolling v oknà jak
+		  se uk†zalo podopruj° jen star®° verze Windows a beztak
+		  umàly jen v 320x200/256... Ma®ina ov®em v oknà bàh† a to
+		  v jakÇmkoliv rozli®en° a barevnÇ hloubce...jak? V DOSemu
+		  v Linuxu.
+
+e1-3.03-0a
+
+		+ jen pro legraci: Ma®ina teÉ scrolluje i ve Windows v oknà (jak
+		  na to? vlez do setupu, vypni IRQ2, nastav 320x200/8 a vypni
+		  automatickou zmànu m¢du (nebo rovnou pusü Ma®inu
+		  s parametry vga x=320 y=200) a stiskni Alt-Enter)
+
+
+e1-3.02-0a
+
+		+ sice to nen° novinka Ma®iny, ale p©iloëenò novò RAIN 1.2 hraje
+		  ve Windows p©es DirectSound (kdyby byly problÇmy, DS lze
+		  zak†zat p©i konfiguraci RAINu) a m† vy®®° prioritu
+		? tak se uk†zalo, ëe IRQ2 i hodiny jsou ok, za pad†n° nàkteròch
+		  Windows mohl mousehandler (chyba Borlandu, Microsoftu nebo
+		  my®°ho driveru). mousehandler od 3.01 pouë°v†m jen na p©†n°,
+		  v°c nelze dàlat
+		+ hlasitost se p©i se©izov†n° (+,-) ukazuje na obrazovce
+
+
+e1-3.01-0a
+
+		+ nàco z minule slavnà uvedenòch IRQ2 a p©esnòch hodin moën†
+		  dàl† nàkteròm Windowsñm tàëkou hlavu, proto je teÉ oboje
+		  implicitnà vypnuto a opàt zapnout (coë doporuáuji) lze
+		  v setupu nebo v dm.ini
+		+ vypnut je i mousehandler, tÇë doporuáuji zapnout. v°m o
+		  jedinÇm poá°taái, kterò s mousehandlerem asi chybou ovladaáe
+		  my®i obáas tuhnul
+		+ v nàkteròch situac°ch men®° spot©eba a lep®° chov†n° p©i
+		  nedostatku pamàti (ov®em jen v mez°ch moënost°
+		  zabugovanÇho Borland°ho memory manageru)
+
+
+e1-3.00-0a
+
+		d[zvuk]a
+		+ novò audiosystÇm RAIN
+		  . hraje na libovolnÇ zvukovÇ kartà s ovladaáem ve Windows
+		  . ov®em nad†le hraje i v áistÇm DOSu p©es GUS/SB/PAS/WSS
+		  . p©ehr†v† MOD, S3M, XM, (IT), WAV, MP3
+		  . 16bit stereo + interpolace
+		  . nen° nutno, ale lze nakonfigurovat p©°kazem rain -c
+		  . dee.cz/rain
+		+ novÇ hudebn° menu pod F8
+		  . lze p©ehr†vat v®echny moduly a mp3 z vybranÇho adres†©e
+		  . po©ad° mñëe bòt abecedn° nebo n†hodnÇ
+		  . automaticky st©°dat lze po dohr†n° nebo po x minut†ch
+		  . ruánà lze pustit p©edchoz°, n†sleduj°c° nebo n†hodnò modul
+		? d©°ve obsazenÇ kl†vesy F9, F10 a F11 jsou teÉ volnÇ
+		+ plus a m°nus na numpadu ovl†daj° hlavn° zesilovaá
+		+ hudebn° uk†zka hraje vëdy jen jedna a jej° hlasitost se ©°d°
+		  hlasitost° hudby v Ma®inà (takëe jde nastavit kl†vesami 1..0)
+		+ kliknut° na modul ho p©ehraje jednou a vr†t° pñvodn° hudbu
+		+ aë na p†r sampl°kñ £plnà novÇ ozvuáen°; douf†m, ëe se l°b°
+		d[scrolling]a
+		+ novÇ metody jak dos†hnout plynulÇho scrollingu i ve Windows
+		  nebo v jinòch nehostinnòch krajin†ch, bàhem hran° MP3 apod.
+		  . IRQ2 generovanÇ grafickou kartou
+		  . hodiny s p©esnost° vy®®° neë mikrosekunda
+		d[ostatn°]a
+		+ novò setup se spoustou áudl°kñ (F2 nebo tlaá°tko Setup)
+		  . spousta áudl°kñ
+		  . a hejbl†tek
+		+ v podpñrnÇm bal°ku k editoru p©ibyl
+		  . FNED verze 1999/10/17
+		  . p†r fontñ
+		? d©°ve samostatnÇ lang.cz a lang.eng byly uklizeny do dm.exe,
+		  k roz®°©en° podpory o dal®° jazyky uë je nutnÇ
+		  p©ekompilov†n°, nestaá° jako d©°v jen p©idat novò lang.*
+		+ chr†n° dal®° vadnÇ VBE na Voodoo3 p©ed zhroucen°m
+		+ p†r drobnost° typu: fileselectory p©i spu®tàn° editoru a p©i
+		  hled†n° vlastn° hudby zaánou kde skonáily minule
+		+ auto©i mñëou kaëdÇmu obr†zku ve slideshow doporuáit
+		  prohl°ëec° rozli®en°
+		+ mothership reconnected ze scene.org na scene.cz, na .org
+		  nejsou ani trochu broncsy, jak dokl†d† pravdivò p©°bàh, kterò
+		  se stal: potupnà jsem vyplnil apply form, p©iloëil we r0mb ya
+		  dont (naprost† bomba), realtime radiosity (naprost† bomba) a
+		  fuck you (naprost† bomba) a oni ani neodpovàdàli, trpajzlici
+		  bradaviánatò. takëe smysl ëivota je skryt na
+		  broncs.scene.cz
+
+
+e1-2.40-0a
+
+		+ p©°prava na zmànu audiosystÇmu, bin†rn° kompatibilita bude
+		  zachov†na do verze 3.09, pozdàji vytvo©enÇ projekty pñjdou
+		  prohl°ëet uë jen Ma®inou 3.xx s novòm audiosystÇmem
+		? jist† zmàna, d°ky kterÇ je scrolling na Cirrus Logic 5436/46
+		  plynulej®° (dejte mi vàdàt kdyby se na jinÇ kartà situace
+		  naopak zhor®ila)
+		+ chr†n° vadnÇ VBE na Banshee p©ed zhroucen°m
+		+ opravy
+		  . HTML export str†nek s mnoha emaily a http adresami
+		  . dlgMenu v Parlanu
+		
+
+e1-2.34-0a
+
+		+ podpora sloven®tiny
+		  . konvertuje znaky z kl†vesnice v jinÇm k¢dov†n°
+		  . konvertuje znaky p©i exportu do jinÇho k¢dov†n°
+		  . ov®em za p©iloëenÇ fonty neruá°m, asi nebudou £lpnÇ
+		+ podpora rñznòch k¢dovn° diakritiky
+		  . Kamen°ci, ISO Latin 2, PC Latin 2, Win 1250
+		  . v®e se autodetekuje, uëivatel se o nic nestar†
+		  . funguje nejen v editoru p©i psan° a p©i otv°r†n° textovòch
+		    souborñ, ale i p©i psan° v prohl°ëeái, t©eba v inputlajnà
+		    v anketn°m l°stku
+		  . pamatuje si jakÇ k¢dov†n° bylo pouëito p©i minulÇm spu®tàn°,
+		    nemus° se tedy pokaëdÇ znovu samose©izovat a p©°padnà
+		    dàlat v prvn°ch p†r znac°ch chyby
+		+ automatick† volba bitovÇ hloubky bere v £vahu i mnoëstv°
+		  systÇmovÇ pamàti, màlo by ubòt p†dñ na jej° nedostatek
+		+ podpora áty© a ®estn†ctibarevnòch PNG
+		+ bàë° i na systÇmech bez retrace a z†rove§ bez hodin
+		+ v podpñrnÇm bal°ku k editoru p©ibyl
+		  . progr†mek na zpracov†n° anketn°ch l°stkñ
+		+ pod vlivem Y2k kampanà jsem se mrknul co dàl† Ma®ina
+		  s datem a s radost° v srdci mohu ozn†mit, ëe prvn° problÇmy
+		  (zpñsobenÇ filesystemem FAT, ne Ma®inou) mohou nastat
+		  aë roku 2100
+		+ opravy
+		  . grafika na Voodoo 3
+		  . grafika na Cirrus Logic 5436/46
+		  . karty s extrÇmnà velkou videopamàt°
+		  . pr†ce s ini souborem pod NT
+		  . vyhodnocov†n° nàkteròch vòrazñ v ParLanu
+
+
+e1-2.33-0a
+
+		+ v podpñrnÇm bal°ku k editoru p©ibyl
+		  . skript na vòbàr z v°ce moënost° (uëiteánò do anket)
+		+ z editoru palety jde kliknut°m na b°lò átvereáek zapsat do
+		  souboru rgb hodnoty oznaáenòch barev
+		+ podpora dvoubarevnòch PNG
+
+
+e1-2.32-0a
+
+		+ v ParLanu p©ibyly p©°kazy na pr†ci se soubory,
+		  typick† aplikace je ukl†d†n° anketn°ch l°stkñ
+		+ Ma®ina nyn° funguje i bez moënosti sledovat bàh paprsku,
+		  nap©°klad v DOSEmu oknà pod Linuxem
+		+ v podpñrnÇm bal°ku k editoru p©ibyly
+		  . konvertor TTF2PCX
+		  . Acemanñv PIC2FN (z libovolnÇho TTF teÉ lze vyrobit FN)
+		  . skript na inputlajnu
+		  . skript na ukl†d†n° anketn°ch l°stkñ
+		  . (a novàj®° verze FNED a FN)
+		+ parametrem z p©°kazovÇ ©†dky lze otev©°t swapfile
+		  (ale to jen ve velkÇ nouzi, nàjak to pad†)
+		+ na str†nk†ch mohou bòt odkazy na TXT, PAS, C apod. soubory
+		+ tam kde znàl jeden sampl mñëe bòt seznam, ze kterÇho se
+		  vëdy n†hodnà vybere
+		+ opravy
+
+
+e1-2.31-0a
+
+		+ F3 = vòbàr str†nek podle autorñ
+		+ str†nky po exportu do HTML jsou v ISO Latin 2,
+		  takëe áeskÇ znaky mus° spr†vnà zobrazit v®echny browsery
+		+ lep®° export do TXT
+		+ v podpñrnÇm bal°ku k editoru p©ibyl font editor FNED
+		+ opravy
+
+
+e1-2.30-0a
+
+		+ pod F7 p©ibylo uloëen° screenshotu
+		+ opravy a men®° zmàny a roz®°©en° form†tu
+
+
+e1-2.20-0a
+
+		+ poprvÇ od 2.00 je to ostr† verze: v®echny kontroln° testy
+		  vypu®tàny, program je men®° a rychlej®°
+		+ prohl°ëet jde i v textm¢du
+		+ z p©°kazovÇ ©†dky lze omezit mnoëinu pouë°vanòch rozli®en°
+		+ m°sto parametru V jsou nyn° VGA, VESA, NOVGA a NOVESA
+		+ F4 = volba projektu (alternativa k hlavn°mu menu)
+		+ F5 = volba rozli®en° (alternativa k hlavn°mu menu)
+		   v°c o rozli®en°ch a m¢dech se dozv°® na str†nce Fakta
+		+ pos°len† podpora psan° pro Vòhe§
+		+ opravy
+
+
+e1-2.10-0a
+
+		+ str†nky mohou m°t popisek na doln° li®tà (lze vypnout v ini)
+		+ vylep®enò editor a form†t (detaily v helpu)
+		+ Ma®inou x.yz lze prohl°ëet .DM soubory aë do verze x.y9
+		+ opravy
+
+
+e1-2.00-0a
+
+		d+ programovatelnosta
+		  . na str†nky lze vkl†dat objekty napsanÇ v jazyce ParLan
+		  . objekty mohou mànit vzhled str†nky
+		  . objekty mohou komunikovat mezi sebou i s uëivatelem
+		  . objekty mohou vytv†©et novÇ objekty
+		  . objekty mohou sledovat a ovliv§ovat nastaven° Ma®iny
+		  . objekty mohou spou®tàt extern° programy
+		  . objekty mohou p©etrvat vypnut° Ma®iny
+		d+ vàrnàj®° zobrazen° d°ky Hi/TrueColor m¢dñma
+		  . bitov† hloubka se vol° podle okolnost° tak, aby p©i n°
+		    karta pokud moëno je®tà zvl†dla plynulò scrolling
+		  . v®e tedy nad†le funguje i na VGA kartà s 256KB pamàti
+		  . rñznÇ bitovÇ hloubky lze zak†zat z p©°kazovÇ ©†dky
+		  . interaktivn° testy grafickÇ karty jsou implicitnà vypnuty
+		    ale jdou zapnout v INI souboru
+		d+ v°cejazyánosta
+		  . Ma®ina i projekty mohou podporovat libovolnò jazyk
+		    s ©azen°m znakñ zleva doprava, shora dolñ
+		  . Ma®ina moment†lnà um° CZ a ENG
+		  . podpora v projektech z†leë° jen na jejich tvñrc°ch
+		  . snadn† roz®i©itelnost Ma®iny i projektñ o dal®° jazyky
+		d+ snadnàj®° vytv†©en° vlastn°ch projektña
+		  . ë†dnÇ starosti s paletami obr†zkñ
+		  . vno©ov†n° ®ablon
+		  . generovatelnost str†nek pomoc° objektñ
+		  . ®ir®° podpora grafickòch form†tñ
+		  . klasick† prñhlednost u GIFñ
+		  . vrh†n° st°nñ
+		  . ztmavov†n° okrajñ obr†zkñ
+		  . p©ibyl novò jednodu®®° zpñsob tvorby pozad° str†nek
+		  . textm¢dovÇ str†nky
+		d+ exporta
+		  . lze exportovat do TXT, obr†zku, Vòhnà, HTML, Ma®iny
+		  . lze exportovat jedinou str†nku nebo celò podstrom
+		  . HTML exportÇr m† hromadu parametrñ v INI souboru
+		d+ a dal®°a
+		  . á†steán† podpora VGA nekompatibiln°ch karet
+		  . podpora operaán°ch systÇmñ bez sluëby Event Wait
+
+
+
+e1-1.34-0a
+
+		+ v DM.INI lze nastavit rychlost stm°v†n°/rozsvàcen°
+		+ obzvl†®ü vypeáen† a £áinn† detekce SVGA m¢dñ
+		  (kvñli vadnòm VBE s polopr†zdnòm modelistem)
+
+
+
+e1-1.33-0a
+
+		+ F8 = vòbàr modulu odkudkoliv
+		+ dialogy (menu, fileselector) jdou ovl†dat my®°
+		+ my® se po©†d necentruje
+		+ kopec novòch fontñ, nov† verze konvertoru FN
+		+ provizorn° export str†nek do HTML a do form†tu Vòhnà
+		- pokud nàkdy fungovaly anketn° l°stky, tak odteÉ aë do
+		  verze 2.0 nebudou
+
+
+
+e1-1.32-0a
+
+		+ mñëe® si nakreslit vlastn° ®ipku (viz dokumentace\fakta\
+		  o konfigurov†n°) nebo jen nastavit jej° velikost (v DM.INI)
+
+
+
+e1-1.31-0a
+
+		+ animace (FLI, FLC), p©ehr†vat lze jak fullscreenovà,
+		  tak na str†nk†ch mezi textem, i nàkolik najednou
+		+ setup zvukovÇ karty se spou®t° automaticky
+		+ novÇ menu pod F1 (shrnuje v®echny ostatn° funkce)
+		+ F7 vyvol† menu pro export str†nky (TGA/TXT/zdroj†k)
+		+ F8 umoë§uje vybrat si a spustit vlastn° modul
+		+ F9 reinicializuje Midas (pouëij kdyë zaáne chráet)
+		+ na tituln° str†nku si mñëe® d†t vlastn° obr†zek
+		  (viz dokumentace\fakta\o konfigurov†n°)
+		+ nàkterÇ chyby ohl†s° v oknà a d†l bàë°, nepad† do dosu
+		+ nàkolik drobnost°
+		  . podpora dal®°ho vadnÇho S3 VBE
+		  . vrac° se do rozli®en° z jakÇho byla spu®tàna
+		  . v DM.INI lze zapnout/vypnout intern° cache Ma®iny,
+		    od tÇto verze je implicitnà vypnut†
+		+ samoz©ejmà halda oprav
+		? neinstaluje se do C:\KLAN\DM ale do C:\DISKMAGS\DM :-)
+
+
+
+e1-1.22-0a
+
+		+ je to ostr† verze c(Usoudil jsem, ëe uë je Ma®ina dost
+		  stabiln° na to, abych vyhodil kontroln° a lad°c° k¢d. Ale
+		  pokud ti minul† verze nàkdy ©ekla: "Betaverze hl†s°: chyba
+		  bleble...", tahle uë to ne©ekne a moën† se zhrout°. Zato
+		  je program dvakr†t krat®° a trochu rychlej®°.)a
+		+ p†r oprav a drobnÇ zmàny (slideshow dàd° vlastnosti
+		  ze str†nky template)
+		+ ony sl°benÇ novÇ fonty a konvertor (minule do®lo
+		  k z†mànà adres†©ñ, sorry)
+
+
+e1-1.21-0a
+
+		+ screensaver
+		+ pro redaktory jsou tu novÇ fonty a konvertor mezi
+		  form†ty FN, FNT, FNP, RIF
+		+ zase ubyl kopec chyb
+
+
+e1-1.20-0a
+
+		+ kompletnà p©epsanò soundsystÇm (nadstavba Midasu)
+		   . neomezen† dÇlka samplñ (d©°ve ®ly jen do 64KB)
+		   . m°sto modulu mñëe hr†t jeden dlouhò sampl
+		+ do textu lze vkl†dat odkazy na samply a moduly
+		+ uë zase funguje ruán° p©ep°n†n° hudby (F1, F2...)
+		+ PrintScreen uloë° str†nku na disk do souboru .TGA
+		+ lze kompilovat ©†dovà vàt®° projekty
+		+ opraveno p†r men®°ch a jedna VELKè chyba, kter†
+		  zpñsobovala n†hodnÇ kolapsy uë od verze 1.00
+
+
+e1-1.12-0a
+
+		+ v®echny odkazy jsou podtrëenÇ
+		+ vàt®ina hl†®ek jde p©es DOS, takëe jdou p©esmàrovat
+		+ p©epracovan† spr†va chyb, douf†m ëe v tomto p©°padà si
+		  vàt®ina uëivatelñ ë†dnÇ zmàny nev®imne :)
+		+ p†r oprav a vylep®en° editoru (vàt®° rozsah str†nek,
+		  v°ce zpñsobñ form†tov†n° textu...)
+
+
+e1-1.11-0a
+
+		+ mnoho oprav (scrolling v nàkteròch m¢dech, textm¢dy
+		  s 200, 350 nebo 480 mikro©†dkami, timer, slideshow,
+		  detekce Windows, vy®®° kompatibilita se star®°mi verzemi,
+		  podpora pro dal®° vadnò vesa bios, synchronizace my®i,
+		  spr†va chybovòch stavñ, event wait)
+		+ uë nepot©ebuje vysokÇ FILES=
+		+ novò layout INI souboru (nelze á°st star®°mi verzemi)
+		+ Dr D.Bug'z info windoo (TAB/tilda/q/w)
+		+ nouzovò m¢d (parametr n)
+		+ instalace (parametr i)
+		- zru®en CD m¢d (parametr c)
+
+
+e1-1.10-0a
+
+		+ samply koneánà hraj°, i nàkolik z†rove§
+		+ slideshow koneánà funguje
+		+ opraveno mnoho chyb, program je podstatnà stabilnàj®°
+		+ kompletnà p©eps†na volba metody pro scrolling, d°ky tomu
+		  je scrolling plynulò i v nàkteròch m¢dech kde d©°v nebyl
+		+ ©ada novinek v editoru 
+		   . problÇm s nedostatkem m°sta vy©e®en scrollingem
+		     do stran, viz promànn† "Zoom" v INI souboru
+		   . problÇm s importem a bloky vy©e®en p©ep°n†n°m
+		     do editoru z TurboVision
+		   . kl†vesy jako End, Ctrl-Y opàt v provozu
+
+
+e1-1.01-0a
+
+		+ odstranàno hroucen° p©i n†vratu do operaán°ho systÇmu
+		+ odstranàno vynech†v†n° p°smen v editoru
+		+ opraven scrolling v nàkteròch m¢dech
+		+ jako obvykle kupa drobnost°
+
+
+e1-1.00-0a
+
+		+ d©°ve bezejmennò program dostal n†zev Deus ex Machina
+		+ nevyëaduje EMS ani XMS, bàë° v protektu, sn†®° Windows
+		+ volitelnÇ rozli®en°/podpora SVGA m¢dñ
+		+ scrolling do stran (na ®irokòch str†nk†ch)
+		+ parametr e spou®t° editor str†nek
+		+ na SB hraje i dlouhÇ moduly
+		+ lep®° komprese grafiky (JPG,PNG)
+		+ DOS shell a Boss key
+		+ moënost p©izpñsobit si paletu (mezern°k)
+		+ novÇ moënosti p©i tvorbà str†nek (fonty,template..)
+		- nehraj° samply (doáasnà)
+		- ne£pln† zpàtn† kompatibilita
+		  (hroucen° ái ®patnÇ zobrazen° mnoha staròch str†nek)
+		- velik† hromada nedodàlanòch vàc°
+		  (to-do list teÉ m† asi 100 poloëek)
+		+ ©ada p©°jemnòch drobnost°
+		   . £pln† emulace my®i numpadem (váetnà "drë a t†hni")
+		   . kromà ®ipek lze pouë°t i PgUp, PgDwn, Home, End
+		   . uë ë†dn† diskriminace majitelñ PS/2 my®°
+		   . menu a ostatn° funkce jsou dostupnÇ i ze slideshow
+		   . spou®tàn° .DM souboru parametrem z p©°kazovÇ ©†dky
+		   . nastavov†n° pracovnho adres†©e z p©°kazovÇ ©†dky
+		   . pracovn° adres†© lze uráit i DOSovou promànnou DM
+		   . ignoruje ReadOnly INI soubory (nap© vyp†lenÇ na CD)
+		- ©ada nep©°jemnòch drobnost°
+		   . nejde ruánà p©ep°nat hudba
+		   . nejde za bàhu mànit citlivost my®i apod.
+		   . BIOS obáas nezachyt° znak z kl†vesnice
+		   . slideshow se zat°m neposouv† samo
+
+
+
+e1-044-0a
+
+		  ------------pre-release-----------
+		+ podpora PS/2 my®°, p©ep°naá v INI
+		+ intro-str†nky (viz War2/P15)
+		+ detaily v ovl†d†n° (F10 v setupu/ripperu=n†hl† smrt)
+
+
+e1-043-0a
+
+		+ SVGA str†nky, zat°m jen kvñli testov†n°
+		+ Se©izov†n° jasu pozad° (®edivÇ +/-)
+		+ Inteligentnàj®° p©ep°n†n° hudby (hlavnà na SB)
+		+ P†r drobnòch oprav a vylep®en°
+		- Intern° zmàny, tj. spousta novòch kr†snòch chyb :)))
+
+
+e1-042-0a
+
+		+ TEXTURY!!!
+		+ P†r oprav
+
+
+e1-041-0a
+
+		+ Zesilovaá (dostupnò v INI souboru)
+		+ Fix na problik†vaj°c° slideshow (áti INI)
+		+ BoldDoubleFont a jin† mÇnà podstatn† vylep®en°
+		+ Odstranàny nàkterÇ starÇ chyby
+		+ Jin† tv†© :)
+
+
+e1-040-0a
+
+		- Chyba v ovl†d†n° z kl†vesnice
+		+ Moënost vypnout synchronizaci s paprskem
+		+ LevÇ tlaá°tko inteligentnà GoBackuje
+		+ Roztrou®enÇ anketn° ot†zky
+		+ Malò fix v p©ehr†v†n° samplñ
+
+
+e1-039-0a
+
+		+ SlideShow
+		- Zmizel scrolling do stran
+		+ Program nevyëaduje drivery pro grafickÇ karty
+		+ Ripper na moduly 
+		+ DumpScreen (BMP)
+		+ Samply hraj° i na SB (douf†m)
+		+ Nàkter† 'neviditeln†' vylep®en°
+		+ Opravena ©ada staròch drobnòch chyb
+		- Zavleáena ©ada novòch drobnòch chyb
+		+ Zjednodu®en DISKMAG.INI (mÇnà parametrñ)
+
+
+
+e1-038-0a
+
+Prvn° verze od oddàlen° k¢du a dat.
+Ä°slo 38 znamen† ëe jde o 38. ve©ejnà ®°©enou verzi.
+
+
+

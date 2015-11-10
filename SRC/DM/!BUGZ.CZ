@@ -1,0 +1,49 @@
+nfo:ëmÒagî 321
+tem:!help
+fmt:1
+par:5,0
+siz:80x77
+pos:slp=1 x=8 line=1 slpline=0
+Ý^0,40,0,65Þ
+
+
+cOt zky a odpovˆdi.a
+
+Pokus¡m se zde odpov¡dat na ‡asto kladen‚ ot zky, kter‚ mohou pomoci mnoha lidem. A proto‘e na dotazy norm lnˆ hned odpov¡d m a zapom¡n m odpovˆdi zan ¨et i sem, p r dot zk– si vymysl¡m.
+
+	bPro‡ obr zek s castshadow=on nevrh  st¡n?a
+Asi proto, ‘e m  pr–hledn‚ pozad¡. Realistick‚ vrh n¡ st¡n– dˆrav˜mi obr zky (nebo dokonce animacemi) by na pomal‚m po‡¡ta‡i zdr‘ovalo, vypustil jsem ho.
+
+	bPro‡ nem  obr zek/animace se shadeborder=on ztmaven‚ okraje?a
+U animace by to ned valo smysl - tak stra¨n‚ zdr‘ov n¡ kv–li nˆ‡emu, co si m–‘e¨ udˆlat s m (ulo‘it animaci s okrajem u‘ ztmaven˜m). Obr zky s pr–hledn˜m pozad¡m jsou stejn˜ p©¡pad, nem  smysl slo‘itˆ ztmavovat nepravidelnˆ tvarovan‚ okraje, kdy‘ si to m–‘e¨ udˆlat s m a ulo‘it obr zek u‘ ztmaven˜. Posledn¡ p©¡pad, kdy neztmavuji pro p©¡li¨nou ‡asovou n ro‡nost jsou obr zky s paletou na str nce generovan‚ v 256 barev ch.
+
+
+cPro‡ to zas spadlo?a
+
+To by mohla b˜t ot zka nej‡astˆj¨¡. Jsou r–zn‚ d–vody, pro‡ program pad . P r jich tu proberu. Ka‘dop dnˆ ‡asto ukl dej a ob‡as i z lohuj.
+
+
+	bText p©esahuje okraj str nky.a
+Tvary nˆkter˜ch okrasn˜ch p¡smen zasahuj¡ daleko mimo jejich tˆla. Zarovn v n¡ se ale prov d¡ podle tˆl, tak‘e kdy‘ um¡st¡¨ text tˆsnˆ ke kraji, vr¨ku nebo spodku obrazovky, semtam nˆjak‚ p¡smeno p©e‡ouhne a zp–sob¡ General Protection Fault. Mohl bych to hl¡dat a o©ez vat, ale bylo by to zbyte‡n‚ zpomalen¡ programu, ohl¡dej si to s m. (zvl ¨Ÿ pozor na font Bard)
+
+	bSloupce se dostaly za hranice str nky.a
+Bˆ‘nˆ se ti to nestane, ale kdy‘ bude¨ cht¡t, je spousta zp–sob–, jak dostat sloupec textu za hranice str nky. Trivi ln¡ je zvˆt¨it str nku, posunout sloupec ke kraji a zmen¨it str nku. Jin  mo‘nost - zavˆsit sloupec dva NAD sloupec jedna a sloupec jedna posunout co nejv˜¨. Takov˜ sloupec mimo str nku nadˆl  paseku jedna radost..
+
+	bNekorektn¡ template.a
+Str nka template mus¡ m¡t kompletn¡ header, ostatn¡ ne, ostatn¡ si chybˆj¡c¡ £daje dopln¡ pr vˆ z template. Tak‘e ne aby tˆ napadlo nˆjakou oby‡ejnou str nku p©ejmenovat na template...
+
+	bNejde vygenerovat pozad¡a
+		Viz help k tvorbˆ pozad¡, asi tam nˆjakou chybu m¡t bude¨..
+
+	bN hodn˜ znak nˆkde kam nepat©¡.a
+A‡koliv je Ma¨ina ve srovn n¡ s jin˜mi programy je¨tˆ pomˆrnˆ blbuvzdorn , n hodn˜ znak na nespr vn‚m m¡stˆ p©eci jen ¨kodit m–‘e. Nˆkdy se projev¡ hned, nˆkdy pozdˆji. Kdy‘ se na podez©ele padavou str nku pod¡v ¨ bˆ‘n˜m prohl¡‘e‡em textov˜ch soubor–, mo‘n  si nˆjak‚ chyby v¨imne¨. Ov¨em vy‘aduje to zbˆhlost v syntaxi str nek.
+
+	bTahle str nka vytrvale pad .a
+Zkus po ‡ stech umaz vat dokud nezjist¡¨ kter˜m kouskem to bylo. Tam u‘ nˆjakou zradu najde¨. A kdy‘ ne, po¨li mi to. Vˆt¨ina chyb je v datech (na str nk ch), ale probl‚m teoreticky m–‘e dˆlat i program.
+
+	bVadn‚ soubory.a
+Nevylu‡uji kolaps na vadn‚m obr zku, modulu, fontu apod.. Pochopitelnˆ se sna‘¡m je rozeznat a slu¨nˆ odm¡tnout, ale ne v‘dy se to mus¡ pov‚st, korektn¡ vstupy jsou tvoje starost.
+
+	b???a
+		Dal¨¡ probl‚my? Poslouch m...
+

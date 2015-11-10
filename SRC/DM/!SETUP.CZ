@@ -1,0 +1,52 @@
+nfo:ëmÒagî 351
+tem:!doc
+fnt:tenkej.fn;bard.fn
+fmt:0
+tex:d
+fla:c
+pal:WZ=UQ8SI4QA0O8,M0(K($I  ^\I>7']\ ]\_22 >> MM ZZ O::_CC444>>>HHH :: HH UU3* 5) 6+ 8+ <* >+ =* :+ 8, 3+ 0+ .+ +' && ##    
+siz:360x726
+pos:slp=3 x=44 line=16 slpline=9
+Ý^0,236,204,245Þ
+Ý~!loco,245x165Þ
+
+Ý^0,54,256,108Þ
+
+Ýf,,3Þ1eDeus
+ex
+Machinaa0
+Ýf,,1Þ
+Ý^0,209,20,190Þ
+c   !checkb.scr enable_buttonpicsa  obr zky na tla‡¡tk ch
+c   !checkb.scr enable_picturesa  obr zky v–bec
+c   !checkb.scr enable_animationsa  animace
+c   !checkb.scr enable_slideshowsa  slideshow
+c   !checkb.scr enable_changemodea  automatick  zmˆna m¢du
+c   !checkb.scr enable_modelista  seznam m¢d– v menu
+c   !checkb.scr enable_infopanela  li¨ta na nˆkter˜ch str nk ch
+c   !checkb.scr enable_testsa  testy grafick‚ karty
+c   !checkb.scr enable_avoidbadgfxa  jen bezpe‡n‚ m¢dy
+c   !checkb.scr enable_irq2a  irq2 (pro lep¨¡ scrolling)
+c   !checkb.scr enable_preciseclocka  p©esn‚ hodiny (-"-)
+Ý^0,189,390,296Þ
+c             !slide.scr volume_musica  hlasitost hudby
+c             !slide.scr volume_samplea  hlasitost zvuk–
+
+c             !slide.scr size_mousea  velikost my¨i
+
+c             !slide.scr speed_mousea  citlivost my¨i
+c             !slide.scr speed_numpada  citlivost numpadu (emulace my¨i)
+c             !slide.scr speed_autoscrola  rychlost scrollingu my¨¡
+c             !slide.scr speed_arrowsa  rychlost scrollingu ¨ipkami
+
+c             !slide.scr delay_nextslidea  prodleva mezi obr zky ve slideshow (0-20sec)
+c             !slide.scr delay_screensavera  za jak dlouho pustit screensaver (0-20min)
+
+
+c             !varline.scr shella  p©¡kaz vykonan˜ po stisku DOS shell
+
+b
+ÝÄÞ
+Tyto £daje jsou ulo‘eny v souboru dm.ini.
+Setup audiosyst‚mu RAIN lze spustit p©¡kazem "rain -c".
+

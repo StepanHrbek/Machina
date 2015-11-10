@@ -1,0 +1,78 @@
+nfo:ëmÒagî 231
+tem:!help
+siz:80x73
+pos:slp=1 x=0 line=60 slpline=59 blkStart=2589 blkEnd=2662
+Ý^0,40,0,80Þ
+
+
+dMain editor functions
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄa
+
+    c[main functions]a
+    bF1a       - help
+    bF2a       - save
+    bF3a       - save and show in graphics !
+    bF4a       - save and run source editor
+    bF5a       - change colour from cursor
+    bF6a       - change font from cursor
+    bShift F6a - change font from cursor to one of fonts already used on page
+    bCtrl F6a  - replace all occurrences of one font with a different font
+    bF7a       - create link to some other page or script
+                After selecting some page, you'll get page.
+                Fill a reference (the word that will be underlined)
+                to get a valid link like: referencepage.
+    bShift F7a - link to other page/picture/anim/sample/module/script
+    bF8a       - insert a picture or an animation
+    bShift F8a - insert a picture or an animation as link
+                to other page/picture/animation...
+    bF10a      - insert object (but usually more suitable is the way with F7)
+    bF12,Alt-Xa- quit editor
+    bTABa      - one TAB on line beginning aligns text to left
+                two TABs on line beginning shifts text as new paragraph
+                TABs inside text has no meaning
+
+    c[layers]a
+    bF9a       - split layer under cursor
+    bShift F9a - merge this and previous layer into one, inverse to F9
+    bAlt 1..9a - jump to layer 1..9
+    bdragging with left buttona             - move whole layer
+    bhorizontal dragging with right buttona - change layer width
+    bvertical dragging with right buttona   - rehook layer to another layer
+
+
+dCommon functions
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄa
+
+    c[cursor movement]a
+    barrowsa               - move cursor left/right/up/down
+    bCtrl arrowsa          - jump a word left/right
+    bHomea                 - to the begin of line
+    bEnda                  - to the end of line
+    bPageUpa               - 20 rows up
+    bPageDowna             - 20 rows down
+    bCtrl Homea            - to the begin of layer
+    bCtrl Enda             - to the end of layer
+    bCtrl PageUpa          - to the begin of file
+    bCtrl PageDowna        - to the end of file
+    bclicking left buttona - position cursor
+
+    c[deleting/writing]a
+    bDeletea               - delete char under cursor
+    bBackspacea            - delete char before cursor
+    bCtrl Ya               - delete one row
+                           if picture starts at next line, it's also deleted
+    bCtrl Ta               - delete from cursor to begin of next word
+    bInserta               - insert a new row
+
+    c[blocks]a
+    bShift [move cursor]a  - MARK block
+    bShift Deletea         - CUT block to memory
+    bShift Inserta         - PASTE block from memory
+    bCtrl Inserta          - COPY block to memory
+    bCtrl Deletea          - DELETE block
+
+    c[others]a
+    bclicking right buttona- menu (also bAlt-Sa menu, bAlt-Da repeats last selection)
+    bEsca                  - leave page
+
+

@@ -1,0 +1,66 @@
+nfo:ëmÒagî 303
+tem:!help
+siz:80x61
+pos:slp=1 x=0 line=34 slpline=33
+İ^0,40,0,80Ş
+
+d
+                        ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´  V¨e co se t˜k  zvuku  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                        ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙa
+
+cJak‚ kategorie zvuk– Ma¨ina nab¡z¡a
+  - bhudbaa (v‘dy hraje jen jedna a loopuje nebo se st©¡da s jinou hudbou)
+  - bhudebn¡ uk zkaa (v‘dy hraje jen jedna, neloopuje, zti¨¡ si hudbu)
+  - bsampla (m–‘e hr t mnoho nar z, neloopuj¡)
+
+cPodporovan‚ form tya
+  Jsou to ty, kter‚ podporuje RAIN, tedy
+  - MOD
+  - S3M
+  - XM
+  - ‡ ste‡nˆ IT
+  - MP3
+  - nekomprimovan˜ WAV
+  - mal  podmno‘ina IFF pouze kv–li zpˆtn‚ kompatibilitˆ
+
+cJak˜ soubor pat©¡ do kter‚ kategoriea
+  V¨echny form ty jsou rovnocenn‚ a za hudbu, hudebn¡ uk zku nebo sampl jsou
+  pova‘ov ny podle okolnost¡.
+  N sleduj¡c¡ pravidla mo‘n  vypadaj¡ slo‘itˆ, ale byla zvolena tak, aby ses
+  nemusel ve vˆt¨inˆ p©¡pad– o nic starat.
+
+  - v promˆnn‚ mus: je v‘dy bhudbaa
+  - v promˆnn˜ch sxx:, v odkazu na soubor a p©i pou¨tˆn¡ ze skriptu
+    se rozhoduje podle jm‚na a velikosti souboru:
+     *_s.* je bsampla
+     *_d?a.* je bhudebn¡ uk zkaa (zti¨¡ hudbu na d?a0% p–vodn¡ hlasitosti)
+     *.mod, *.s3m, *.xm, *.it je bhudebn¡ uk zkaa (zti¨¡ hudbu na 0%)
+     *.mp3 vˆt¨¡ ne‘ 32KB nebo *.wav/iff vˆt¨¡ ne‘ 128KB je bhudebn¡ uk zkaa
+       (zti¨¡ hudbu na 0%)
+     ostatn¡ je bsampla
+
+  V praxi to vypad  tak, ‘e mal‚ sampl¡ky zazn¡ jen tak do hudby, v¨echno
+  ostatn¡ si hudbu zti¨¡... o podtr‘¡tka se za‡ni zaj¡mat teprv a‘ bude¨ cht¡t
+  odli¨n‚ chov n¡.
+
+cJak nˆco zahr ta
+  - Na ka‘d‚ str nce m–‘e¨ (do promˆnn‚ mus:) zadat seznam modul–/mp3, kter‚
+    se pak budou podle p© n¡ ‡ten ©e st©¡dat. Pokud str nka nem  v hlavi‡ce
+    "mus:..." polo‘ku, zdˆd¡ hudbu z minul‚ str nky. Pokud zad ¨ pr zdn‚
+    "mus:", bez hodnoty (to lze tu¨¡m jen ru‡nˆ v F4 editoru), bude ticho.
+  - Na ka‘d‚ str nce m–‘e¨ (do promˆnn˜ch sxx:) zadat samply, kter‚ se zahraj¡
+    p©i
+      vstupu na str nku
+      kliknut¡ na link na dal¨¡ str nku
+      n vratu na str nku
+      opou¨tˆn¡ str nky
+      n razu na okraj str nky
+    Norm lnˆ m–‘e¨ p©i©adit do ka‘d‚ ¨katulky jen 1 sampl, ale kdy‘ za nˆj ru‡nˆ
+    p©ip¡¨e¨ dal¨¡, bude se poka‘d‚ n hodnˆ vyb¡rat jeden ze seznamu.
+  - Na modul/sampl m–‘e v‚st odkaz. Kliknut¡m na odkaz se soubor za©ad¡
+    do jedn‚ z kategori¡ (viz minul˜ odstavec) a p©ehraje.
+  - Modul/sampl lze pustit ze skriptu. Efekt je stejn˜ jako p©i kliknut¡ na
+    odkaz.
+
+

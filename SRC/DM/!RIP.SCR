@@ -1,0 +1,37 @@
+{descr: simple ripper}
+{param: file:what_to_rip}
+{files: !meepmee.wav !incorre.wav !chkbox0.gif !chkbox1.gif}
+
+cx=Context(-1,-1,-1)
+data=GetAtom(cx,"data")
+stav=GetAtom(cx,"stav")
+
+if (data!="") then
+ {Pouze pri prvnim spusteni analyzuje vstup a podle nej
+  uvede sve atomy do pocatecniho stavu. Pozdeji (napr pri
+  dalsim vstupu na stranku) se uz vstup ignoruje, neuvadi
+  atomy znovu do vychoziho stavu.}
+ if (stav=="") then
+  {ulozi si udaje do vlastnich atomu}
+  SetAtom(cx,"rip",data,forRuntime)
+  SetAtom(cx,"stav","0",forRuntime)
+ endif
+ mapLoad("!chkbox"+GetAtom(cx,"stav")+".gif")
+ mapRefresh()
+ SetAtom(cx,"data","",forDunno)
+else
+ {Pri kliknuti na objekt zmeni stav.}
+ if (stav=="0") then
+  if Rip(GetAtom(cx,"rip"),"rip\\") then
+   Play("!meepmee.wav")
+   SetAtom(cx,"stav","1",forRuntime)
+   mapLoad("!chkbox1.gif")
+   mapRefresh()
+  else
+   Play("!incorre.wav")
+  endif
+ else
+  Play("!incorre.wav")
+ endif
+endif
+

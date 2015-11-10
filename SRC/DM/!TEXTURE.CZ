@@ -1,0 +1,175 @@
+nfo:ëmÒagî 300
+tem:!help
+siz:80x170
+pos:slp=1 x=9 line=17 slpline=16
+Ý^0,40,0,80Þ
+
+d
+                         ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´  Pozad¡/Textury  ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                         ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙa
+
+    Z historick˜ch d–vod– jsou podporov ny dva z sadnˆ odli¨n‚ zp–soby
+    barevn‚ho designov n¡ str nek (vzhled pozad¡, barvy textu).
+
+    cStar¨¡ um¡ pracovat jen s 256 barvami.a
+    Vzhled pozad¡ je definov n polo‘kou tex:.
+    Barva pozad¡ a barvy textu jsou definov ny polo‘kou pal:.
+      + umo‘¤uje rozm¡stit po pozad¡ v¡ce textur
+      + m  filtry
+      + m  r me‡ky
+      + um¡ textury libovolnˆ p©ebarvit
+      - velmi slo‘it  syntaxe
+      - obr zky pouze ve form tu X s ©adou omezen¡
+      - str nka se pot‚ generuje ve 256 barv ch, nikdy directcolor
+
+    cMlad¨¡ je univerz ln¡, nez visl˜ na barevn‚m modelu.a
+    Pozad¡ i barvy textu jsou definov ny polo‘kou tex:.
+      + velmi jednoduch  syntaxe
+      + naprost  univerz lnost
+      - vy‘aduje p©edem pe‡livˆ p©ipraven˜ a vyladˆn˜ obr zek
+
+
+  dMlad¨¡
+  ÄÄÄÄÄÄa
+    Syntaxe je p©evzata z HTML tagu BODY a m¡rnˆ upravena:
+      promˆnn 1=hodnota1 promˆnn 2=hodnota2...
+      V¨e je case insensitive, tj. nez le‘¡ na velikosti p¡smen.
+    cPromˆnn‚a
+      background- jm‚no obr zku na pozad¡
+      bgtype    - jak nalo‘it s obr zkem: wallpaper/center/stretch
+      bgcolor   - barva pozad¡, nen¡-li p©ekryto obr zkem
+      text      - barva textu psan‚ho autorem
+      cowriter  - barva textu psan‚ho spoluautorem (stejnˆ v˜razn )
+      link      - barva zv˜raznˆn‚ho textu a odkaz–
+      strong    - barva silnˆ zv˜raznˆn‚ho textu
+    cHodnotya
+      #rrggbb   - barva zadan  pomoc¡ sv˜ch rgb hodnot, hexadecim lnˆ 00..ff
+      "slova"   - jak˜koliv v˜raz v uvozovk ch
+      slovo     - neobsahuje-li v˜raz mezery, lze zadat bez uvozovek
+    cKonstantya
+      Black  = #000000    Green  = #008000
+      Silver = #C0C0C0    Lime   = #00FF00
+      Gray   = #808080    Olive  = #808000
+      White  = #FFFFFF    Yellow = #FFFF00
+      Maroon = #800000    Navy   = #000080
+      Red    = #FF0000    Blue   = #0000FF
+      Purple = #800080    Teal   = #008080
+      Fuchsia= #FF00FF    Aqua   = #00FFFF
+    cImplicitn¡ nastaven¡a
+      background   =""
+      bgtype       =wallpaper
+      bgcolor      =black
+      text         =silver
+      cowriter     =aqua
+      link         =yellow
+      strong       =white
+    cP©¡klada
+      text="white" background="bkg.gif" bgtype=
+
+
+  dStar¨¡
+  ÄÄÄÄÄÄa
+      Jak jsem zmi¤oval, star¨¡ syntaxe je slo‘itˆj¨¡.
+      V¨e co n sleduje se u‘ t˜k  jen j¡.
+
+    cPost©ehya
+      Pozad¡ je asi nejd–le‘itˆj¨¡ ‡ st vzhledu dob©e vypadaj¡c¡ str nky.
+      Skoro ‘ dn  textura nevypad  dob©e hned, dobr˜ch v˜sledk–
+       lze dos hnout jen s pe‡liv˜m v˜bˆrem palety.
+      I o¨kliv‚ textury lze pou‘¡t, filtry nˆkdy dˆlaj¡ divy.
+      Programem generovan˜ch textur nen¡ moc, nakresli si vlastn¡.
+
+    c—voda
+      Popis pozad¡ se skl d  ze slov oddˆlen˜ch mezerou. Ka‘d‚ slovo
+      ©¡k  kterou texturu pou‘¡t, jak˜ obd‚ln¡k na obrazovces s n¡ pokr˜t
+      a p©¡padnˆ jak˜ r me‡ek tomu obd‚ln¡ku d t.
+      Kdy‘ se ti popis pozad¡ nevejde do 76 znak–, kter‚ editor nab¡z¡,
+      pou‘ij F4 a edituj © dek tex:.  Maximum je zhruba 250 znak–.
+
+    cSou©adnice (popis obd‚ln¡ku)a
+      Definujme obd‚ln¡k parametry Y0 (Y-sou©adnice vr¨ku), VYS (v˜¨ka
+      v pixelech), X0 (X-sou©adnice lev‚ho kraje), SIR (¨¡©ka v pixelech).
+      Nejsou-li zad ny X-sou©adnice, p©edpokl d  se ¨¡©ka p©es celou
+      obrazovku. Nen¡-li zad na v˜¨ka, p©edpokl d  se a‘ do konce str nky.
+
+    cSyntaxe slova [=Y0.][-Y.][(X0,SIR)][VYS]a[(filtr1,filtr2..)][r me‡ek]a
+
+      Hranat‚ z vorky ozna‡uj¡ nepovinn‚ ‡ sti.
+      Y0,X0 jsou sou©adnice lev‚ho horn¡ho rohu kreslen‚ho obd‚ln¡ku.
+      SIR,VYS jsou jeho ¨¡©ka a v˜¨ka.
+      -Y je sn¡‘en¡ sou©adnice Y, tedy posun z aktu ln¡ pozice nahoru.
+
+    cIdentifikace texturya
+      Jedin  povinn  ‡ st je jedno p¡smeno kter‚ ©¡k  jakou texturu pou‘¡t.
+        a,b,c,d,e...takov‚ norm ln¡ generovan‚ textury
+        h...hvˆzdi‡ky
+        x...bludi¨tˆ
+        y...‡ern‚
+        z...‘ dn‚ (kdy‘ je cel  strana pokryta obr zkem, nen¡ t©eba
+            generovat texturu)
+        ~...poslednˆ pou‘it  textura v‡etnˆ jej¡ho filtru, prostˆ se
+            vezme ta bitmapa kter  je zrovna p©ipravena v bufferu
+        <file.x>...jako texturu pou‘ije zadan˜ obr zek ve form tu x,
+            mus¡ b˜t nezkomprimov n, maxim lnˆ 16 barev, maxim lnˆ 64KB,
+            pokud mo‘no rozmˆry mocnina dvou. Kdy‘ zad ¨ p©ed n zev
+            souboru hvˆzdi‡ku (<*file.x>), z–stane textura v p–vodn¡ barvˆ,
+            v opa‡n‚m p©¡padˆ tvo©¡¨ barvu stejnˆ jako u ostatn¡ch textur.
+
+    cR me‡eka
+      Popis r me‡ku se skl d  z 1 a‘ 3 cifer. Cifra nula i znak poml‡ka
+      jsou ekvivalenty situaci kdy nen¡ zad no nic.
+
+      Prvn¡ cifra popisuje vr¨ek:
+        0...‘ dn˜ r me‡ek
+        1...‡ern  linka
+        2...barevn  linka (barva Ctrl)
+        3...‡ern  a pod n¡ barevn  linka (barva Ctrl)
+        4...p©echod z minul‚ na tuto texturu.. bez okras
+        5...p©echod z minul‚ na tuto texturu.. horn¡ st¡nov n¡
+        6...p©echod z minul‚ na tuto texturu.. doln¡ st¡nov n¡
+
+      Druh  cifra popisuje spodek:
+        0...‘ dn˜ r me‡ek
+        1...‡ern  linka
+        2...barevn  linka (barva A)
+        3...barevn  a pod n¡ ‡ern  linka
+
+      T©et¡ cifra popisuje boky:
+        nult˜ bit...nedefinov no
+        prvn¡ bit...barevn‚ boky (vlevo Ctrl, vpravo A)
+
+    cFiltrya
+      Za identifikac¡ textury m–‘e b˜t v kulat˜ch z vork ch zad n filtr,
+      p©¡padnˆ v¡ce filtr– oddˆlen˜ch ‡ rkami. Popis filtru za‡¡n  jedn¡m
+      znakem a mohou n sledovat ‡¡seln‚ parametry oddˆlen‚ lom¡tkem '/':
+      +...k textu©e p©i‡te param1=2 a zarovn  vr¨ek na hranici param2=40
+      -...od textu©y ode‡te param1=2 a zarovn  spodek na hranici param2=25
+      *...zdvojn sob¡ hloubku textury, tj pix:=(pix-param1=25)*2+param2=10
+      \...p©evr t¡ texturu podle osy zn zornˆn‚ t¡mto lom¡tkem
+      o...osek  spodek i vr¨ek na hranic¡ch param1=25 a param2=40
+      r...randomy: obarv¡ (param2=100)*100 pixel– na hodnotu param1=32
+      p...p©ejede pluhem
+      a...provede operaci param1=0:
+          param1=0...n hodnˆ p©ehod¡ (param2=100)*256 pixel–
+          param1=1...zkrout¡ texturu do hnusnˆ vypadaj¡c¡ch kornout–
+      m...ml‘¡ (pr–mˆruje sousedn¡ pixely)
+      n...ml‘¡ lehce, jen nepatrn  zmˆna
+      s...sype (po jednotk ch vyrovn v  hodnoty sousedn¡ch pixel–)
+      z...zeƒ, do textury vytla‡¡ cihly o hloubce param1=5
+
+    cP©¡kladya
+      '100a 150b c' pokryje prvn¡ch 100 © dek texturou a,
+        dal¨¡ch 150 texturou b a zbytek a‘ do konce texturou c.
+      'c =50.(250,10)y' v¨echno pokryje texturou c a nav¡c uprost©ed,
+        tj. X od 250 do 259, od © dky 50 do konce str nky pl cne prou‘ek y.
+      'a -10.b' pokryje plochu texturou a, pak se o 10 © dek vr t¡
+        a pokra‡uje texturou b a‘ do konce, tedy posledn¡ch 10 © dek.
+      '<bagr.x>' obr zek kr l¡ka v bagru
+      'a(p,m)' textura A s filtry P a M
+
+    cZ vˆra
+      Nepokr˜vej velk‚ plochy v¡ckr t po sobˆ a nekombinuj zbyte‡nˆ mnoho
+      filtr–, zpomaluje to generov n¡ str nky.
+
+

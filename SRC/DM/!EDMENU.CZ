@@ -1,0 +1,95 @@
+nfo:ëmÒagî 303
+tem:!help
+siz:80x90
+pos:slp=1 x=0 line=10 slpline=9 blkStart=192 blkEnd=447
+Ý^0,40,0,80Þ
+d
+                             ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ menu editoru ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                             ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙa
+
+ Edito©¡ menu se zjev¡ po stisku cAlt-sa (j  v¡m, jsem na r nu, ale navrhnˆte
+ nˆco lep¨¡ho... stejn˜ efekt m  kliknut¡ prav˜m tla‡¡tkem my¨i).
+ cAlt-da je pak takov  zkratka, zopakuje minul˜ v˜bˆr z menu.
+ A teƒ u‘ k jednotliv˜m polo‘k m menu:
+
+bVelikost str nky [siz:]a
+ Velikost v pixelech.. m–‘e¨ mˆnit jen prvn¡ slo‘ku (¨¡©ku), a je¨tˆ ne pod
+ hranici danou nejpravˆj¨¡m krajem sloupcem na str nce. Tato doln¡ mez se ti
+ p©i vkl d n¡ nov‚ hodnoty uk ‘e. Pokud p©esto zad ¨ ni‘¨¡, pou‘ije se mezn¡
+ hodnota. Druh  slo‘ka (v˜¨ka) se dopo‡¡t v  podle obsahu str nku.
+
+bTemplate str nka [tem:]a
+ N sleduj¡c¡ odsazen‚ promˆnn‚ nemus¡ b˜t nastaveny p©¡mo na str nce,
+ sta‡¡ kdy‘ jsou v template str nce. Zde se nastavuje kter  str nka
+ je za "¨ablonu" pova‘ov na.
+
+b  N zev str nky [nam:]a
+   N zev str nky je k dispozici objekt–m na str nce a zobrazuje se na li¨tˆ.
+
+b  Autor str nky [aut:]a
+   Jm‚no autora je k dispozici objekt–m na str nce a zobrazuje se na li¨tˆ.
+
+b  Doporu‡en‚ rozli¨en¡ [res:]a
+   Ka‘d  karta zvl d  jin  rozli¨en¡, proto nem  smysl vynucovat si p©esnˆ
+   jedno. Ma¨ina vybere a nastav¡ vhodn‚ rozli¨en¡ co nejbli‘¨¡ k zadan‚mu.
+
+b  Obr zek na pozad¡a
+   Jak˜ obr zek polo‘it na pozad¡ str nky.
+   Jeho dal¨¡ atributy lze nastavit p©¡mo editac¡ promˆnn‚ [tex:].
+   Jeliko‘ syntaxe tex: m  dvˆ zcela odli¨n‚ varianty a jen jedna podporuje
+   vkl d n¡ obr zk– na pozad¡, p©i nutnosti zmˆny varianty (a tedy zru¨en¡
+   st vaj¡c¡ho nastaven¡) se Ma¨ina p©ept  zda to opravdu chce¨.
+
+b  Definice pozad¡/barev [tex:]a
+   Ru‡n¡ editace bpopisu pozad¡!texturea = p©¡stup ke v¨em featur m.
+
+b  Seznam font– [fnt:]a
+   Seznam na str nce pou‘it˜ch font–, maxim lnˆ 4.
+
+b  Sampl >þ  [si1:] (welcome)a
+   Sampl hran˜ p©i vstupu na str nku ze str nky p©edchoz¡.
+
+b  Sampl  þ [si2:] (welcome again)a
+   Sampl hran˜ p©i n vratu na tuto str nku z nˆjak‚ n sleduj¡c¡ str nky.
+
+b  Sampl  þ> [sen:] (yes sir)a
+   Sampl hran˜ p©i opou¨tˆn¡ str nky a p©echodu na dal¨¡.
+
+b  Sampl þ  [sou:] (go back)a
+   Sampl hran˜ p©i opou¨tˆn¡ str nky a n vratu na p©edchoz¡.
+
+b  Sampl þ [skr:] (boom)a
+   Sampl hran˜ p©i n razu na za‡ tek nebo konec str nky.
+
+b  Hudba [mus:]a
+   Z editoru m–‘e¨ zadat jen jeden, dal¨¡ lze dopsat ru‡nˆ do zdroj ku.
+   Tyto moduly se p©i prohl¡‘en¡ str nky n hodnˆ st©¡daj¡. Dˆd¡ se
+   na dal¨¡ nav¨t¡ven‚ str nky bez vlastn¡ho seznamu.
+   Prvn¡m spu¨tˆn¡m modulu se inicializuje MIDAS, do t‚ doby nejsou sly¨et
+   ani samply, tak‘e nˆjak˜ modul by rozhodnˆ mˆl b˜t na tituln¡ str nce.
+   Seznam m–‘e m¡t maxim lnˆ asi 4 ‡leny.
+
+b  Flags [fla:]a
+   R–zn‚ flagy ovliv¤uj¡c¡ vzhled str nky a chov n¡ editoru.
+   Viz bpopis form tu str nky!formata.
+
+bZarovnat odstavec...a
+ Zarovn  © dky textu v aktu ln¡m odstavci podle p© n¡ doleva, doprava, doleva
+ i doprava nebo centruje.
+
+bVycentrovat sloupeca
+ Vycentruje aktu ln¡ sloupec ve smˆru horizont ln¡m.
+
+bRozli¨en¡ editorua
+ V jak‚m rozli¨en¡ (znak– x znak–) m  bˆ‘et editor.
+ Nastaven¡ se projev¡ a‘ p©i p©¡¨t¡m spu¨tˆn¡ editoru.
+
+bP©ehodit Y a Za
+ Tak t©eba j  na tzv. "‡esk‚" kl vesnici ps t neum¡m, hr–za... a nˆkdo to m 
+ naopak. Pokud nejde zmˆnit kl vesnice v opera‡n¡m syst‚mu, m–‘e se hodit tenhle
+ "dirty hack".
+
+bVolba jazykaa
+ Bez koment ©e :)
+

@@ -1,0 +1,254 @@
+nfo:ëmÒagî 321
+tem:!doc
+fnt:tenkej.fn;bard.fn;tlustej.fn
+pal:^D%^G$^K#^N"^R"^U!^Y ^] ^V ^\;__ ^]_22 >> MM ZZ O::_CC444>>>HHH :: HH UU!:#%?"+E"1J!5O!<V B\ B] '( -, 40 62 84 <7 ?: C> 
+tex:e(*35/45,s) =120.(30,300)5480~(+9,\)222 =30.(80,200)100~(+3)222
+siz:360x5682
+pos:slp=1 x=31 line=39 slpline=38
+Ý^0,180,2,262Þ
+
+
+
+
+e1* fakta *0a
+
+
+
+
+	d2Minim ln¡ konfigurace0a
+
+	  - 386, 2-4MB RAM, VGA, DOS 4.0
+
+
+	d2Doporu‡en  konfigurace0a
+
+	  - 400MHz CPU, 32MB RAM
+	  - SVGA 4MB se spr vnˆ implementovan˜m VBE,
+	    p©¡padnˆ se spu¨tˆn˜m UniVBE
+	  - t©¡tla‡¡tkov  my¨
+	  - zvukov  karta
+
+
+	d2Vhodn‚ opera‡n¡ syst‚my a jejich chyby0a
+
+	  - MS-DOS alespo¤ 4.0 a kompatibiln¡ syst‚my
+		‘ dn‚ probl‚my
+
+	  - OpenDOS 7.1
+		proti DOSu m  p©ep¡n n¡ task–, ale taskmgr
+		 nechr n¡ celou vram, m–‘e nechat d¡ru v obraze
+
+	  - Windows
+		fullscreen ok
+		chod v oknˆ vˆt¨ina verz¡ Windows podporuje
+		 nedostate‡nˆ nebo v–bec
+		nˆkter‚ verze NT ¨patnˆ emuluj¡ p r kl ves
+		nˆkter‚ karty ‡i drivery v NT ¨patnˆ emuluj¡ VBE
+		XP £dajnˆ zakazuj¡ VBE, dostupn‚ jen VGA m¢dy
+
+	  - Linux
+		pod VMware netestov no, ale ur‡itˆ p–jde
+		pod WINE z jara 99 spustit nejde
+		pod DOSEmu 0.66 ve fullscreenu:
+		- zat¡m nen¡ emulov n zvuk
+		pod DOSEmu 0.66 v X oknˆ nav¡c:
+		- nejdou SVGA m¢dy (chybka v emulaci VBE)
+		- nejsou emulov ny unchained m¢dy (je vidˆt
+		  jen zmˆŸ pixel–)... jde tedy jen 320x200
+		- p r kl ves nejde
+		- emulovan  my¨ se chov  divnˆ
+		- hor¨¡ scrolling, p©esn˜ timer ani bˆh paprsku
+		  nejsou emulov ny
+
+	  - OS/2
+		pros¡m o jak‚koliv zpr vy z boji¨tˆ
+		kdysi jsem sly¨el, ‘e jde fullscreen i okno
+
+	  - Mac OS
+		pros¡m o jak‚koliv zpr vy z boji¨tˆ
+		
+
+	d2Zdroj ky tvo©¡c¡ Ma¨inu0a
+
+	  - Deus ex Machina
+		570K pas+asm
+		autor: D.
+		http://dee.cz/machina
+	
+	  - CIA
+		knihovna pro v¨echno a hlavnˆ grafiku
+		1150K pas+asm
+		auto©i: D. a dal¨¡
+		volnˆ ¨¡©en‚
+		http://dee.cz/cia
+
+	  - Loadery
+		JPG,PNG,GIF,PCX,TGA,X,FLI,FLC
+		160K asm+pas
+		autor: Jan Patera
+
+	  - ParLan
+		interpret skriptov‚ho jazyka
+		100K pas
+		autor: Martin Halama
+
+	  - Skripty
+		25K parlan
+
+	  - Rain
+		audio syst‚m
+		verze 1.x
+		vyu‘¡v  Midas a amp11
+		40K c+pas+asm
+		autor: D.
+		volnˆ ¨¡©en‚
+		http://dee.cz/rain
+
+	  - Midas
+		audio syst‚m
+		upraven  verze 1.1.2
+		1400K c+asm
+		auto©i: Sahara Surfers
+		volnˆ ¨¡©en‚
+		http://www.s2.org/midas
+
+	  - amp11
+		MP3 decoder
+		upraven  verze 990908
+		120K cpp
+		autor: Niklas Beisert
+		volnˆ ¨¡©en‚
+		http://www.ph.tum.de/~nbeisert/amp11.html
+
+
+	d2RAIN0a
+
+Audiosyst‚m RAIN vyu‘¡v  dostupn˜ch prost©edk– - ve Windows jejich slu‘eb (WinAPI, DirectSound), v DOSu a jin˜ch opera‡n¡ch syst‚mech emuluj¡c¡ch DOS p©¡mo hardware nˆkter‚ z karet kompatibiln¡ch se SoundBlaster, Gravis UltraSound, Pro Audio Spectrum nebo Windows Sound System. Bˆ‘nˆ se v¨e (kromˆ WSS v DOSu) detekuje p©i spu¨tˆn¡, neukl daj¡ se ‘ dn‚ konfigura‡n¡ soubory, mezi implicitn¡ hodnoty pat©¡ vysok  kvalita mixov n¡ (zapnut  interpolace) a ve Windows 100ms dlouh˜ buffer pro DirectSound a 500ms pro Wave device (nen¡-li k dispozici DirectSound nebo je emulovan˜).
+Nˆkdy se ov¨em m–‘e st t, ‘e je pot©eba nastavit vlastn¡ hodnoty. Kdy?
+	- zvuk chr‡¡, je p©eru¨ovan˜, pak m–‘e pomoci buƒ
+	  prodlou‘it buffery nebo sn¡‘it kvalitu zvuku
+	- zpo‘dˆn¡ zvuku ve Windows nelze d le trpˆt,
+	  pak pom–‘e zkr tit buffer
+	- WSS karta v DOSu, RAIN ji s m nezdetekuje
+Konfigurov n¡ RAINu se spou¨t¡ p©¡kazem brain -ca. Nastaven¡ se ulo‘¡ do souboru MIDAS.DOS nebo MIDAS.WIN podle toho zda bˆ‘¡ DOS nebo Windows a bude pou‘ito p©i ka‘d‚m dal¨¡m spu¨tˆn¡ v tomto syst‚mu. Soubory MIDAS.DOS nebo MIDAS.WIN lze kdykoliv smazat nebo zmˆnit dal¨¡m konfigurov n¡m. Pokud jsou readonly, budou ignorov ny, proto‘e takov‚ soubory ‡asto poch zej¡ z jin‚ho po‡¡ta‡e s jinou zvukovou kartou.
+Ma¨ina se norm lnˆ pou¨t¡ p©¡kazem bdma nebo bdm.coma (pop©. bmachinaa, v¨echno je tot‚‘), p©i tom se startuje audiosyst‚m. Lze ji ov¨em pustit i bez audiosyst‚mu a to p©¡kazem bdm.exea.
+
+
+	d2Podpora v¡ce jazyk–0a
+
+Ma¨ina moment lnˆ plnˆ podporuje ‡e¨tinu a angli‡tinu. Jazyk jde kdykoliv p©epnout. P©idat podporu dal¨¡ho jazyka je jednoduch‚, sta‡¡ p©elo‘it nˆkolik textov˜ch soubor–, moment lnˆ to ‡in¡ 115KB. Kdyby se na¨el takov˜ nad¨enec, r d mu p©¡slu¨n‚ soubory po¨lu a p©elo‘en‚ je zahrnu do dal¨¡ verze.
+A‡koliv Ma¨ina sama um¡ jen ‡esky a anglicky, p©i vytv ©en¡ vlastn¡ch projekt– nikoho v rozletu neomezuje, ‡ten ©i se z napsan˜ch jazykov˜ch mutac¡ uk ‘e ta jeho, p©¡padnˆ dostane na v˜bˆr.
+
+
+	d2Konfigurov n¡0a
+
+Nejd–le‘itˆj¨¡ parametry Ma¨iny lze se©izovat v setupu (F2 nebo tla‡¡tko Setup).
+Tyto parametry a ©ada dal¨¡ch jsou po ukon‡en¡ Ma¨iny ulo‘eny a jdou mˆnit v DM.INI souboru.
+Audiosyst‚m RAIN lze, pokud nevyhovuj¡ implicitn¡ a autodetekovan‚ hodnoty, konfigurovat p©¡kazem "RAIN -c", viz v˜¨e.
+Pro pln‚ vyu‘it¡ mo‘nost¡ grafick‚ karty jsou nˆkdy nutn‚ interaktivn¡ testy. Aby neobtˆ‘ovaly p©i prvn¡m spu¨tˆn¡, jsou implicitnˆ potla‡eny. M–‘e¨ je zapnout v setupu.
+Pokud chce¨ m¡t na tituln¡ obrazovce vlastn¡ obr zek, um¡sti ho do adres ©e s INI souborem a p©ejmenuj na b2!title.*a0.
+M–‘e¨ si po©¡dit i vlastn¡ ¨ipku my¨i. Sta‡¡ nakreslit a d t jej¡ obr zek b2!mouse.*0a do adres ©e s INI souborem (barva 0 je pr–hledn ).
+
+
+	d2Instalace0a
+
+Ma¨ina spu¨tˆn  s parametrem bia se pokus¡ nainstalovat se na harddisk. Moment lnˆ k tomu m  ur‡en˜ adres © C:\DISKMAGS\DM (instalace mus¡ b˜t plnˆ automatick ). Komu se to nehod¡, m–‘e instalaci p©esmˆrovat do jin‚ho adres ©e t¡m, ‘e nastav¡ dosovou promˆnnou DM (nap©¡klad p©¡kazem SET DM=adres ©). Pokud u‘ v instala‡n¡m adres ©i nˆjak  Ma¨ina je, porovnaj¡ se verze a nainstaluje se ta novˆj¨¡ (je-li to t©eba).
+
+
+	d2Rozli¨en¡, bitov‚ hloubky, VGA, VESA0a
+
+Ka‘d  str nka m–‘e b˜t nalayoutov na pro jin‚ rozli¨en¡. Ma¨ina se sna‘¡ str nk m vyhovˆt a nastavit jim po‘adovan‚, nebo aspo¤ co nejbli‘¨¡ rozli¨en¡. Majitel‚ pouze VGA karet tedy skoro o nic, kromˆ spr vn‚ho rozli¨en¡, nep©ijdou. Jedinou v˜jimkou jsou FLC animace ur‡en‚ pro rozli¨en¡ vy¨¨¡ ne‘ 320x200. Ty Ma¨ina na VGA kartˆ vynech .
+Pokud ti jako u‘ivateli z jak‚hokoliv d–vodu nevyhovuje rozli¨en¡ nebo barevn  hloubka, kter‚ Ma¨ina vybrala, m–‘e¨ je zmˆnit. K tomu je ur‡eno nˆkolik prost©edk–. Zmˆna rozli¨en¡ za bˆhu (bF5a nebo postrann¡ li¨ty v hlavn¡m menu, je-li v INI zapnuto ShowResolutions) se t˜k  jen aktu ln¡ str nky. Ovlivnit nar z v¨echny str nky lze r–zn˜mi parametry z p©¡kazov‚ © dky. Jednak lze vynutit (resp. zak zat) VGA ‡i VESA (SVGA) m¢dy parametry bVGAa, bVESAa (resp. bNOVGAa, bNOVESAa). D le lze vynutit (resp. zak zat) ur‡it‚ bitov‚ hloubky parametry b+bitsa (resp. b-bitsa) kde bits je po‡et bit– na pixel z 4, 8, 15, 16, 24, 32 (4 je textm¢d). P©i prohl¡‘en¡ v textm¢du pozor: nejdou skripty. A nakonec je tu mo‘nost shora ‡i zdola omezit rozli¨en¡ v ose x ‡i y. Tomu slou‘¡ ©ada oper tor– b<a,blta, b<=a,b=<a,blea, b=a,b==a,beqa, b!=a,bnea, b=>a,b>=a,bgea, b>a,bgta a parametry OsaOper torLimit (nap©¡klad xlt800 y<600 nebo t©eba x=80 y=30). Pozor na fakt, ‘e znaky b<a a b>a maj¡ v DOSu speci ln¡ v˜znam, p©esmˆrov n¡. Zbavit je speci ln¡ho v˜znamu jde nap©¡klad v DOSu 7.0 vlo‘en¡m cel‚ho parametru do uvozovek (xlt800 "y<600").
+
+
+	d2Ochrana0a
+
+Napsal jsem fikanou ochranu proti komer‡n¡mu zneu‘it¡ programu, ale tˆsnˆ p©ed releasem ji vypnul, abych neomezoval v s, poctiv‚ u‘ivatele. Douf m, ‘e se nenajde nˆjak˜ vykuk, kter˜ mˆ p©inut¡ toho litovat.
+Z rove¤ jsem vy©adil i hotovou ochranu proti vkl d n¡ neefektivnˆ ulo‘en˜ch obr zk– (bˆ‘nˆ se setk v m s JPG, kter˜ jde bez viditeln‚ ztr ty zmen¨it t©eba z 800 na 80KB). Ka‘d˜ buƒ sv‚ho ¨tˆst¡ str–jcem. A kdo chce kam, pomozme mu tam.
+
+
+	d2Omezen¡ manipulace s .DM0a
+
+Seznam dostupn˜ch .DM soubor– se vytv ©¡ p©i spu¨tˆn¡ Ma¨iny, proto nen¡ mo‘n‚ za bˆhu vymˆ¤ovat m‚dium (nap©¡klad CD‡ko) s .DM, shellnout do DOSu a manipulovat s .DM apod.
+
+
+	d2Export do .TXT0a
+
+Export str nky do TXT souboru je velmi obt¡‘n  vˆc. Texty psan‚ r–znˆ velk˜mi fonty je t©eba zobrazit fontem jedin˜m a nesm¡ se p©itom moc rozh zet rozlo‘en¡ textu na str nce. Ma¨ina p©esnˆ zachov v  © dkov n¡ a zarovn v  k okraj–m tak jako v grafice. Mohou nastat dva probl‚my. (1) Pokud je na jedn‚ © dce neobvykle hodnˆ p¡smen (buƒ je mal˜m fontem nebo to jsou te‡ky apod), mus¡me ostatn¡ © dky rozt hnout na ¨¡©ku t‚ nejdel¨¡, zarovn v me p©ece ke kraj–m, ne. Ale kdy‘ je rozd¡l v po‡tu p¡smen p©¡li¨ velk˜, rozta‘en‚ mezery mezi slovy nevypadaj¡ dob©e. (2) Mezi norm ln¡ © dky se dostlo p r n¡zk˜ch (n¡zk˜m fontem). P©¡klad: norm ln¡ 16-pixelov‚ © dky a n¡zk‚ 8-pixelov‚. Export‚r zdetekuje 16 jako z kladn¡ v˜¨ku © dky a ka‘d‚ dvˆ 8-pixelov‚ splynou v jednu. Stejn  rutina je pou‘ita p©i prohli‘en¡ v textm¢du.
+
+
+	d2Export do form tu V˜hnˆ0a
+
+P©ev d¡ se pouze to hlavn¡ - text, zmˆny barvy a odkazy. Plus jm‚no str nky a jej¡ho autora. Obr zky se vypou¨tˆj¡. Pozor, p©i skl d n¡ layer– p©es sebe m–‘e doj¡t k p©eps n¡ jedn‚ vrstvy textu jinou a v˜sledek pak buƒ neodpov¡d  p©edloze nebo je dokonce nekorektn¡. Bude-li z jem, m–‘u tento provizorn¡ konvertor d l vyv¡jet.
+
+
+	d2Export do HTML0a
+
+Nˆco se p©ev d¡: text, obr zky, odkazy na jin‚ str nky, nov  pozad¡... a nˆco ne: layery, fonty, moduly, samply, skripty, star  pozad¡. Obr zky z–st vaj¡ v p–vodn¡m form tu (PNG apod), konverze je na tobˆ. Pod¡vej se do DM.INI na sekci [HTML], je tam p r u‘ite‡n˜ch parametr– ovliv¤uj¡c¡ch export.
+
+
+	d2PamˆŸ0a
+
+Kdy‘ m  Ma¨ina m lo pamˆti na obr zky, nech  m¡sto nich pr zdn‚ r me‡ky. To je typick˜ p©¡pad po‡¡ta‡– se 4MB RAM. Kdy‘ je pamˆti je¨tˆ m‚nˆ a nesta‡¡ ani na str nku bez obr zk–, nen¡ mo‘n‚ se na str nku dostat. To je p©¡pad vˆt¨iny str nek na po‡¡ta‡¡ch se 2 MB RAM. Kdy‘ pamˆŸ nesta‡¡ ani na prvn¡ str nku, Ma¨ina ihned skon‡¡. Pozn: Ma¨ina nemus¡ startovat v‘dy str nkou s lokomotivou, kdy‘ zad ¨ p©i spou¨tˆn¡ jako parametr jm‚no DM souboru, za‡ne¨ jeho tituln¡ str nkou.
+
+
+	d2Scrolling:0a
+
+	dNAPROSTO PLYNUL scrolling v¨emi smˆry je nedosa‘iteln˜a
+
+	  - Bez interaktivn¡ch test– (lze zapnout v setupu).
+	  - Na nˆkter˜ch vadn˜ch kart ch (chyba karty/biosu).
+	  - V nˆkter˜ch rozli¨en¡ch (technicky neprovediteln‚).
+
+	dPokud obraz nevypad  jak by mˆla
+
+	  - Mohl jsi udˆlat chybu p©i interaktivn¡ch testech.
+	    Sma‘ [SVGA:...] sekci v souboru DM.INI.
+	  - Nebo m ¨ vadnou grafickou kartu/bios. Ji‘ nˆkolik
+	    (des¡tek) takov˜ch vad jsem objevil a dok ‘u se
+	    jim p©izp–sobit. Dal¨¡ na odhalen¡ teprve ‡ekaj¡,
+	    kontaktuj mˆ pokud mysl¡¨, ‘e je to tv–j p©¡pad.
+
+
+	d2Bˆhem psan¡ Ma¨iny jsem upgradoval0a
+
+	  386 AMD -> 486 AMD -> 5x86 AMD -> 6x86 Cyrix
+	   -> Cyrix MII (jo, jsem nez visl k :)))
+	  Trident 8900 -> Tseng ET4000 -> ET6000
+	   -> Western Digital VGA!! -> Cirrus Logic -> ET6000
+	  GUS -> stejn˜ GUS ... net©eba upgradovat :)
+	  Borland Pascal 7 -> ... nelze upgradovat :)
+
+
+	d2Barvy p©i spu¨tˆn¡ s parametrem DP0a
+
+	  nahr v n¡ obr zku (dek¢dov n¡ JPG apod)
+	  histogram a kvantizace (tvorba palety)
+	  konverze modelu (8,15,16,24,32,rgb,bgr)
+
+	  maz n¡ my¨i
+	  doba, kdy je my¨ skryt 
+	  kreslen¡ my¨i
+
+	  bˆh skriptu
+	  garbage collector
+	  screensaver
+
+
+
+
+
+
+
+Ý^2,108,-288,66Þ
+	- ‡erven‚
+	- b¡l 
+	- ¨ed 
+
+	- ‡erven 
+	- zelen‚
+	- modr 
+
+	- tmavˆ ‘lut 
+	- b¡l 
+	- ¨ed 

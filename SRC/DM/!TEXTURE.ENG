@@ -1,0 +1,69 @@
+nfo:ëmÒagî 300
+tem:!help
+siz:80x64
+pos:slp=1 x=40 line=15 slpline=14
+İ^0,40,0,80Ş
+
+d
+                          ÚÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ¿
+    ÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ´ Background/Textures ÃÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄ
+                          ÀÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÙa
+
+      There are two different ways to create a page background.
+      The cyoungera one (recommended)..
+       + is easy to use
+       + has no limitations
+       - requires carefully prepared texture
+      cOldera one..
+       + is able to place more textures around page
+       + has filters
+       + has frames
+       + is able to recolorize a texture
+       - has very complicated syntax
+       - support only the *.X pictures with many limitations
+       - generate the pages in 256 colors, never in directcolor
+
+  dYounger
+  ÄÄÄÄÄÄÄa
+    Syntax is taken from HTML tag BODY and slightly modified:
+      variable1=value1 variable2=value2...
+      Everything is case insensitive.
+    cVariablesa
+      background- name of a background picture
+      bgtype    - how to handle picture: wallpaper/center/stretch
+      bgcolor   - background color, if it's not covered with picture
+      text      - color of common text
+      cowriter  - color of text written by cowriter (the same brightness)
+      link      - color of emphasized text and links
+      strong    - color of strongly emphasized text
+    cValuesa
+      #rrggbb   - color described by its rgb values, hexadecimally 00..ff
+      "words"   - any term in ""
+      word      - term without spaces could be entered without ""
+    cConstantsa
+      Black  = #000000    Green  = #008000
+      Silver = #C0C0C0    Lime   = #00FF00
+      Gray   = #808080    Olive  = #808000
+      White  = #FFFFFF    Yellow = #FFFF00
+      Maroon = #800000    Navy   = #000080
+      Red    = #FF0000    Blue   = #0000FF
+      Purple = #800080    Teal   = #008080
+      Fuchsia= #FF00FF    Aqua   = #00FFFF
+    cImplicit settinga
+      background   =""
+      bgtype       =wallpaper
+      bgcolor      =black
+      text         =silver
+      cowriter     =aqua
+      link         =yellow
+      strong       =white
+    cExamplea
+      text="white" background="bkg.gif" bgtype=
+
+
+  dOlder
+  ÄÄÄÄÄa
+      As I mentioned before, older syntax is more complicated.
+      It is described only in the bCzech help!texture.cza.
+
+

@@ -1,0 +1,31 @@
+nfo:ëmÒagî 352
+res:640x480
+tem:!doc
+nam:Mo‘nost ¨patn˜ch driver–
+fnt:tenkej.fn;bard.fn
+fla:c
+tex:text=#C0C0C0 cowriter=#E88C00 link=#F8F400 strong=#FCFCFC
+siz:640x473
+pos:slp=1 x=33 line=23 slpline=22
+Ý^0,180,0,360Þ
+
+b1Upozornˆn¡0a
+
+Drivery Va¨¡ grafick‚ karty mohou obsahovat v ‘n‚ chyby. Ma¨ina ve Va¨em z jmu pou‘ije zat¡m pouze rozli¨en¡ o kter˜ch je zn mo, ‘e je Va¨e drivery zvl dnou.
+
+Toto opat©en¡ m–‘ete vypnout v csetupu!setupa od¨krtnut¡m kolonky cPouze bezpe‡n‚ m¢dya, Ma¨ina pak bude vˆ©it, ‘e drivery m te ji‘ v po© dku.
+
+
+
+Ý~!zlahve,110x73Þ
+
+	dMatroxa - drivery pro Windows 2000 z £nora 2002 nezvl daj¡ VESA m¢dy, v˜voj ©i uv dˆj¡, ‘e oprava m  u nich n¡zkou prioritu
+
+	dNVidiaa - drivery Detonator XP z £nora 2002 nezvl daj¡ VESA a VGA m¢dy z rove¤, spole‡nost zat¡m neodpovˆdˆla, Ma¨ina tedy vypou¨t¡ VGA
+
+	d3DFx/Bansheea - drivery z po‡ tku 2001 chybovaly v nˆkolika n¡zk˜ch rozli¨en¡ch, dne¨n¡ stav nen¡ zn m
+
+	dCirrus Logic GD-54xxa - VBE nezvl d  15 a 24bit m¢dy
+
+Ý^0,515,0,250Þ
+Ý~!title.png,250x465Þ

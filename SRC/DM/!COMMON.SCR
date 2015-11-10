@@ -1,0 +1,39 @@
+{descr: extract common files to selected directory}
+{param: ...:message}
+{files: !common.exe !meepmee.wav !incorre.wav}
+
+cx=Context(-1,-1,-1)
+click=GetAtom(cx,"click")
+
+if (click!="") then
+ ok=0
+ sfx="!common.exe"
+ commondir=""
+ GetVar("dir_common",commondir)
+ dirOld=dirCur()
+ if (commondir=="") then
+  commondir=dirExe()
+  if (dirWriteable(commondir)==0) then commondir=dirIns() endif
+  dirMake(commondir)
+  mask="*.* common"
+ else
+  mask="*.*"
+ endif
+ commondir=dlgPath(2,GetAtom(cx,"data"),mask,commondir)
+ if (commondir!="") then
+  if dirMake(commondir) then
+   if Rip(sfx,commondir) then
+    if dirChange(commondir) then
+     Play("!meepmee.wav")
+     Exec(1,sfx)
+     Exec(0,"del "+sfx)
+     SetVar("dir_common",commondir)
+     ok=1
+    endif
+   endif
+  endif
+ endif
+ dirChange(dirOld)
+ if (commondir!="") & (ok==0) then Play("!incorre.wav") endif
+endif
+
