@@ -1,0 +1,38 @@
+Authors:
+========
+
+Stepan Hrbek   <dee.at.dee.cz>
+
+
+Contributors:
+=============
+
+Martin Halama  <>                     Parlan scripting language
+Carlos         <crs.at.centrum.cz>    fonts, proof-reading and more
+Daniel Sykora  <redox.at.volny.cz>    software 3d renderer in mothership screen
+
+
+Libraries used:
+===============
+
+CiA            https://github.com/StepanHrbek/CiA
+RAIN           https://github.com/StepanHrbek/RAIN
+
+
+Many thanks to:
+===============
+
+Finarfin           - for 8KB music "rush hour"
+Nula               - for 8KB music "pozitiff"
+Smirk              - for 4KB music "christmas on mars"
+Croaker or Feather - for icon of work in progress
+Pavel Zlab         - for many fonts
+Navel              - for fixing midas/s3m loader bug
+Waclaw             - for some fonts and good suggestions
+Duncan             - for ideal conditions to find last maxibug
+Tomas Nagaj        - for ideal conditions to find another bug
+Matous             - for HTML related advices
+Jeffrey Lim        - for appreciating Deus ex Machina so much, that I decided to write an international version
+Bestie             - for telling me about it
+everybody          - for testing, bugreports and support
+
